@@ -1,0 +1,32 @@
+/* components/task-card/task-card.wxss */
+.card {
+  width: 600rpx;
+  height: 300rpx;
+  background: #FFFFFF;
+  border: 2rpx solid #1E1C26;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.bar{
+  width: 598rpx;
+  height: 40rpx;
+  background: #2C12A1;
+  position: relative;
+
+}
+
+.xicon {
+  width: 36rpx;
+  height: 36rpx;
+  position: absolute;
+  right: 0;
+  padding: 3rpx;
+  padding-right: 4rpx;
+}
+
+.task-name {
+  padding: 5%;
+  padding-top: 15%;
+}
