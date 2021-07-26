@@ -19,8 +19,7 @@ Component({
    */
   methods: {
     checkDone() {
-      // if(this.data)
-      console.log(this.data)
+      // console.log(this.data)
       if(this.data.doneTap == true){
         this.setData({ doneTap: false })
       }else{
