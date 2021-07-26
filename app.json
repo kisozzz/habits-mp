@@ -1,8 +1,12 @@
 {
   "pages":[
     "pages/index/index",
+    "pages/test/test",
     "pages/logs/logs"
   ],
+  "usingComponents":{
+    "tabbar": "/components/tabbar/tabbar"
+  },
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",

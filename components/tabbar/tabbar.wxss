@@ -1,0 +1,71 @@
+/* components/tabbar/tabbar.wxss */
+.bar {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: linear-gradient(to top right, #333, #666);
+  padding-bottom: 1.2rem;
+  padding-top: 0.3rem;
+}
+
+.tab {
+  color: #eee;
+  margin: 0.8rem auto;
+}
+
+.logo {
+  height: 90rpx;
+  width: 90rpx;
+}
+
+.dynamic-tab-left {
+  background-color: #333;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 80%;
+  left: 30%;
+  animation: 1s 1 alternate tabSlideOutLeft;
+}
+
+.dynamic-tab-right {
+  background-color: #333;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 80%;
+  left: 58%;
+  animation: 1s 1 alternate tabSlideOutRight;
+}
+
+.dynamic-tab-center {
+  background-color: #333;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 117%;
+  left: 44%;
+  animation: 1s 1 alternate tabSlideOutCenter;
+}
+
+/* to do: add in animation originating from center */
+@keyframes tabSlideOutLeft {
+  0% { bottom: 28%; left: 44%; }
+  100% { bottom: 80%; left: 30%; }
+}
+
+@keyframes tabSlideOutRight {
+  0% { bottom: 28%; left: 44%; }
+  100% { bottom: 80%; left: 58%; }
+}
+
+@keyframes tabSlideOutCenter {
+  0% { bottom: 28%; left: 44%; }
+  100% { bottom: 117%; left: 44%; }
+}
