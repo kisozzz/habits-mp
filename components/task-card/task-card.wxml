@@ -1,0 +1,7 @@
+<!--components/task-card/task-card.wxml-->
+<view class="card">
+    <view class="bar">
+      <navigator class="delete" url="#"><image class="xicon" src="/images/icons/xicon.svg"></image></navigator>
+    </view>
+    <view class="task-name">Go to gym</view>
+</view>
