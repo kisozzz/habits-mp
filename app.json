@@ -6,7 +6,8 @@
   ],
   "usingComponents":{
     "tabbar": "/components/tabbar/tabbar",
-    "task-card": "/components/task-card/task-card"
+    "task-card": "/components/task-card/task-card",
+    "l-progress":"/miniprogram_npm/lin-ui/progress/index"
 
   },
   "window":{
