@@ -9,6 +9,7 @@
     "task-card": "/components/task-card/task-card",
     "habit-card": "/components/habit-card/habit-card",
     "task-form": "/components/task-form/task-form",
+    "btn": "/components/button/button",
     "l-progress":"/miniprogram_npm/lin-ui/progress/index"
 
   },

@@ -4,7 +4,7 @@
   width: 600rpx;
   height: 120rpx;
   background: #FFFFFF;
-  border: 4rpx solid #2C12A1;
+  border: 3rpx solid #2C12A1;
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -23,7 +23,7 @@
 .cube {
   width: 60rpx;
   height: 60rpx;
-  background: #C6C6C7;
+  background: #F4F4F4;
   border: 2rpx solid #2C12A1;
   box-sizing: border-box;
   margin-left: 30rpx;
