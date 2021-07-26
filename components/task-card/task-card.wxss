@@ -2,67 +2,32 @@
 .task-card {
   position: relative;
   width: 600rpx;
-  height: 280rpx;
+  height: 120rpx;
   background: #FFFFFF;
   border: 4rpx solid #2C12A1;
   box-sizing: border-box;
   display: flex;
-  flex-direction: column;
-}
-
-.bar{
-  width: 596rpx;
-  height: 40rpx;
-  background: #2C12A1;
-  position: relative;
-
-}
-
-.xicon {
-  width: 36rpx;
-  height: 36rpx;
-  position: absolute;
-  right: 0;
-  padding: 2rpx;
-  padding-right: 4rpx;
-  /* padding-bottom: 4rpx; */
+  align-items: center;
 }
 
 .task-name {
-  padding-top: 50rpx;
+  padding: 30rpx;
   padding-left: 30rpx;
   font-family: VT323;
   font-style: normal;
   font-weight: normal;
-  font-size: 55rpx;
-  line-height: 30rpx;
+  font-size: 50rpx;
   color: #2C12A1;
 }
 
-.progress-bar {
-  width: 90%;
-  margin: auto;
-  
+.cube {
+  width: 60rpx;
+  height: 60rpx;
+  background: #C6C6C7;
+  border: 2rpx solid #2C12A1;
+  box-sizing: border-box;
+  margin-left: 30rpx;
 }
-
-.days {
-  display: flex;
-  padding: 20rpx 35rpx;
-  padding-top: 48rpx;
-  justify-content: flex-end;
-}
-
-.calendar-icon {
-  width: 40rpx;
-  height: 40rpx;
-  padding-right: 10rpx;
-}
-
-.days-text {
-  font-family: Inconsolata;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 28rpx;
-  color: #1E1C26;
-  padding-top: 8rpx;
+.done {
+  background: #A0F337 !important;
 }
