@@ -5,3 +5,11 @@
   <task-card />
 </view>
 
+<view class="container">
+  <habit-card />
+</view>
+
+<view class="container">
+  <task-form />
+</view>
+
