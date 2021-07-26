@@ -48,7 +48,7 @@
 .days {
   display: flex;
   padding: 20rpx 35rpx;
-  padding-top: 40rpx;
+  padding-top: 48rpx;
   justify-content: flex-end;
 }
 
@@ -56,4 +56,13 @@
   width: 40rpx;
   height: 40rpx;
   padding-right: 10rpx;
+}
+
+.days-text {
+  font-family: Inconsolata;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28rpx;
+  color: #1E1C26;
+  padding-top: 8rpx;
 }
