@@ -6,9 +6,15 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: linear-gradient(to top right, #333, #666);
+  background:white;
+  /* background: linear-gradient(to top right, #333, #666); */
   padding-bottom: 1.2rem;
   padding-top: 0.3rem;
+  
+  height: 150rpx;
+  background-color:white;
+  border-top:solid 2rpx #f0f0f0;
+  z-index: 99999;
 }
 
 .tab {
