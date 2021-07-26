@@ -1,8 +1,8 @@
 <!--components/tabbar/tabbar.wxml-->
 <view class="bar">
-  <navigator class="tab" url="#"><image class="logo" src="static/homeLogo.svg"></image></navigator>
-  <navigator bindtap="displayCreateOptions" class="tab" url="#"><image class="logo" src="static/createLogo.svg"></image></navigator>
-  <navigator class="tab" url="#"><image class="logo" src="static/groupLogo.svg"></image></navigator>
+  <navigator class="tab" url="#"><image class="logo" src="/images/icons/HouseSimple.svg"></image></navigator>
+  <navigator bindtap="displayCreateOptions" class="tab" url="#"><image class="logo" src="/images/icons/plusgame.svg"></image></navigator>
+  <navigator class="tab" url="#"><image class="logo" src="/images/icons/Smiley.svg"></image></navigator>
   <navigator class="dynamic-tab-left" wx:if="{{createMenuOpen}}"></navigator>
   <navigator class="dynamic-tab-right" wx:if="{{createMenuOpen}}"></navigator>
   <navigator class="dynamic-tab-center" wx:if="{{createMenuOpen}}"></navigator>
