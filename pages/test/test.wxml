@@ -3,15 +3,15 @@
 <!-- <tabbar /> -->
 
 <!-- <btn color="grey" text="Create" /> -->
-<view class="container"><habit-form/></view>
+<!-- <view class="container"><habit-form/></view> -->
 
   <!-- <view class="container"><task-card /></view> -->
-  <!-- <view class="container"><habit-card /></view> -->
+  <view class="container"><habit-card /></view>
  
   <!-- <task-form /> -->
-<check-box color="grey" text="MON"/>
+<!-- <check-box color="grey" text="MON"/>
 <check-box color="red" text="TUE"/>
 
-<view class="container"><task-form /></view>
+<view class="container"><task-form /></view> -->
 
 
