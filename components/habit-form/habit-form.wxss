@@ -16,8 +16,7 @@
   font-size: 34rpx;
   line-height: 64rpx;
   color: #1E1C26;
-  margin-left: 40rpx;
-  padding-left: 20rpx;
+  margin-left: 10rpx;
   padding-bottom:14rpx;
 }
 .title-input {
@@ -36,7 +35,7 @@
     align-items: center;
     width: 548rpx !important;
     height: 80rpx;
-    margin-top: 80rpx;
+    margin-top: 130rpx;
     /* background: #F4F4F4 !important; */
     background: #DBDDFC !important;
     border: 2rpx solid #1E1C26;
@@ -62,14 +61,13 @@
   display: flex;
   justify-content: space-around;
 }
-checkbox .wx-checkbox-input {
-  border-radius: 32rpx; /* 圆角 */
-  width: 32rpx; /* 背景的宽 */
-  height: 32rpx; /* 背景的高 */
-  border: 2px solid rgba(255, 129, 92, 1);
-} 
-label {
-  background-color: red;
+
+.boxgroup{
+  display: flex;
+}
+
+check-box{
+  padding: 10rpx;
 }
 
 

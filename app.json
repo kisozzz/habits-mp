@@ -10,6 +10,7 @@
     "habit-card": "/components/habit-card/habit-card",
     "task-form": "/components/task-form/task-form",
     "btn": "/components/button/button",
+    "check-box": "/components/checkbox/checkbox",
     "habit-form": "/components/habit-form/habit-form",
     "l-progress":"/miniprogram_npm/lin-ui/progress/index",
     "dashboard-individual":"/components/dashboard-individual/dashboard-individual"
