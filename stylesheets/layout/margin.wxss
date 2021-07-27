@@ -16,6 +16,7 @@
 .mb50 { margin-bottom: 50rpx !important; }
 .mb60 { margin-bottom: 60rpx !important; }
 .mb100 { margin-bottom: 100rpx !important; }
+.mb180 { margin-bottom: 180rpx !important; }
 .mb200 { margin-bottom: 200rpx !important; }
 .mb300 { margin-bottom: 300rpx !important; }
 
@@ -27,6 +28,7 @@
 .mt50 { margin-top: 50rpx !important; }
 .mt60 { margin-top: 60rpx !important; }
 .mt100 { margin-top: 100rpx !important; }
+.mt180 { margin-top: 180rpx !important; }
 .mt200 { margin-top: 200rpx !important; }
 .mt300 { margin-top: 300rpx !important; }
 

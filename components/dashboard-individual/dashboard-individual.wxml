@@ -1,4 +1,24 @@
 <!--components/dashboard-individual/dashboard-individual.wxml-->
-<view class="dashboard-wh bg-blue">
-
+<view class="dashboard bg-white">
+  <view></view>
+    <!-- For retrieving use info -->
+    <view class="flex items-center pa40">
+    <block wx:if="{{canIUseOpenData}}">
+      <view class="avatar-md ofh mr20" bindtap="bindViewTap">
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <view>
+        <open-data type="userNickName"></open-data>
+      </view>
+    </block>
+    <block wx:elif="{{!hasUserInfo}}">
+      <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
+      <button wx:elif="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+      <view wx:else> 请使用1.4.4及以上版本基础库 </view>
+    </block>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
 </view>
