@@ -20,7 +20,7 @@
   padding-left: 20rpx;
   padding-bottom:14rpx;
 }
-input {
+.title-input {
   width: 548rpx !important;
   height: 76rpx !important;
   background: #FFFFFF;
@@ -30,7 +30,7 @@ input {
   margin: auto;
 }
 
-button {
+.btn-big {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,3 +62,14 @@ button {
   display: flex;
   justify-content: space-around;
 }
+checkbox .wx-checkbox-input {
+  border-radius: 32rpx; /* 圆角 */
+  width: 32rpx; /* 背景的宽 */
+  height: 32rpx; /* 背景的高 */
+  border: 2px solid rgba(255, 129, 92, 1);
+} 
+label {
+  background-color: red;
+}
+
+

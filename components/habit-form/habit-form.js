@@ -11,7 +11,8 @@ Component({
    * 组件的初始数据
    */
   data: {
-    date: '2021-08-11',
+    sdate: '2021-01-01',
+    edate: '2021-01-01'
   },
 
   /**
@@ -22,10 +23,17 @@ Component({
       console.log('form发生了submit事件，携带数据为：', e.detail.value)
     },
 
-    bindDateChange: function (e) {
+    bindDateChangeStart: function (e) {
       console.log('picker发送选择改变，携带值为', e.detail.value)
       this.setData({
-        date: e.detail.value
+        sdate: e.detail.value
+      })
+    },
+    
+    bindDateChangeEnd: function (e) {
+      console.log('picker发送选择改变，携带值为', e.detail.value)
+      this.setData({
+        edate: e.detail.value
       })
     },
   }

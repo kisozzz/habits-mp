@@ -2,17 +2,17 @@
 <view class="title">Create a Habit</view>
 <form bindsubmit="formSubmit">
 <view class="section">
-  <view class="label">Title</view>
-  <input name="input" />
+  <view class="label">Name</view>
+  <input name="input" class="title-input"/>
 </view>
 <view class="section">
   <view class="label">Frequency</view>
   <checkbox-group name="checkbox">
-    <label><checkbox value="sunday"/>Sun</label>
+    <label><checkbox class="checkbox" value="sunday"/>Sun</label>
     <label><checkbox value="monday"/>Mon</label>
-    <label><checkbox value="tuesday"/>Tues</label>
+    <label><checkbox value="tuesday"/>Tue</label>
     <label><checkbox value="wednesday"/>Wed</label>
-    <label><checkbox value="thursday"/>Thurs</label>
+    <label><checkbox value="thursday"/>Thu</label>
     <label><checkbox value="friday"/>Fri</label>
     <label><checkbox value="saturday"/>Sat</label>
   </checkbox-group>
@@ -21,22 +21,22 @@
 <view class="section">
   <view class="label">Duration</view>
   <view class="picktime">
-    <picker mode="date" value="{{date}}" start="2021-01-01" end="2100-01-01" bindchange="bindDateChange">
+    <picker mode="date" value="{{date}}" start="2021-01-01" end="2100-01-01" bindchange="bindDateChangeStart">
       <view class="picker">
-        {{date}}
+        {{sdate}}
       </view>
       <view class="label-small">Start</view>
     </picker>
-    <picker mode="date" value="{{date}}" start="2021-01-01" end="2100-01-01" bindchange="bindDateChange">
+    <picker mode="date" value="{{date}}" start="2021-01-01" end="2100-01-01" bindchange="bindDateChangeEnd">
       <view class="picker">
-        {{date}}
+        {{edate}}
       </view>
       <view class="label-small">End</view>
     </picker>
   </view>
 </view>
 <view class="section">
-  <button formType="submit">Create</button>
+  <button formType="submit" class="btn-big">Create</button>
   <!-- <view slot="submit">
     <btn formType="submit" color="grey" text="Create" />
   </view> -->

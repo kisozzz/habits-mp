@@ -1,1 +1,20 @@
 /* components/task-form/task-form.wxss */
+.task-card {
+  position: relative;
+  width: 600rpx;
+  height: 120rpx;
+  background: #FFFFFF;
+  border: 3rpx solid #2C12A1;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+.task-name {
+  padding: 30rpx;
+  padding-left: 30rpx;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40rpx;
+  color: #2C12A1;
+}
