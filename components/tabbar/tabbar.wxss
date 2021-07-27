@@ -1,4 +1,6 @@
 /* components/tabbar/tabbar.wxss */
+@import '/stylesheets/index';
+
 .bar {
   position: fixed;
   bottom: 0;
@@ -7,28 +9,42 @@
   justify-content: space-around;
   align-items: center;
   background:white;
-  /* background: linear-gradient(to top right, #333, #666); */
-  padding-bottom: 1.2rem;
+  padding-bottom: 1rem;
   padding-top: 0.3rem;
   
-  height: 150rpx;
+  height: 130rpx;
   background-color:white;
   border-top:solid 2rpx #f0f0f0;
   z-index: 99999;
 }
 
+.tab-text {
+  color: #2C12A1;
+  font-size: 42rpx;
+  font-family: Inconsolata, sans-serif;
+  margin: 0.8rem auto;
+  padding: 30rpx 30rpx;
+}
+
 .tab {
-  color: #eee;
   margin: 0.8rem auto;
 }
 
 .logo {
+  position: absolute;
+  left: 41%;
+  bottom: 41%;
+  /* transform: translateY(-40rpx); */
   height: 90rpx;
   width: 90rpx;
+  padding: 20rpx;
+  border-radius: 50%;
+  background-color: #CDC3F8;
+  box-shadow: 0px 2px 3px #2C12A1;
 }
 
 .dynamic-tab-left {
-  background-color: #333;
+  background-color: #CDC3F8;
   width: 100rpx;
   height: 100rpx;
   border-radius: 50%;
@@ -36,10 +52,11 @@
   bottom: 80%;
   left: 30%;
   animation: 1s 1 alternate tabSlideOutLeft;
+  transform: translateY(-40rpx);
 }
 
 .dynamic-tab-right {
-  background-color: #333;
+  background-color: #CDC3F8;
   width: 100rpx;
   height: 100rpx;
   border-radius: 50%;
@@ -47,10 +64,11 @@
   bottom: 80%;
   left: 58%;
   animation: 1s 1 alternate tabSlideOutRight;
+  transform: translateY(-40rpx);
 }
 
 .dynamic-tab-center {
-  background-color: #333;
+  background-color: #CDC3F8;
   width: 100rpx;
   height: 100rpx;
   border-radius: 50%;
@@ -58,9 +76,9 @@
   bottom: 117%;
   left: 44%;
   animation: 1s 1 alternate tabSlideOutCenter;
+  transform: translateY(-40rpx);
 }
 
-/* to do: add in animation originating from center */
 @keyframes tabSlideOutLeft {
   0% { bottom: 28%; left: 44%; }
   100% { bottom: 80%; left: 30%; }
