@@ -4,7 +4,7 @@
   </view>
 
 
-  <view class="mt180 mb200 column-center">
+  <view class="mt180 mb250 column-center">
     <habit-card class="mb20" />
     <habit-card class="mb20" />
     <habit-card class="mb20" />
@@ -12,11 +12,6 @@
 
   <tabbar />
 </view>
-
-
-
-
-
 
 <!-- DON'T DELETE PLEASE Get user avatar and nickname -->
   <!-- <view class="userinfo">

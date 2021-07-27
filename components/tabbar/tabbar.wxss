@@ -32,15 +32,21 @@
 
 .logo {
   position: absolute;
-  left: 41%;
-  bottom: 41%;
-  /* transform: translateY(-40rpx); */
-  height: 90rpx;
-  width: 90rpx;
+  left: 43vw;
+  bottom: 42%;
+  height: 80rpx;
+  width: 80rpx;
+  /* transform: translateX(-45rpx); */
   padding: 20rpx;
   border-radius: 50%;
   background-color: #CDC3F8;
   box-shadow: 0px 2px 3px #2C12A1;
+}
+
+.dynamic-tab-inner {
+  position: absolute;
+  left: 42%;
+  bottom: 42%;
 }
 
 .dynamic-tab-left {
