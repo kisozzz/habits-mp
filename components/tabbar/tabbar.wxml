@@ -1,8 +1,10 @@
 <!--components/tabbar/tabbar.wxml-->
-<view class="bar">
-  <navigator class="tab" url="#"><image class="logo" src="/images/icons/HouseSimple.svg"></image></navigator>
+<view class="bar relative">
+  <view class="vw row-around">
+    <navigator class="tab-text" url="#">HOME</navigator>
+    <navigator class="tab-text" url="#">GROUP</navigator>
+  </view>
   <navigator bindtap="displayCreateOptions" class="tab" url="#"><image class="logo" src="/images/icons/plusgame.svg"></image></navigator>
-  <navigator class="tab" url="#"><image class="logo" src="/images/icons/Smiley.svg"></image></navigator>
   <navigator class="dynamic-tab-left" wx:if="{{createMenuOpen}}"></navigator>
   <navigator class="dynamic-tab-right" wx:if="{{createMenuOpen}}"></navigator>
   <navigator class="dynamic-tab-center" wx:if="{{createMenuOpen}}"></navigator>
