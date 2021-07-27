@@ -18,6 +18,7 @@
 .mb100 { margin-bottom: 100rpx !important; }
 .mb180 { margin-bottom: 180rpx !important; }
 .mb200 { margin-bottom: 200rpx !important; }
+.mb250 { margin-bottom: 250rpx !important; }
 .mb300 { margin-bottom: 300rpx !important; }
 
 .mt0 { margin-top: 0 !important;}

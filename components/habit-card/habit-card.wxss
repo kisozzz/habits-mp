@@ -1,10 +1,25 @@
 @import '/stylesheets/index';
 
-/* components/habit-card/habit-card.wxss */
+/* can replace with real icons later */
+.step-icon {
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+  border: 1px solid #2C12A1;
+}
+
+.step-icon-filled {
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+  border: 1px solid #2C12A1;
+  background-color: #A0F337;
+}
+
 .task-card {
   position: relative;
   width: 660rpx;
-  height: 220rpx;
+  height: 180rpx;
   background: #FFFFFF;
   border: 2rpx solid #2C12A1;
   box-sizing: border-box;
@@ -14,7 +29,7 @@
 
 .bar{
   width: 100%;
-  height: 8rpx;
+  height: 6rpx;
   background: #2C12A1;
   position: relative;
 }
