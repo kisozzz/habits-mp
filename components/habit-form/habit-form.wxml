@@ -47,7 +47,7 @@
   </view>
 </view>
 <view class="section">
-  <button formType="submit" class="btn-big">Create</button>
+  <button bindtap="changeColor" style="background: {{color}};" formType="submit" class="btn-big">Create</button>
   <!-- <view slot="submit">
     <btn formType="submit" color="grey" text="Create" />
   </view> -->

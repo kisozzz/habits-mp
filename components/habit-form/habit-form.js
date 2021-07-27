@@ -12,7 +12,8 @@ Component({
    */
   data: {
     sdate: '2021-01-01',
-    edate: '2021-01-01'
+    edate: '2021-01-01',
+    color: '#DBDDFC'
   },
 
   /**
@@ -36,5 +37,11 @@ Component({
         edate: e.detail.value
       })
     },
+
+    changeColor: function(e){
+      this.setData({
+        color: "#F4F4F4"
+      })
+    }
   }
 })
