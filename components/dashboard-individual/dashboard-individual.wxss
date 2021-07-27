@@ -1,5 +1,9 @@
 /* components/dashboard-individual/dashboard-individual.wxss */
-dashboard-wh {
-  width: 80%;
-  height: 400rpx;
+@import '/stylesheets/index';
+
+.dashboard {
+  width: 660rpx;
+  height: 560rpx;
+  transform: translateY(100rpx);
+  border: 2rpx solid #2C12A1;
 }
