@@ -9,5 +9,6 @@
   <!-- <view class="container"><habit-card /></view> -->
  
   <!-- <task-form /> -->
-
+<check-box color="grey" text="MON"/>
+<check-box color="red" text="TUE"/>
 

@@ -7,7 +7,16 @@
 </view>
 <view class="section">
   <view class="label">Frequency</view>
-  <checkbox-group name="checkbox">
+  <view class="boxgroup">
+    <check-box id="sun" color="grey" text="SUN"></check-box>
+    <check-box id="mon" color="grey" text="MON"></check-box>
+    <check-box id="tue" color="grey" text="TUE"></check-box>
+    <check-box id="wed" color="grey" text="WED"></check-box>
+    <check-box id="thu" color="grey" text="THU"></check-box>
+    <check-box id="fri" color="grey" text="FRI"></check-box>
+    <check-box id="sat" color="grey" text="SAT"></check-box>
+  </view> 
+  <!-- <checkbox-group name="checkbox">
     <label><checkbox value="sunday"/>Sun</label>
     <label><checkbox value="monday"/>Mon</label>
     <label><checkbox value="tuesday"/>Tues</label>
@@ -15,7 +24,7 @@
     <label><checkbox value="thursday"/>Thurs</label>
     <label><checkbox value="friday"/>Fri</label>
     <label><checkbox value="saturday"/>Sat</label>
-  </checkbox-group>
+  </checkbox-group> -->
 </view>
 
 <view class="section">
