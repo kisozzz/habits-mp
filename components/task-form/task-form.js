@@ -21,5 +21,9 @@ Component({
     submit: function (e) {
       console.log("表单携带的数据：", e.detail.value)
     },
+
+    inputBlur: function (e) {
+      console.log("unfocused", e.detail.value)
+    }
   }
 })

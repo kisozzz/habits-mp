@@ -1,8 +1,8 @@
 <!--components/task-form/task-form.wxml-->
 <view class="task-card">
   <form bindsubmit="submit">
-  <input name="name" placeholder="Add a task"></input>
-  <button form-type="submit">提交</button>
+  <input name="name" placeholder="Add a task" placeholder-style="font-family: VT323;" class="task-name" bindblur="inputBlur"></input>
+  <!-- <button form-type="submit">提交</button> -->
  </form>
 </view>
 
