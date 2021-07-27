@@ -16,8 +16,8 @@
   },
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
+    "navigationBarBackgroundColor": "#CDC3F8",
+    "navigationBarTitleText": "Habits",
     "navigationBarTextStyle":"black"
   },
   "style": "v2",
