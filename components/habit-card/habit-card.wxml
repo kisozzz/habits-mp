@@ -9,9 +9,23 @@
         <view class="days-text">28 days left</view>
       </view> -->
       <view class="row-around">
-        <view class="step-icon mr20"></view>
-        <view class="step-icon mr20"></view>
-        <view class="step-icon-filled"></view>
+        <view bindtap="showDialog1" class="step-icon-{{filled1}} mr20"></view>
+        <view class="step-icon-{{filled2}} mr20"></view>
+        <view class="step-icon-{{filled3}}"></view>
+        <view wx:if="{{dialog1}}">
+          <l-dialog 
+          id="task1"
+          bind:linconfirm = "confirm"
+          show="{{true}}"
+          type="confirm"  
+          show-title="{{false}}"
+          content="Pack gym clothes"
+          confirm-text="Done"
+          confirm-color="#f60"
+          cancel-text="Cancel"
+          cancel-color="#999" />
+        </view>
+        
         <!-- <l-progress percent="50" stroke-width='15' border-radius='2' active-color="#A0F337" l-class="progress-bar"></l-progress>  -->
       </view>
     </view>

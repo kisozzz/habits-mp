@@ -1,14 +1,14 @@
 @import '/stylesheets/index';
 
 /* can replace with real icons later */
-.step-icon {
+.step-icon- {
   width: 40rpx;
   height: 40rpx;
   border-radius: 50%;
   border: 1px solid #2C12A1;
 }
 
-.step-icon-filled {
+.step-icon-filled1 {
   width: 40rpx;
   height: 40rpx;
   border-radius: 50%;
