@@ -1,36 +1,36 @@
+@import '/stylesheets/index';
+
 /* components/habit-card/habit-card.wxss */
 .task-card {
   position: relative;
-  width: 600rpx;
-  height: 280rpx;
+  width: 660rpx;
+  height: 220rpx;
   background: #FFFFFF;
-  border: 4rpx solid #2C12A1;
+  border: 2rpx solid #2C12A1;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
 }
 
 .bar{
-  width: 596rpx;
-  height: 40rpx;
+  width: 100%;
+  height: 8rpx;
   background: #2C12A1;
   position: relative;
-
 }
 
-.xicon {
+/* .xicon {
   width: 36rpx;
   height: 36rpx;
   position: absolute;
   right: 0;
   padding: 2rpx;
   padding-right: 4rpx;
-  /* padding-bottom: 4rpx; */
-}
+} */
 
 .task-name {
-  padding-top: 50rpx;
-  padding-left: 30rpx;
+  /* padding-top: 50rpx;
+  padding-left: 30rpx; */
   font-family: VT323;
   font-style: normal;
   font-weight: normal;
@@ -40,9 +40,8 @@
 }
 
 .progress-bar {
-  width: 90%;
-  margin: auto;
-  
+  /* width: 90%; */
+  /* margin: auto; */
 }
 
 .days {

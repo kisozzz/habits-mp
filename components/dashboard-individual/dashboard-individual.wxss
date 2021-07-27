@@ -1,1 +1,5 @@
 /* components/dashboard-individual/dashboard-individual.wxss */
+dashboard-wh {
+  width: 80%;
+  height: 400rpx;
+}

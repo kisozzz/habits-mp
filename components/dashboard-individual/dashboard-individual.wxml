@@ -1,2 +1,4 @@
 <!--components/dashboard-individual/dashboard-individual.wxml-->
-<text>components/dashboard-individual/dashboard-individual.wxml</text>
+<view class="dashboard-wh bg-blue">
+
+</view>

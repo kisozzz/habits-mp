@@ -1,15 +1,17 @@
 /**index.wxss**/
+.background-top {
+  min-height: 40%;
+  background: linear-gradient(0deg, rgba(254,154,190,1) 0%, rgba(205,195,248,1) 60%);
+}
+
 .userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #aaa;
+  background-color: #888888;
 }
 
 .userinfo-avatar {
   overflow: hidden;
-  width: 128rpx;
-  height: 128rpx;
+  width: 80rpx;
+  height: 80rpx;
   margin: 20rpx;
   border-radius: 50%;
 }

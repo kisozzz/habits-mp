@@ -1,13 +1,15 @@
-<!--components/habit-card/habit-card.wxml-->
 <view class="task-card">
     <view class="bar">
-      <navigator class="delete" url="#"><image class="xicon" src="/images/icons/xicon.svg"></image></navigator>
+      <!-- <navigator class="delete" url="#"><image class="xicon" src="/images/icons/xicon.svg"></image></navigator> -->
+  </view>
+    <view class="h100 px40 py20 flex column justify-around">
+      <view class="task-name">Go to gym</view>
+      <!-- <view class="days">
+        <image class="calendar-icon" src="/images/icons/calendar.svg"></image>
+        <view class="days-text">28 days left</view>
+      </view> -->
+      <view>
+        <l-progress percent="50" stroke-width='15' border-radius='2' active-color="#A0F337" l-class="progress-bar"></l-progress> 
+      </view>
     </view>
-    <view class="task-name">Go to gym</view>
-    <view class="days">
-      <image class="calendar-icon" src="/images/icons/calendar.svg"></image>
-      <view class="days-text">28 days left</view>
-    </view>
-    <l-progress percent="50" stroke-width='15' border-radius='2' active-color="#A0F337" l-class="progress-bar"></l-progress>
-    
 </view>
