@@ -1,6 +1,6 @@
 /* components/task-form/task-form.wxss */
 .task-card {
-  position: relative;
+  /* position: relative; */
   width: 600rpx;
   height: 120rpx;
   background: #FFFFFF;
@@ -8,13 +8,29 @@
   box-sizing: border-box;
   display: flex;
   align-items: center;
+  justify-content: flex-start;
 }
 
 .task-name {
-  padding: 30rpx;
+  display: flex;
+  align-items: center;
   padding-left: 30rpx;
   font-style: normal;
   font-weight: normal;
-  font-size: 40rpx;
+  font-size: 60rpx;
   color: #2C12A1;
+}
+
+.plusicon{
+  margin-left: 30rpx;
+  width: 31px;
+  height: 31px;
+  display: flex;
+  align-items: center;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
