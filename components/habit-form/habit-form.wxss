@@ -1,0 +1,64 @@
+/* components/habit-form/habit-form.wxss */
+.title {
+  font-family: VT323;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 36px;
+  color: #1E1C26;
+  text-align: center;
+  padding: 40rpx;
+}
+.label {
+  font-family: Overpass Mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 34rpx;
+  line-height: 64rpx;
+  color: #1E1C26;
+  margin-left: 40rpx;
+  padding-left: 20rpx;
+  padding-bottom:14rpx;
+}
+input {
+  width: 548rpx !important;
+  height: 76rpx !important;
+  background: #FFFFFF;
+  border: 2rpx solid #1E1C26;
+  box-sizing: border-box;
+  box-shadow: inset 0rpx 6rpx 0rpx rgba(0, 0, 0, 0.25);
+  margin: auto;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 548rpx !important;
+    height: 80rpx;
+    margin-top: 80rpx;
+    /* background: #F4F4F4 !important; */
+    background: #DBDDFC !important;
+    border: 2rpx solid #1E1C26;
+    border-radius: 0 !important;
+    box-sizing: border-box;
+    box-shadow: 0rpx 6rpx 0rpx rgba(0, 0, 0, 0.7);
+
+    font-family: VT323;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50rpx;
+    line-height: 56rpx;
+    text-align: center;
+    letter-spacing: 3rpx;
+    color: #1E1C26;
+}
+
+.section {
+  margin: 50rpx;
+}
+
+.picktime{
+  display: flex;
+  justify-content: space-around;
+}
