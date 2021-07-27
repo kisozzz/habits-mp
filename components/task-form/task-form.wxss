@@ -1,1 +1,11 @@
 /* components/task-form/task-form.wxss */
+.task-card {
+  position: relative;
+  width: 600rpx;
+  height: 120rpx;
+  background: #FFFFFF;
+  border: 3rpx solid #2C12A1;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}

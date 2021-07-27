@@ -3,7 +3,7 @@
 <form bindsubmit="formSubmit">
 <view class="section">
   <view class="label">Title</view>
-  <input name="input" />
+  <input name="input" class="title-input"/>
 </view>
 <view class="section">
   <view class="label">Frequency</view>
@@ -21,22 +21,22 @@
 <view class="section">
   <view class="label">Duration</view>
   <view class="picktime">
-    <picker mode="date" value="{{date}}" start="2021-01-01" end="2100-01-01" bindchange="bindDateChange">
+    <picker mode="date" value="{{date}}" start="2021-01-01" end="2100-01-01" bindchange="bindDateChangeStart">
       <view class="picker">
-        {{date}}
+        {{sdate}}
       </view>
       <view class="label-small">Start</view>
     </picker>
-    <picker mode="date" value="{{date}}" start="2021-01-01" end="2100-01-01" bindchange="bindDateChange">
+    <picker mode="date" value="{{date}}" start="2021-01-01" end="2100-01-01" bindchange="bindDateChangeEnd">
       <view class="picker">
-        {{date}}
+        {{edate}}
       </view>
       <view class="label-small">End</view>
     </picker>
   </view>
 </view>
 <view class="section">
-  <button formType="submit">Create</button>
+  <button formType="submit" class="btn-big">Create</button>
   <!-- <view slot="submit">
     <btn formType="submit" color="grey" text="Create" />
   </view> -->

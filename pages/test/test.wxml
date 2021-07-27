@@ -3,11 +3,11 @@
 <!-- <tabbar /> -->
 
 <!-- <btn color="grey" text="Create" /> -->
-<view class="container"><habit-form/></view>
+<!-- <view class="container"><habit-form/></view> -->
 
   <!-- <view class="container"><task-card /></view> -->
   <!-- <view class="container"><habit-card /></view> -->
  
-  <!-- <task-form /> -->
+<task-form />
 
 
