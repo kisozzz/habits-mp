@@ -3,7 +3,7 @@
   <form bindsubmit="submit">
   <view class="container">
     <image class="plusicon" src="/images/icons/plus.svg"></image>
-    <input name="name" placeholder="Add a task" placeholder-style="font-family: VT323; color: #C6C6C6;" class="task-name" bindblur="inputBlur"></input>
+    <input name="name" placeholder="Add a task" placeholder-style="font-family: Overpass Mono; color: #C6C6C6;" class="task-name"></input>
   </view>
  </form>
 </view>

@@ -1,0 +1,7 @@
+<!--components/task-card-small/task-card-small.wxml-->
+<view class="task-card">
+    <view class="cube"></view>
+    <image bindtap="handleTap" class="xicon" src="/images/icons/xicon.svg"></image>
+    <view class="task-name">{{name}}</view>
+</view>
+

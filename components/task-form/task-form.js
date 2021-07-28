@@ -4,14 +4,14 @@ Component({
    * 组件的属性列表
    */
   properties: {
-
+    
   },
 
   /**
    * 组件的初始数据
    */
   data: {
-
+   
   },
 
   /**
@@ -21,9 +21,5 @@ Component({
     submit: function (e) {
       console.log("表单携带的数据：", e.detail.value)
     },
-
-    inputBlur: function (e) {
-      console.log("unfocused", e.detail.value)
-    }
   }
 })

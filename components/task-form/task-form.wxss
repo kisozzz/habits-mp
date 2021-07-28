@@ -1,14 +1,16 @@
 /* components/task-form/task-form.wxss */
 .task-card {
   /* position: relative; */
-  width: 600rpx;
-  height: 120rpx;
+  width: 550rpx;
+  height: 80rpx;
   background: #FFFFFF;
-  border: 3rpx solid #2C12A1;
-  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  border: 2rpx solid #1E1C26;
+  box-sizing: border-box;
+  box-shadow: inset 0rpx 6rpx 0rpx rgba(0, 0, 0, 0.25);
+  margin: auto;
 }
 
 .task-name {
@@ -17,14 +19,14 @@
   padding-left: 30rpx;
   font-style: normal;
   font-weight: normal;
-  font-size: 60rpx;
+  font-size: 34rpx;
   color: #2C12A1;
 }
 
 .plusicon{
   margin-left: 30rpx;
-  width: 31px;
-  height: 31px;
+  width: 40rpx;
+  height: 40rpx;
   display: flex;
   align-items: center;
 }
