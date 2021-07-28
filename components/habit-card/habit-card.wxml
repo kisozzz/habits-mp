@@ -15,13 +15,17 @@
         <view wx:if="{{dialog1}}">
           <l-dialog 
           id="task1"
+          l-class="dialog"
+          l-cancel-class="cancel-btn"
+          l-confirm-class="confirm-btn"
+          l-content-class="step-name"
           bind:linconfirm = "confirm"
           show="{{true}}"
           type="confirm"  
           show-title="{{false}}"
           content="Pack gym clothes"
           confirm-text="Done"
-          confirm-color="#f60"
+          confirm-color="#2C12A1"
           cancel-text="Cancel"
           cancel-color="#999" />
         </view>
