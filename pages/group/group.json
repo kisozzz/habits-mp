@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "dashboard-group": "/components/dashboard-group/dashboard-group"
+  }
+}

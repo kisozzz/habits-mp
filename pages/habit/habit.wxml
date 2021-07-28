@@ -1,0 +1,12 @@
+<view class="wrapper vh100">
+  <view class="px40 pt60 pb40 fheader vt323 text-primary">{{placeholder_name}}</view>
+  <view class="px80 py40">
+  <frequency-display />
+  </view>
+  <view class="steps-div flex column items-center justify-center pa20">
+    <task-card class="mb20" />
+    <task-card class="mb20" />
+    <task-card class="mb20" />
+  </view>
+  <tabbar />
+</view>

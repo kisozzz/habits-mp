@@ -1,0 +1,4 @@
+.background-top {
+  min-height: 25%;
+  background: linear-gradient(0deg, rgba(254,154,190,1) 0%, rgba(205,195,248,1) 100%);
+}

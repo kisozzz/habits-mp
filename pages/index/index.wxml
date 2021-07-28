@@ -1,11 +1,10 @@
 <view class="wrapper vh100">
-  <view class="background-top bg-blue column-center">
+  <view class="background-top column-center">
     <dashboard-individual />
   </view>
 
 
   <view class="mt180 mb250 column-center">
-    <habit-card class="mb20" />
     <habit-card class="mb20" />
     <habit-card class="mb20" />
   </view>

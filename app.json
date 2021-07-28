@@ -1,6 +1,8 @@
 {
   "pages":[
     "pages/index/index",
+    "pages/habit/habit",
+    "pages/group/group",
     "pages/test/test",
     "pages/logs/logs"
   ],
@@ -18,7 +20,9 @@
     "l-collapse":"/miniprogram_npm/lin-ui/collapse/index",
     "l-collapse-item":"/miniprogram_npm/lin-ui/collapse-item/index",
     "l-transition":"/miniprogram_npm/lin-ui/transition/index",
-    "dashboard-individual":"/components/dashboard-individual/dashboard-individual"
+    "dashboard-individual":"/components/dashboard-individual/dashboard-individual",
+    "frequency-display":"/components/frequency-display/frequency-display"
+
   },
   "window":{
     "backgroundTextStyle":"light",
