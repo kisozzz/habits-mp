@@ -16,7 +16,7 @@
   background-color: #A0F337;
 }
 
-.task-card {
+.habit-card {
   position: relative;
   width: 660rpx;
   height: 180rpx;
@@ -43,7 +43,7 @@
   padding-right: 4rpx;
 } */
 
-.task-name {
+.habit-name {
   /* padding-top: 50rpx;
   padding-left: 30rpx; */
   font-family: VT323;

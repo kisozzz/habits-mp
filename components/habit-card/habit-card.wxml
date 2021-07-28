@@ -1,10 +1,14 @@
-<view class="task-card">
+<view class="habit-card">
     <view class="bar">
     </view>
     <view class="h100 px10 flex items-center justify-around">
+
+    <view class="habit-name">{{name}}</view>
+
     <navigator url="/pages/habit/habit?id={{info.id}}" class="w60 h100 flex items-center justify-center">
       <view class="task-name">{{info.name}}</view>
     </navigator>
+
     <view class="w40 h100 flex items-center justify-center">
       <view class="row-around">
         <view bindtap="showDialog1" class="step-icon-{{filled1}} mr20"></view>

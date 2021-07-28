@@ -19,3 +19,47 @@
 .usermotto {
   margin-top: 200px;
 }
+
+/* customize */
+
+
+.habit-name {
+  font-family: VT323;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 55rpx;
+  height: 65px;
+  margin: 10px 0;
+  text-align: center;
+  /* line-height: 30rpx; */
+  color: #2C12A1;
+  /* position: relative; */
+  /* z-index: 1;
+  top: 40rpx;
+  right: 140rpx; */
+}
+
+.habit-name-title{
+  height: 65px;
+  text-align: center;
+  margin: 10px 0;
+}
+.screen {
+  -webkit-overflow-scrolling: touch;
+}
+
+.screen1 {
+  overflow-y: scroll;
+  padding: 0;
+}
+
+.paragraph {
+  -webkit-transition: transform ease-in-out 500ms;
+  transition: transform ease-in-out 500ms;
+  -webkit-transform: scale(0.6);
+  transform: scale(0.6);
+}
+
+.enter.paragraph {
+  transform: none;
+}
