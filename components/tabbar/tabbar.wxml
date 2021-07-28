@@ -1,8 +1,8 @@
 <!--components/tabbar/tabbar.wxml-->
 <view class="bar relative">
   <view class="vw row-around">
-    <navigator class="tab-text" url="#">HOME</navigator>
-    <navigator class="tab-text" url="#">GROUP</navigator>
+    <navigator class="tab-text" url="/pages/index/index">HOME</navigator>
+    <navigator class="tab-text" url="/pages/group/group">GROUP</navigator>
   </view>
   <navigator bindtap="displayCreateOptions" class="tab" url="#"><image class="logo" src="/images/icons/plusgame.svg"></image></navigator>
   <navigator class="dynamic-tab-left" wx:if="{{createMenuOpen}}">
