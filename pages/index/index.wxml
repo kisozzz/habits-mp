@@ -1,19 +1,19 @@
 <view class="wrapper vh100">
   <view class="background-top column-center">
-    <dashboard-individual />
+    <dashboard-individual info="{{habits}}" />
   </view>
 
-
-
-
   <view class="mt180 mb250 column-center">
-    <block wx:for="{{habits}}" wx:key="index">
-      <habit-card info="{{item}}" />
+    <block wx:for="{{habits.master_habits}}" wx:key="index">
+      <habit-card info="{{item}}" class="mb20" />
     </block>
   </view>
 
   <tabbar />
 </view>
+
+
+
 
 <!-- DON'T DELETE PLEASE Get user avatar and nickname -->
   <!-- <view class="userinfo">

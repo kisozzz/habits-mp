@@ -12,7 +12,7 @@ Page({
    */
   onLoad: function (options) {
     console.log(options)
-    const habit_id = options.id;
+    const master_habit_id = options.id;
     const page = this;
     // wx.request({
     //   url: `https://airspace-api.herokuapp.com/api/v1/spaces/${space_id}`,

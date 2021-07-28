@@ -25,7 +25,7 @@
 
 .icon-bar-position {
   position: absolute;
-  left: 40rpx;
+  right: 40rpx;
   bottom: 40rpx;
 }
 
@@ -47,4 +47,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.icon-sizing {
+  width: 15px;
+  height: 15px;
 }

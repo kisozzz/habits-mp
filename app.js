@@ -8,8 +8,8 @@ App({
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
         wx.request({
           // http://localhost:3000/api/v1/login
-          // https://airspace-api.herokuapp.com/api/v1/login
-          url: 'http://localhost:3000/api/v1/login',
+          // https://habits.wogengapp.cn
+          url: 'https://habits.wogengapp.cn/api/v1/login',
           method: 'POST',
           data: {
             code: res.code

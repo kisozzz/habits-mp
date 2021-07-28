@@ -29,7 +29,7 @@ Page({
       url: "https://habits.wogengapp.cn/api/v1/users/1/master_habits",
       method: "GET",
       success(res) {
-        const habits = res.data.master_habits;
+        const habits = res.data;
         // const spacesSwiper = spaces.slice(-5);
         console.log(habits);
         page.setData({
