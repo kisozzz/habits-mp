@@ -15,7 +15,7 @@
   <!-- share element page-->
   <view class="screen screen1">
     <view class="mt180 mb250 column-center">
-      <block wx:for="{{habits}}" wx:key="id" wx:for-item="habit">
+      <block wx:for="{{habits.master_habits}}" wx:key="id" wx:for-item="habit">
         <view class="habit" bindtap="showNext" data-idx="{{index}}">
           <share-element class="habit-name" key="name" duration="{{duration}}" transform="{{transformIdx === index}}">
           {{habit.name}}

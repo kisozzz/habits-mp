@@ -3,7 +3,7 @@
     </view>
     <view class="h100 px10 flex items-center justify-around">
 
-    <view class="habit-name">{{name}}</view>
+    <!-- <view class="habit-name">{{name}}</view> -->
 
     <navigator url="/pages/habit/habit?id={{info.id}}" class="w60 h100 flex items-center justify-center">
       <view class="task-name">{{info.name}}</view>
