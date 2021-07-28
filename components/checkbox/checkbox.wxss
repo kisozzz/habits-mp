@@ -7,6 +7,8 @@
   background: #F4F4F4;
   border: 1px solid #18191F;
   border-radius: 50px;
+  justify-content: center;
+  align-items: center;
 }
 
 .box-red {
@@ -17,17 +19,16 @@
   background: #FFE8F0;
   border: 1px solid #18191F;
   border-radius: 50px;
+  justify-content: center;
+  align-items: center;
 }
 
 .day{
-  position: absolute;
   font-family: VT323;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 16px;
   color: #1E1C26;
-  top: 12rpx;
-  left: 10rpx;
+  text-align: center;
 
 }
