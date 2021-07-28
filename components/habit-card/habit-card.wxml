@@ -1,8 +1,11 @@
-<view url="/pages/habit/habit" class="task-card">
+<view class="task-card">
     <view class="bar">
-  </view>
-    <view class="h100 px10 py20 flex items-center justify-around">
+    </view>
+    <view class="h100 px10 flex items-center justify-around">
+    <navigator url="/pages/habit/habit" class="w60 h100 flex items-center justify-center">
       <view class="task-name">Go to gym</view>
+    </navigator>
+    <view class="w40 h100 flex items-center justify-center">
       <view class="row-around">
         <view bindtap="showDialog1" class="step-icon-{{filled1}} mr20"></view>
         <view class="step-icon-{{filled2}} mr20"></view>
@@ -20,6 +23,7 @@
           cancel-text="Cancel"
           cancel-color="#999" />
         </view>        
+      </view>
       </view>
     </view>
 </view>
