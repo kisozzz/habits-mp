@@ -37,3 +37,6 @@
 
 /* LINE HEIGHT */
 .lh-copy { line-height: 1.1rem;}
+
+.vt323 { font-family: 'VT323', sans-serif;}
+.inconsolata { font-family: 'Inconsolata', sans-serif;}

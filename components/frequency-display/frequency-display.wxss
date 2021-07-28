@@ -1,1 +1,15 @@
 @import '/stylesheets/index';
+
+.circle {
+  position: relative;
+  border: 1px solid black;
+  width: 80rpx;
+  height: 80rpx;
+  background-origin: 50%;
+}
+
+.circle-text {
+  position: absolute;
+  top: 50%;
+  transform: translate(100%, -50%);
+}

@@ -1,4 +1,6 @@
 /* DON'T CHANGE THE VARIABLES */
+.text-primary { color: #2C12A1;}
+
 
 /* TEXT COLORS */
 .trans { color: transparent !important; }
