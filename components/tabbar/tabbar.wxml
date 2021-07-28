@@ -6,12 +6,12 @@
   </view>
   <navigator bindtap="displayCreateOptions" class="tab" url="#"><image class="logo" src="/images/icons/plusgame.svg"></image></navigator>
   <navigator class="dynamic-tab-left" wx:if="{{createMenuOpen}}">
-    <view class="dynamic-tab-inner">***</view>
+    <view class="dynamic-tab-inner text-primary inconsolata">My Progress</view>
   </navigator>
   <navigator class="dynamic-tab-right relative" wx:if="{{createMenuOpen}}">
-    <view class="dynamic-tab-inner">+++</view>
+    <view class="dynamic-tab-inner text-primary inconsolata">New Habit</view>
   </navigator>
   <navigator class="dynamic-tab-center" wx:if="{{createMenuOpen}}">
-    <view class="dynamic-tab-inner">^^^</view>
+    <view class="dynamic-tab-inner text-primary inconsolata">Latest Habit</view>
   </navigator>
 </view>

@@ -45,8 +45,9 @@
 
 .dynamic-tab-inner {
   position: absolute;
-  left: 42%;
-  bottom: 42%;
+  left: 0%;
+  bottom: 22%;
+  text-align: center;
 }
 
 .dynamic-tab-left {
