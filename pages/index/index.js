@@ -70,6 +70,20 @@ Page({
         canIUseGetUserProfile: true
       })
     }
+
+    const page = this;
+    wx.request({
+      url: "https://habits.wogengapp.cn/api/v1/users/1/master_habits",
+      method: "GET",
+      success(res) {
+        const habits = res.data;
+        // const spacesSwiper = spaces.slice(-5);
+        console.log(habits);
+        page.setData({
+          habits: habits
+        });
+      }
+    })
   },
   getUserProfile(e) {
     // 推荐使用wx.getUserProfile获取用户信息，开发者每次通过该接口获取用户个人信息均需用户确认，开发者妥善保管用户快速填写的头像昵称，避免重复弹窗

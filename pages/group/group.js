@@ -12,7 +12,21 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-
+    console.log(options)
+    const page = this
+    const group_id = options.id
+    wx.request({
+      // route doesn't work for some reason
+      url: `https://habits.wogengapp.cn/api/v1/groups/${group_id}`,
+      method: "GET",
+      success(res) {
+        const group = res.data;
+        console.log(group);
+        page.setData({
+          group: group
+        });
+      }
+    });
   },
 
   /**

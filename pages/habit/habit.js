@@ -7,16 +7,24 @@ Page({
   data: {
     placeholder_name: "Go to gym"
   },
-
-  properties: {
-    habit: Object
-  },
-
   /**
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-
+    console.log(options)
+    const master_habit_id = options.id;
+    const page = this;
+    // wx.request({
+    //   url: `https://airspace-api.herokuapp.com/api/v1/spaces/${space_id}`,
+    //   method: "GET",
+    //   success(res) {
+    //     const space = res.data;
+    //     console.log(space);
+    //     page.setData({
+    //       space: space
+    //     });
+    //   }
+    // });
   },
 
   /**
