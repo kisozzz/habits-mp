@@ -2,7 +2,7 @@
 
 .circle {
   position: relative;
-  border: 1px solid black;
+  border: 1px solid #2C12A1;
   width: 80rpx;
   height: 80rpx;
   background-origin: 50%;
@@ -12,4 +12,7 @@
   position: absolute;
   top: 50%;
   transform: translate(100%, -50%);
+  color: #2C12A1;
+  font-family: VT323, sans-serif;
+  font-size: 64rpx;
 }
