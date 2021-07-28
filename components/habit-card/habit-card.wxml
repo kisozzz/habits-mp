@@ -2,8 +2,8 @@
     <view class="bar">
     </view>
     <view class="h100 px10 flex items-center justify-around">
-    <navigator url="/pages/habit/habit" class="w60 h100 flex items-center justify-center">
-      <view class="task-name">Go to gym</view>
+    <navigator url="/pages/habit/habit?id={{info.id}}" class="w60 h100 flex items-center justify-center">
+      <view class="task-name">{{info.name}}</view>
     </navigator>
     <view class="w40 h100 flex items-center justify-center">
       <view class="row-around">
