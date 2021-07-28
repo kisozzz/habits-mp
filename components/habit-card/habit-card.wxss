@@ -54,11 +54,6 @@
   color: #2C12A1;
 }
 
-.progress-bar {
-  /* width: 90%; */
-  /* margin: auto; */
-}
-
 .days {
   display: flex;
   padding: 20rpx 35rpx;

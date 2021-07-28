@@ -1,13 +1,8 @@
-<view class="task-card">
+<view url="/pages/habit/habit" class="task-card">
     <view class="bar">
-      <!-- <navigator class="delete" url="#"><image class="xicon" src="/images/icons/xicon.svg"></image></navigator> -->
   </view>
     <view class="h100 px10 py20 flex items-center justify-around">
       <view class="task-name">Go to gym</view>
-      <!-- <view class="days">
-        <image class="calendar-icon" src="/images/icons/calendar.svg"></image>
-        <view class="days-text">28 days left</view>
-      </view> -->
       <view class="row-around">
         <view bindtap="showDialog1" class="step-icon-{{filled1}} mr20"></view>
         <view class="step-icon-{{filled2}} mr20"></view>
@@ -28,9 +23,7 @@
           confirm-color="#2C12A1"
           cancel-text="Cancel"
           cancel-color="#999" />
-        </view>
-        
-        <!-- <l-progress percent="50" stroke-width='15' border-radius='2' active-color="#A0F337" l-class="progress-bar"></l-progress>  -->
+        </view>        
       </view>
     </view>
 </view>

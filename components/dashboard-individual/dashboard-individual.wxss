@@ -8,6 +8,21 @@
   border: 2rpx solid #2C12A1;
 }
 
+.avatar-position {
+  position: absolute;
+  left: 42%;
+  bottom: 90%;
+}
+
+.avatar {
+  width:125rpx;
+  height:125rpx;
+  border-radius:30%;
+  flex-shrink: 0;
+  flex-grow: 0;
+  box-shadow: 0px 2px 3px #2C12A1;
+}
+
 .icon-bar-position {
   position: absolute;
   left: 40rpx;
@@ -18,7 +33,7 @@
   font-family: 'VT323', sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 42rpx;
+  font-size: 32rpx;
   color: #2C12A1;
 }
 
