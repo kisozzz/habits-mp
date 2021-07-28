@@ -35,9 +35,16 @@
   font-weight: normal;
   font-size: 32rpx;
   color: #2C12A1;
+  padding-top: 20rpx;
 }
 
 .inconsolata {
   font-family: Inconsolata, sans-serif;
   color: #2C12A1;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

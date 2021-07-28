@@ -1,13 +1,13 @@
 <!--components/dashboard-individual/dashboard-individual.wxml-->
 <view class="dashboard bg-white relative">
     <!-- For retrieving user info -->
-    <view class="flex items-center pa40">
+    <view class="center items-center pa40">
     <block wx:if="{{canIUseOpenData}}">
       <view class="avatar ofh avatar-position" bindtap="bindViewTap">
         <open-data type="userAvatarUrl"></open-data>
       </view>
       <view class="header-text mt20">
-        <open-data type="userNickName"></open-data>
+        <open-data class="center" type="userNickName"></open-data>
       </view>
     </block>
     <block wx:elif="{{!hasUserInfo}}">
