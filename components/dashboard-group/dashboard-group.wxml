@@ -1,6 +1,6 @@
 <view class="dashboard bg-white relative">
   <view class="px40 py20 flex column">
-    <view class="fheader vt323 text-primary mb40">Group Name</view>
+    <view class="fheader vt323 text-primary mb40">{{info.name}}</view>
     <view class="mb40">
       <view class="inconsolata fbody mb20">group weekly progress</view>
         <l-progress percent="50" stroke-width='15' border-radius='2' active-color="#A0F337" l-class="progress-bar"></l-progress> 
