@@ -7,26 +7,20 @@
 </view>
 <view class="section">
   <view class="label">Frequency</view>
-  <view class="boxgroup">
-    <check-box id="sun" color="grey" text="SUN"></check-box>
-    <check-box id="mon" color="grey" text="MON"></check-box>
-    <check-box id="tue" color="grey" text="TUE"></check-box>
-    <check-box id="wed" color="grey" text="WED"></check-box>
-    <check-box id="thu" color="grey" text="THU"></check-box>
-    <check-box id="fri" color="grey" text="FRI"></check-box>
-    <check-box id="sat" color="grey" text="SAT"></check-box>
-  </view> 
-  <!-- <checkbox-group name="checkbox">
-    <label><checkbox value="sunday"/>Sun</label>
-  <checkbox-group name="checkbox">
-    <label><checkbox class="checkbox" value="sunday"/>Sun</label>
-    <label><checkbox value="monday"/>Mon</label>
-    <label><checkbox value="tuesday"/>Tue</label>
-    <label><checkbox value="wednesday"/>Wed</label>
-    <label><checkbox value="thursday"/>Thu</label>
-    <label><checkbox value="friday"/>Fri</label>
-    <label><checkbox value="saturday"/>Sat</label>
-  </checkbox-group> -->
+  <view class="choosefreq">
+    <view data-freq="daily" bindtap="choosefreq" id="daily" class="optfreq {{selectedFreq==='daily'?'selectedfreq':''}}">Daily</view>
+    <view data-freq="weekly" bindtap="choosefreq" id="weekly" class="optfreq {{selectedFreq==='weekly'?'selectedfreq':''}}">Weekly</view>
+    <view data-freq="days" bindtap="showDays" id="days" class="optfreq {{selectedFreq==='days'?'selectedfreq':''}}">Days</view>
+  </view>
+    <view wx:if="{{showDays === 'showdays'}}" class="boxgroup">
+      <check-box id="sun" color="grey" text="SUN"></check-box>
+      <check-box id="mon" color="grey" text="MON"></check-box>
+      <check-box id="tue" color="grey" text="TUE"></check-box>
+      <check-box id="wed" color="grey" text="WED"></check-box>
+      <check-box id="thu" color="grey" text="THU"></check-box>
+      <check-box id="fri" color="grey" text="FRI"></check-box>
+      <check-box id="sat" color="grey" text="SAT"></check-box>
+    </view> 
 </view>
 
 <view class="section">
@@ -46,8 +40,25 @@
     </picker>
   </view>
 </view>
+
+
 <view class="section">
-  <button bindtap="changeColor" style="background: {{color}};" formType="submit" class="btn-big">Create</button>
+  <view class="label">Steps</view>
+  <view wx:for="{{steps}}" wx:for-item="step" wx:key="index" class="step-added">
+    <task-card-small bind:myevent="removeStep" name="{{step}}" index="{{index}}" class="task-card"/> 
+  </view>
+  <view class="task-card">
+    <form bindsubmit="submit">
+    <view class="container">
+      <image class="plusicon" src="/images/icons/plus.svg"></image>
+      <input name="name" value="{{stepValue}}" placeholder="Add a step" placeholder-style="font-family: Overpass Mono; color: #C6C6C6;" class="task-name" bindblur="inputBlur"></input>
+    </view>
+  </form>
+</view>
+</view>
+
+<view class="section">
+  <button bindtap="changeBtnColor" style="background: {{color}};" formType="submit" class="btn-big">Create</button>
   <!-- <view slot="submit">
     <btn formType="submit" color="grey" text="Create" />
   </view> -->

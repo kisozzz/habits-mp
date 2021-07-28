@@ -9,6 +9,7 @@
   "usingComponents":{
     "tabbar": "/components/tabbar/tabbar",
     "task-card": "/components/task-card/task-card",
+    "task-card-small": "/components/task-card-small/task-card-small",
     "habit-card": "/components/habit-card/habit-card",
     "task-form": "/components/task-form/task-form",
     "btn": "/components/button/button",
@@ -16,8 +17,12 @@
     "habit-form": "/components/habit-form/habit-form",
     "l-progress":"/miniprogram_npm/lin-ui/progress/index",
     "l-dialog":"/miniprogram_npm/lin-ui/dialog/index",
+    "l-collapse":"/miniprogram_npm/lin-ui/collapse/index",
+    "l-collapse-item":"/miniprogram_npm/lin-ui/collapse-item/index",
+    "l-transition":"/miniprogram_npm/lin-ui/transition/index",
     "dashboard-individual":"/components/dashboard-individual/dashboard-individual",
     "frequency-display":"/components/frequency-display/frequency-display"
+
   },
   "window":{
     "backgroundTextStyle":"light",

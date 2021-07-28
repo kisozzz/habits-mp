@@ -5,7 +5,7 @@
   font-weight: normal;
   font-size: 36px;
   line-height: 36px;
-  color: #1E1C26;
+  color: #2C12A1;
   text-align: center;
   padding: 40rpx;
 }
@@ -20,28 +20,29 @@
   padding-bottom:14rpx;
 }
 .title-input {
-  width: 548rpx !important;
+  width: 550rpx !important;
   height: 76rpx !important;
   background: #FFFFFF;
   border: 2rpx solid #1E1C26;
   box-sizing: border-box;
   box-shadow: inset 0rpx 6rpx 0rpx rgba(0, 0, 0, 0.25);
   margin: auto;
+  padding-left: 80rpx;
+  padding-right: 80rpx;
 }
 
 .btn-big {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 548rpx !important;
+    width: 550rpx !important;
     height: 80rpx;
     margin-top: 130rpx;
-    /* background: #F4F4F4 !important; */
     background: #DBDDFC;
     border: 2rpx solid #1E1C26;
     border-radius: 0 !important;
     box-sizing: border-box;
-    box-shadow: 0rpx 6rpx 0rpx rgba(0, 0, 0, 0.7);
+    box-shadow: 0rpx 6rpx 0rpx #2C12A1;
 
     font-family: VT323;
     font-style: normal;
@@ -50,7 +51,7 @@
     line-height: 56rpx;
     text-align: center;
     letter-spacing: 3rpx;
-    color: #1E1C26;
+    color: #2C12A1;
 }
 
 .section {
@@ -63,20 +64,21 @@
 }
 
 .picker{
-  width: 91px;
-  height: 38px;
+  width: 182rpx;
+  height: 76rpx;
   display: flex;
   justify-content: center;
   align-items: center;
 
   background: #FFFFFF;
-  border: 1px solid #1E1C26;
+  border: 2rpx solid #1E1C26;
   box-sizing: border-box;
-  box-shadow: inset 0px 3px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0rpx 6rpx 0rpx rgba(0, 0, 0, 0.25);
 }
 
 .boxgroup{
   display: flex;
+  justify-content: center;
 }
 
 check-box{
@@ -89,3 +91,67 @@ check-box{
   padding: 16rpx;
 }
 
+.choosefreq{
+  display: flex;
+  width: 95%;
+  margin: auto;
+  justify-content: space-around;
+  padding-bottom: 20rpx;
+}
+
+.optfreq {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 152rpx;
+  height: 60rpx;
+
+  border: 2rpx solid #1E1C26;
+  box-sizing: border-box;
+}
+
+.selectedfreq{
+  background-color: #C4EEEA;
+}
+
+.task-card {
+  /* position: relative; */
+  width: 550rpx;
+  height: 80rpx;
+  background: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: 2rpx solid #1E1C26;
+  box-sizing: border-box;
+  box-shadow: inset 0rpx 6rpx 0rpx rgba(0, 0, 0, 0.25);
+  margin: auto;
+}
+
+.task-name {
+  display: flex;
+  align-items: center;
+  padding-left: 30rpx;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 34rpx;
+  color: #2C12A1;
+}
+
+.plusicon{
+  margin-left: 30rpx;
+  width: 40rpx;
+  height: 40rpx;
+  display: flex;
+  align-items: center;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.step-added {
+  padding-bottom: 20rpx;
+}
