@@ -5,6 +5,10 @@ Page({
    * Page initial data
    */
   data: {
+    placeholder_name: "Go to gym"
+  },
+
+  properties: {
     habit: Object
   },
 
