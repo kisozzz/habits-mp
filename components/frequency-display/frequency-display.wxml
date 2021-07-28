@@ -1,5 +1,11 @@
-<view class="frequency-div flex items-center px40 py40">
-    <view>M</view>
-    <view>W</view>
-    <view>F</view>
+<view class="frequency-div flex justify-between items-center">
+    <view class="circle">
+      <view class="circle-text">M</view>
+    </view>
+    <view class="circle">
+      <view class="circle-text">M</view>
+    </view>
+    <view class="circle">
+      <view class="circle-text">M</view>
+    </view>
   </view>

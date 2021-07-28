@@ -4,7 +4,7 @@ Component({
    * Component properties
    */
   properties: {
-
+    frequency_info: Object
   },
 
   /**
