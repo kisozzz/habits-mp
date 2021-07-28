@@ -1,0 +1,48 @@
+@import '/stylesheets/index';
+
+.dashboard {
+  width: 660rpx;
+  height: 560rpx;
+  transform: translateY(100rpx);
+  border: 2rpx solid #2C12A1;
+}
+
+.icon-bar-position {
+  position: absolute;
+  left: 40rpx;
+  bottom: 40rpx;
+}
+
+.header-text {
+  font-family: 'VT323', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 42rpx;
+  color: #2C12A1;
+}
+
+.inconsolata {
+  font-family: Inconsolata, sans-serif;
+  color: #2C12A1;
+}
+
+.days {
+  display: flex;
+  padding: 30rpx 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.calendar-icon {
+  width: 40rpx;
+  height: 40rpx;
+  padding-right: 10rpx;
+}
+
+.days-text {
+  font-family: Inconsolata;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28rpx;
+  color: #2C12A1;
+}

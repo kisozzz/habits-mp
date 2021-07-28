@@ -1,4 +1,6 @@
 <view class="wrapper vh100">
-
+  <view class="background-top column-center">
+    <dashboard-group />
+  </view>
 <tabbar />
 </view>
