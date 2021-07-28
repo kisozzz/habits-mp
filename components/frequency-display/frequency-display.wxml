@@ -1,0 +1,5 @@
+<view class="frequency-div flex items-center px40 py40">
+    <view>M</view>
+    <view>W</view>
+    <view>F</view>
+  </view>

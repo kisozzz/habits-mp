@@ -1,4 +1,9 @@
 <view class="wrapper vh100">
-
-
+  <view class="px40 py40">{{placeholder_name}}</view>
+  <frequency-display />
+  <view class="steps-div flex column items-center justify-center pa20">
+    <task-card class="mb20" />
+    <task-card class="mb20" />
+    <task-card class="mb20" />
+  </view>
 </view>
