@@ -15,7 +15,6 @@ Component({
     edate: '2021-01-01',
     btnColor: '#DBDDFC',
     selectedFreq: null,
-    showDays: '',
     steps:[],
     stepValue: null
   },
@@ -52,17 +51,10 @@ Component({
       console.log(e.currentTarget.dataset)
       this.setData({
         selectedFreq: e.currentTarget.dataset.freq,
-        showDays: ''
       })
     },
 
-    showDays: function(e){
-      console.log(e)
-      this.setData({
-        selectedFreq: e.currentTarget.dataset.freq,
-        showDays: 'showdays'
-      })
-    },
+
 
     inputBlur: function (e) {
       console.log("表单携带的数据：", e.detail.value)

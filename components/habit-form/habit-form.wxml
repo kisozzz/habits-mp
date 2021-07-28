@@ -10,9 +10,9 @@
   <view class="choosefreq">
     <view data-freq="daily" bindtap="choosefreq" id="daily" class="optfreq {{selectedFreq==='daily'?'selectedfreq':''}}">Daily</view>
     <view data-freq="weekly" bindtap="choosefreq" id="weekly" class="optfreq {{selectedFreq==='weekly'?'selectedfreq':''}}">Weekly</view>
-    <view data-freq="days" bindtap="showDays" id="days" class="optfreq {{selectedFreq==='days'?'selectedfreq':''}}">Days</view>
+    <view data-freq="days" bindtap="choosefreq" id="days" class="optfreq {{selectedFreq==='days'?'selectedfreq':''}}">Days</view>
   </view>
-    <view wx:if="{{showDays === 'showdays'}}" class="boxgroup">
+    <view wx:if="{{selectedFreq==='days'}}" class="boxgroup">
       <check-box id="sun" color="grey" text="SUN"></check-box>
       <check-box id="mon" color="grey" text="MON"></check-box>
       <check-box id="tue" color="grey" text="TUE"></check-box>
@@ -20,6 +20,14 @@
       <check-box id="thu" color="grey" text="THU"></check-box>
       <check-box id="fri" color="grey" text="FRI"></check-box>
       <check-box id="sat" color="grey" text="SAT"></check-box>
+    </view> 
+    <view wx:if="{{selectedFreq==='weekly'}}" class="boxgroup">
+      <check-box id="1" color="grey" text="1"></check-box>
+      <check-box id="2" color="grey" text="2"></check-box>
+      <check-box id="3" color="grey" text="3"></check-box>
+      <check-box id="4" color="grey" text="4"></check-box>
+      <check-box id="5" color="grey" text="5"></check-box>
+      <check-box id="6" color="grey" text="6"></check-box>
     </view> 
 </view>
 
