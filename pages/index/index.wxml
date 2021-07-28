@@ -4,9 +4,12 @@
   </view>
 
 
+
+
   <view class="mt180 mb250 column-center">
-    <habit-card class="mb20" />
-    <habit-card class="mb20" />
+    <block wx:for="{{habits}}" wx:key="index">
+      <habit-card info="{{item}}" />
+    </block>
   </view>
 
   <tabbar />
