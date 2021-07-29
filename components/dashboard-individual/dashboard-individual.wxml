@@ -22,8 +22,11 @@
   </view>
 
   <!-- Rest of dashboard content -->
+  <!-- Display habits content -->
   <view class="px40 flex column">
     <!-- To do: make this able to handle props and add in logic for when there is more than two habits. This will overflow the individual dashboard container if it has too much content -->
+    <!-- Problem is we need the nextHabits here for data, not just the habits array or master_habit name -->
+    <block >
     <view class="mb40">
       <view class="inconsolata fbody mb20">Go to gym</view>
         <l-progress percent="50" stroke-width='15' border-radius='2' active-color="#A0F337" l-class="progress-bar"></l-progress> 
@@ -32,12 +35,19 @@
       <view class="inconsolata fbody mb20">Write in journal</view>
         <l-progress percent="50" stroke-width='15' border-radius='2' active-color="#A0F337" l-class="progress-bar"></l-progress> 
     </view>
+    </block>
 
+    <!-- Display groups logic -->
+    <block wx:if="{{info.groups.length <= 3}}">
     <block wx:for="{{info.groups}}" wx:key="index">
       <navigator url="/pages/group/group?id={{item.id}}" class="inconsolata text-primary fbody flex items-center mb20">
         <view class="mr20">{{item.name}}</view>
         <image class="icon-sizing" src="/images/icons/arrow-icon.svg"></image>
       </navigator>
+    </block>
+    </block>
+    <block wx:if="{{info.groups.length > 3}}">
+      <navigator url="/pages/groups-select/groups-select?id={{info.user.id}}" class="inconsolata text-primary fbody flex items-center mb20">See My Groups</navigator>
     </block>
 
     <view class="flex icon-bar-position">
