@@ -12,7 +12,7 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-    console.log(options)
+    // console.log(options)
     const page = this
     const group_id = options.id
     wx.request({
