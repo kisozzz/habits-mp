@@ -1,2 +1,4 @@
 <!--components/checkbox/checkbox.wxml-->
-<view bindtap="checkDay" class="box-{{color}} mauto"><text class="day">{{text}}</text></view>
+<!-- <view bindtap="checkDay" class="box-{{color}} mauto"><text class="day">{{text}}</text></view> -->
+<view class="box-{{color}} mauto"><text class="day">{{text}}</text></view>
+

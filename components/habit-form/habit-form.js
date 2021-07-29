@@ -16,7 +16,17 @@ Component({
     btnColor: '#DBDDFC',
     selectedFreq: null,
     steps:[],
-    stepValue: null
+    stepValue: null,
+    currentWeeklyKey: null,
+    initialDays: [
+      { value: 'SUN', isChecked: false},
+      { value: 'MON', isChecked: false},
+      { value: 'TUE', isChecked: false},
+      { value: 'WED', isChecked: false},
+      { value: 'THU', isChecked: false},
+      { value: 'FRI', isChecked: false},
+      { value: 'SAT', isChecked: false},
+    ]
   },
 
   /**
@@ -48,7 +58,6 @@ Component({
     },
 
     choosefreq: function(e){
-      console.log(e.currentTarget.dataset)
       this.setData({
         selectedFreq: e.currentTarget.dataset.freq,
       })
@@ -75,6 +84,30 @@ Component({
       this.setData({
         steps: steps
       })
-    }
+    },
+
+    selectTimes: function(e){
+      console.log(e.detail)
+      this.setData({
+        currentWeeklyKey: parseInt(e.detail.currentKey)
+      })
+    },
+
+    selectDays: function(e){
+      console.log(e.detail)
+      console.log(this.data.initialDays)
+      let initialDays = this.data.initialDays
+      initialDays.forEach(x => {
+        if (x.value === e.detail.key) {
+          x.isChecked = !x.isChecked
+        }
+      })
+      this.setData({
+        currentDaysKey: e.detail.key,
+        initialDays: initialDays
+      })
+      console.log(444, this.data.initialDays)
+    },
+
   }
 })

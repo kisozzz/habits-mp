@@ -16,7 +16,7 @@
   font-size: 34rpx;
   line-height: 64rpx;
   color: #1E1C26;
-  margin-left: 10rpx;
+  margin-left: 40rpx;
   padding-bottom:14rpx;
 }
 .title-input {
@@ -82,7 +82,7 @@
 }
 
 check-box{
-  padding: 10rpx;
+  padding-top: 5rpx;
 }
 
 .label-small{
@@ -154,4 +154,11 @@ check-box{
 
 .step-added {
   padding-bottom: 20rpx;
+}
+
+.hint {
+  text-align: center;
+  padding: 15rpx;
+  font-family: inconsolata;
+  color:#979797;
 }
