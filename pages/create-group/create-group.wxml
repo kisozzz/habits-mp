@@ -1,1 +1,3 @@
-<view>Create Group Form</view>
+<view class="wrapper">
+  <group-form />
+</view>

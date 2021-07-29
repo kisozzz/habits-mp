@@ -4,7 +4,13 @@
   </view>
 
   <!-- invite friends -->
-<add-friends/>
+<view class="container">
+  <view class="group-members">
+    <view class="title">Members</view>
+    <view class="member-avatars"></view>
+    <add-friends/>
+  </view>
+</view>
 
 
 <tabbar />
