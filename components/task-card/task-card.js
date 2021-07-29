@@ -22,9 +22,7 @@ Component({
       const stepId = this.data.info.id
       if(this.data.doneTap == true) {
         this.setData({ doneTap: false })
-        // SEND PUT REQUEST
         wx.request({
-        // old url: `https://habits.wogengapp.cn/api/v1/master_habits/:master_habit_id/habits/:habit_id/steps/:id`,
         url: `https://habits.wogengapp.cn/api/v1/steps/${stepId}`,
         method: 'PUT',
         data: { completed: false },
