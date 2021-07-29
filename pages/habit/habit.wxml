@@ -8,5 +8,58 @@
         <task-card info="{{item}}" class="mb20" />
     </block>
   </view> 
+
+  <!-- delete button -->
+  <view bindtap="showDeleteDialog" class="mt40 px80 w30 flex items-center">
+    <image class="icon-sizing" src="/images/icons/lightning.svg"></image>
+    <view class="text-primary inconsolata">Delete Habit</view>
+    <view wx:if="{{deleteDialog}}">
+          <l-dialog 
+          id="task1"
+          l-class="dialog"
+          l-cancel-class="cancel-btn"
+          l-confirm-class="confirm-btn"
+          l-content-class="step-name"
+          bind:linconfirm = "deleteMasterHabit"
+          bind:lincancel = "cancelDelete"
+          show="{{true}}"
+          type="confirm"  
+          show-title="{{false}}"
+          content="Are you sure you want to delete this habit? This action cannot be undone."
+          confirm-text="Delete"
+          confirm-color="#2C12A1"
+          cancel-text="Cancel"
+          cancel-color="#666" />
+        </view>   
+  </view>
+
+  <!-- edit button -->
+  <view bindtap="editMasterHabit" class="mt20 px80 w30 flex items-center">
+    <image class="icon-sizing" src="/images/icons/wand.svg"></image>
+    <view class="text-primary inconsolata">Edit Habit</view>
+  </view>
   <tabbar />
 </view>
+
+<!-- <view bindtap="showDialog1" class="step-icon-{{filled1}} mr20"></view>
+        <view class="step-icon-{{filled2}} mr20"></view>
+        <view class="step-icon-{{filled3}}"></view>
+        <view wx:if="{{dialog1}}">
+          <l-dialog 
+          id="task1"
+          l-class="dialog"
+          l-cancel-class="cancel-btn"
+          l-confirm-class="confirm-btn"
+          l-content-class="step-name"
+          bind:linconfirm = "confirm"
+          show="{{true}}"
+          type="confirm"  
+          show-title="{{false}}"
+          content="Pack gym clothes"
+          confirm-text="Done"
+          confirm-color="#2C12A1"
+          cancel-text="Cancel"
+          cancel-color="#999" />
+        </view>        
+      </view>
+      </view> -->

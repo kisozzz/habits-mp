@@ -5,8 +5,42 @@ Page({
    * Page initial data
    */
   data: {
-    placeholder_name: "Go to gym"
+    deleteDialog: false,
+    confirm: false,
+    // filled1: ''
   },
+
+  showDeleteDialog(e){
+    console.log(e)
+    this.setData({deleteDialog: true})
+  },
+
+  cancelDelete(e){
+    console.log('picked cancel')
+    this.setData({deleteDialog: false})
+  },
+
+  deleteMasterHabit() {
+    console.log('deleteMasterHabit')
+    console.log(this.data.habit.master_habit_id)
+    this.setData({deleteDialog: false})
+    const masterId = this.data.habit.master_habit_id
+    wx.request({
+      url: `https://habits.wogengapp.cn/api/v1/master_habits/${masterId}`,
+      method: "DELETE",
+      success(res) {
+        console.log(res)
+        wx.redirectTo({
+          url: `/pages/index/index`
+        });
+      }
+    })
+  },
+
+  editMasterHabit() {
+    console.log('editMasterHabit')
+  },
+
   /**
    * Lifecycle function--Called when page load
    */
