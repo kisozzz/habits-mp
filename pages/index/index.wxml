@@ -3,17 +3,15 @@
     <dashboard-individual info="{{habits}}" />
   </view>
 
-
-
   <view class="mt180 mb250 column-center">
-    <block wx:for="{{habits.master_habits}}" wx:key="index">
+    <block wx:for="{{nextHabits}}" wx:key="index">
       <habit-card info="{{item}}" class="mb20" />
     </block>
   </view>
 
 
-  <!-- share element page
-  <view class="screen screen1">
+  <!-- share element page-->
+  <!-- <view class="screen screen1">
     <view class="mt180 mb250 column-center">
       <block wx:for="{{habits.master_habits}}" wx:key="id" wx:for-item="habit">
         <view class="habit" bindtap="showNext" data-idx="{{index}}">
@@ -62,9 +60,6 @@
       </view>
     </view>
   </page-container> -->
-
-
-
 
   <tabbar />
 </view>
