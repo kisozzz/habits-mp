@@ -1,0 +1,14 @@
+<!--components/group-form/group-form.wxml-->
+<view class="form-container">
+  <form bindsubmit="submit">
+    <view class="title">Create a Group</view>
+    <view class="section">
+      <view class="label">Group Name</view>
+      <input class="title-input" name="name"></input>
+    </view>
+    <view class="section">
+      <view class="label">Invite Friends</view>
+      <image class="plusicon" src="/images/icons/UserCirclePlus.svg"></image>
+    </view>
+  </form>
+</view>

@@ -67,8 +67,9 @@ Component({
 
     inputBlur: function (e) {
       console.log("表单携带的数据：", e.detail.value)
+      let stepObj = {name: e.detail.value}
       let steps = this.data.steps;
-      steps.push(e.detail.value);
+      steps.push(stepObj);
       this.setData({
         steps: steps,
         stepValue: ''
@@ -109,5 +110,67 @@ Component({
       console.log(444, this.data.initialDays)
     },
 
+    formSubmit: function(e){
+      console.log(e.detail.value)
+      console.log(this.data)
+      const user_id = 1;
+      const name = e.detail.value.input;
+      const frequency_options = [];
+      const frequencyForm = this.data.selectedFreq; // daily weekly days
+      const daysOfWeek = this.data.initialDays  // m , t, w
+      const timesWeek = this.data.currentWeeklyKey
+      if (frequencyForm === 'days') {
+        daysOfWeek.forEach(day =>{
+          if (day.isChecked === true) {
+            let result = ''
+            if (day.value === "MON") {
+              result = "Monday"
+            } else if (day.value === "TUE"){
+              result = "Tuesday"
+            } else if (day.value === "WED"){
+              result = "Wednesday"
+            } else if (day.value === "THU"){
+              result = "Thursday"
+            } else if (day.value === "FRI"){
+              result = "Friday"
+            } else if (day.value === "SAT"){
+              result = "Saturday"
+            } else if (day.value === "SUN"){
+              result = "Sunday"
+            } 
+            frequency_options.push(result)
+          }
+        })
+      }else if (frequencyForm === 'weekly'){
+        frequency_options.push('Weekly')
+        frequency_options.push(timesWeek)
+      }else {
+        frequency_options.push('Daily')
+      }
+      
+      const start_date = this.data.sdate;
+      const end_date = this.data.edate;
+      const step_array = this.data.steps;
+      let habit = {
+        user_id: user_id,
+        name: name,
+        frequency_options: frequency_options,
+        start_date: start_date,
+        end_date: end_date,
+        step_array: step_array
+      }
+      console.log(habit)
+      wx.request({
+      url: "https://habits.wogengapp.cn/api/v1/master_habits",
+      method: 'POST',
+      data: habit,
+      success(res) {
+        console.log(res)
+          wx.redirectTo({
+            url: `/pages/index/index?id=${user_id}`
+          });
+        }
+      })
+    }
   }
 })
