@@ -6,9 +6,9 @@
       <view class="label">Group Name</view>
       <input class="title-input" name="name"></input>
     </view>
-    <view class="section">
-      <view class="label">Invite Friends</view>
-      <image class="plusicon" src="/images/icons/UserCirclePlus.svg"></image>
+   
+    <view slot="submit" class="section">
+     <button formType="submit" class="btn-big">Create</button>
     </view>
   </form>
 </view>

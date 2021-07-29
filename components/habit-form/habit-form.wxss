@@ -1,4 +1,6 @@
 /* components/habit-form/habit-form.wxss */
+@import '/stylesheets/index';
+
 .title {
   font-family: VT323;
   font-style: normal;
@@ -147,6 +149,7 @@ check-box{
 }
 
 .container{
+  padding: 0%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
