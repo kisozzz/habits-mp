@@ -1,5 +1,4 @@
-<!--components/task-card/task-card.wxml-->
 <view class="task-card">
     <view bindtap="checkDone" value="{{doneTap}}" class="cube {{doneTap?'done':''}}"></view>
-    <view class="task-name">Pack gym clothes</view>
+    <view class="task-name">{{info.name}}</view>
 </view>

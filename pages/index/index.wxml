@@ -3,10 +3,8 @@
     <dashboard-individual info="{{habits}}" />
   </view>
 
-
-
   <view class="mt180 mb250 column-center">
-    <block wx:for="{{habits.master_habits}}" wx:key="index">
+    <block wx:for="{{nextHabits}}" wx:key="index">
       <habit-card info="{{item}}" class="mb20" />
     </block>
   </view>

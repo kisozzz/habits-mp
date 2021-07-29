@@ -12,19 +12,20 @@ Page({
    */
   onLoad: function (options) {
     console.log(options)
-    const master_habit_id = options.id;
+    const habitId = options.id;
+    const masterId = options.master_id;
     const page = this;
-    // wx.request({
-    //   url: `https://airspace-api.herokuapp.com/api/v1/spaces/${space_id}`,
-    //   method: "GET",
-    //   success(res) {
-    //     const space = res.data;
-    //     console.log(space);
-    //     page.setData({
-    //       space: space
-    //     });
-    //   }
-    // });
+    wx.request({
+      url: `https://habits.wogengapp.cn/api/v1/master_habits/${masterId}/habits/${habitId}`,
+      method: "GET",
+      success(res) {
+        const habit = res.data;
+        console.log(habit);
+        page.setData({
+          habit: habit
+        });
+      }
+    });
   },
 
   /**
