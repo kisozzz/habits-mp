@@ -12,7 +12,7 @@
   </view>
 
 
-  <!-- share element page-->
+  <!-- share element page
   <view class="screen screen1">
     <view class="mt180 mb250 column-center">
       <block wx:for="{{habits.master_habits}}" wx:key="id" wx:for-item="habit">
@@ -61,7 +61,7 @@
         <button class="screen2-button" bindtap="showPrev" hidden="{{!show}}" hover-class="none">Click Me</button>
       </view>
     </view>
-  </page-container>
+  </page-container> -->
 
 
 

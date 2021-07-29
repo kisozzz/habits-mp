@@ -1,1 +1,5 @@
 /* pages/create-habit/create-habit.wxss */
+.form-container{
+  width: 100%;
+  height: 100vh;
+}

@@ -12,22 +12,25 @@
     <view data-freq="weekly" bindtap="choosefreq" id="weekly" class="optfreq {{selectedFreq==='weekly'?'selectedfreq':''}}">Weekly</view>
     <view data-freq="days" bindtap="choosefreq" id="days" class="optfreq {{selectedFreq==='days'?'selectedfreq':''}}">Days</view>
   </view>
-    <view wx:if="{{selectedFreq==='days'}}" class="boxgroup">
-      <check-box id="sun" color="grey" text="SUN"></check-box>
-      <check-box id="mon" color="grey" text="MON"></check-box>
-      <check-box id="tue" color="grey" text="TUE"></check-box>
-      <check-box id="wed" color="grey" text="WED"></check-box>
-      <check-box id="thu" color="grey" text="THU"></check-box>
-      <check-box id="fri" color="grey" text="FRI"></check-box>
-      <check-box id="sat" color="grey" text="SAT"></check-box>
+    <view wx:if="{{selectedFreq==='days'}}">
+        <l-checkbox-group bind:linchange="selectDays" placement="row" l-class="boxgroup">
+        <block wx:for-items="{{initialDays}}" wx:key="value">
+          <l-checkbox key="{{item.value}}" checked="{{item.isChecked}}" custom="{{true}}" >
+            <check-box id="{{item.value}}" color="{{item.isChecked? 'red':'grey'}}" text="{{item.value}}" slot="icon"></check-box>
+          </l-checkbox>
+        </block>
+        </l-checkbox-group>
+      <view class="hint">* choose specific days</view>
     </view> 
-    <view wx:if="{{selectedFreq==='weekly'}}" class="boxgroup">
-      <check-box id="1" color="grey" text="1"></check-box>
-      <check-box id="2" color="grey" text="2"></check-box>
-      <check-box id="3" color="grey" text="3"></check-box>
-      <check-box id="4" color="grey" text="4"></check-box>
-      <check-box id="5" color="grey" text="5"></check-box>
-      <check-box id="6" color="grey" text="6"></check-box>
+    <view wx:if="{{selectedFreq==='weekly'}}" >
+      <l-radio-group bind:linchange="selectTimes" none-checked="{{false}}" placement="row" l-class="boxgroup">
+        <block wx:for="{{6}}" wx:key="value">
+          <l-radio key="{{item + 1}}" custom="{{true}}">
+            <check-box id="{{item + 1}}" color="{{currentWeeklyKey===(item+1)? 'red':'grey'}}" text="{{item + 1}}" slot="icon"></check-box>
+          </l-radio>
+        </block>
+      </l-radio-group>
+      <view class="hint">* choose how many times a week</view>
     </view> 
 </view>
 
