@@ -1,7 +1,7 @@
 // index.js
 // 获取应用实例
 const app = getApp()
-let habits = [{id: 1, name: 'go to gym' }, {id: 2, name: 'write journal' }]
+// let habits = [{id: 1, name: 'go to gym' }, {id: 2, name: 'write journal' }]
 
 Page({
   
@@ -13,57 +13,56 @@ Page({
     canIUseGetUserProfile: false,
     canIUseOpenData: wx.canIUse('open-data.type.userAvatarUrl') && wx.canIUse('open-data.type.userNickName'), // 如需尝试获取用户信息可改为false
 
-    habits: habits,
-    habit: habits[0],
-    transformIdx: 0,
-    position: 'center',
-    duration: 300,
-    show: false,
-    overlay: false
-
+    // habits: habits,
+    // habit: habits[0],
+    // transformIdx: 0,
+    // position: 'center',
+    // duration: 300,
+    // show: false,
+    // overlay: false
   },
   // 事件处理函数
 
-  showNext(e) {
-    const idx = e.currentTarget.dataset.idx
-    this.setData({
-      show: true,
-      habit: habits[idx],
-      transformIdx: idx
-    })
-  },
+//   showNext(e) {
+//     const idx = e.currentTarget.dataset.idx
+//     this.setData({
+//       show: true,
+//       habit: habits[idx],
+//       transformIdx: idx
+//     })
+//   },
   
-  showPrev() {
-    this.setData({
-      show: false
-    })
-  },
+//   showPrev() {
+//     this.setData({
+//       show: false
+//     })
+//   },
 
-  onBeforeEnter(res) {
-    console.log(res)
-  },
-  onEnter(res) {
-    console.log(res)
-  },
-  onAfterEnter(res) {
-    console.log(res)
-  },
-  onBeforeLeave(res) {
-    console.log(res)
-  },
-  onLeave(res) {
-    console.log(res)
-  },
-  onAfterLeave(res) {
-    console.log(res)
-  },
+//   onBeforeEnter(res) {
+//     console.log(res)
+//   },
+//   onEnter(res) {
+//     console.log(res)
+//   },
+//   onAfterEnter(res) {
+//     console.log(res)
+//   },
+//   onBeforeLeave(res) {
+//     console.log(res)
+//   },
+//   onLeave(res) {
+//     console.log(res)
+//   },
+//   onAfterLeave(res) {
+//     console.log(res)
+//   },
 
-// native
-  bindViewTap() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
-  },
+// // native
+//   bindViewTap() {
+//     wx.navigateTo({
+//       url: '../logs/logs'
+//     })
+//   },
 
 // Function that chooses the habit with the closest date to current Date
 compareHabitDates() {
