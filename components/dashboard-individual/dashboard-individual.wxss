@@ -11,7 +11,7 @@
 .avatar-position {
   position: absolute;
   left: 42%;
-  bottom: 90%;
+  bottom: 91%;
 }
 
 .avatar {
