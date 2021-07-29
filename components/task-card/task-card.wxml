@@ -1,4 +1,5 @@
 <view class="task-card">
-    <view bindtap="checkDone" value="{{doneTap}}" class="cube {{doneTap?'done':''}}"></view>
+    <view bindtap="checkDone" value="{{info.completed}}" class="cube {{info.completed?'done':''}}"></view>
     <view class="task-name">{{info.name}}</view>
+    {{info.completed}}
 </view>
