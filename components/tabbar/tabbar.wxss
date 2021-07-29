@@ -58,7 +58,7 @@
   position: absolute;
   bottom: 80%;
   left: 30%;
-  animation: 1s 1 alternate tabSlideOutLeft;
+  animation: 0.5s 1 alternate tabSlideOutLeft;
   transform: translateY(-40rpx);
 }
 
@@ -70,7 +70,7 @@
   position: absolute;
   bottom: 80%;
   left: 58%;
-  animation: 1s 1 alternate tabSlideOutRight;
+  animation: 0.5s 1 alternate tabSlideOutRight;
   transform: translateY(-40rpx);
 }
 
@@ -82,7 +82,7 @@
   position: absolute;
   bottom: 117%;
   left: 44%;
-  animation: 1s 1 alternate tabSlideOutCenter;
+  animation: 0.5s 1 alternate tabSlideOutCenter;
   transform: translateY(-40rpx);
 }
 
