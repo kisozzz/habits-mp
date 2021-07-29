@@ -29,7 +29,8 @@
     "l-checkbox":"/miniprogram_npm/lin-ui/checkbox/index",
     "l-checkbox-group":"/miniprogram_npm/lin-ui/checkbox-group/index",
     "dashboard-individual":"/components/dashboard-individual/dashboard-individual",
-    "frequency-display":"/components/frequency-display/frequency-display"
+    "frequency-display":"/components/frequency-display/frequency-display",
+    "add-friends":"/components/add-friends/add-friends"
 
   },
   "window":{

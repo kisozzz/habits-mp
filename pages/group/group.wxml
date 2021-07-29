@@ -2,5 +2,10 @@
   <view class="background-top column-center">
     <dashboard-group info="{{group}}" />
   </view>
+
+  <!-- invite friends -->
+<add-friends/>
+
+
 <tabbar />
 </view>

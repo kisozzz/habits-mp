@@ -5,7 +5,7 @@ Page({
    * Page initial data
    */
   data: {
-
+    
   },
 
   /**
@@ -74,7 +74,25 @@ Page({
   /**
    * Called when user click on the top right corner to share
    */
-  onShareAppMessage: function () {
+  onShareAppMessage: function (ops) {
+    if (ops.from === 'button') {
+      // 来自页面内转发按钮
+      console.log(ops.target)
+    }
+    return {
+      title: 'Join our group',
+      imageUrl:'http://xxxx',//图片地址
+      path:'/pages/group/group?id=2',// 用户点击首先进入的当前页面
+      success: function (res) {
+        // 转发成功
+        console.log("转发成功:");
+      },
+      fail: function (res) {
+        // 转发失败
+        console.log("转发失败:");
+      }
+    }
 
-  }
+  },
+
 })
