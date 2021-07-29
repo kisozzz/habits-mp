@@ -1,7 +1,7 @@
 <view class="wrapper vh100">
   <view class="px60 pt60 pb40 fheader vt323 text-primary">{{habit.name}}</view>
   <view class="px80 py40">
-  <frequency-display />
+  <frequency-display info="{{habit.master_habit.frequency_options}}" />
   </view>
   <view class="steps-div flex column items-center justify-center pa20">
     <block wx:for="{{habit.steps}}" wx:key="index">

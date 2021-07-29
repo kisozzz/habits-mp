@@ -1,5 +1,9 @@
 @import '/stylesheets/index';
 
+.frequency-div {
+  gap: 10rpx;
+}
+
 .circle {
   position: relative;
   border: 1px solid #2C12A1;
