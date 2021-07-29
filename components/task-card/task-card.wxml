@@ -1,10 +1,4 @@
 <view class="task-card">
-    <!-- <block wx:if="{{info.completed}}"> -->
     <view bindtap="checkDone" value="{{info.completed}}" class="cube {{info.completed?'done':''}}"></view>
-    <!-- </block> -->
-    <!-- <block wx:if="{{!info.completed}}">
-    <view bindtap="checkDone" value="{{!info.completed}}" class="cube"></view>
-    </block> -->
     <view class="task-name">{{info.name}}</view>
-    {{info.completed}}
 </view>
