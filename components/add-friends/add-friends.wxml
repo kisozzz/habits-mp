@@ -1,7 +1,6 @@
 <!--components/add-friends/add-friends.wxml-->
 
 <view class="section">
-      <view class="label">Invite Friends</view>
       <view class="share-section">
         <view class="share-hide">
           <button open-type="share" plain="true" wx:for='{{huihua}}' wx:key='hui' ></button>

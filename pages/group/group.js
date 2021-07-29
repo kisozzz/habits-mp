@@ -81,7 +81,7 @@ Page({
     }
     return {
       title: 'Join our group',
-      imageUrl:'http://xxxx',//图片地址
+      // imageUrl:'http://xxxx',//图片地址
       path:'/pages/group/group?id=2',// 用户点击首先进入的当前页面
       success: function (res) {
         // 转发成功
