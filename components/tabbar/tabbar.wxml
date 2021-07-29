@@ -1,8 +1,15 @@
-<!--components/tabbar/tabbar.wxml-->
 <view class="bar relative">
   <view class="vw row-around">
     <navigator class="tab-text" url="/pages/index/index">HOME</navigator>
-    <navigator class="tab-text" url="/pages/group/group">GROUP</navigator>
+    <block wx:if="{{info.groups.length >= 2}}">
+    <navigator class="tab-text" url="/pages/groups-select/groups-select?id={{info.user.id}}">GROUPS</navigator>
+    </block>
+    <block wx:if="{{info.groups.length === 1}}">
+    <navigator class="tab-text" url="/pages/group/group?id={{info.group[0].id}}">GROUP</navigator>
+    </block>
+    <block wx:if="{{info.groups.length === 0}}">
+    <navigator class="tab-text" url="/pages/create-group/create-group">GROUP</navigator>
+    </block>
   </view>
   <navigator bindtap="displayCreateOptions" class="tab" url="#"><image class="logo" src="/images/icons/plusgame.svg"></image></navigator>
   <navigator class="dynamic-tab-left" wx:if="{{createMenuOpen}}">

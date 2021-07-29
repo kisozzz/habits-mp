@@ -60,7 +60,7 @@
     </view>
   </page-container> -->
 
-  <tabbar />
+  <tabbar info="{{habits}}" />
 </view>
 
 
