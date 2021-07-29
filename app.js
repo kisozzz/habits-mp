@@ -9,7 +9,7 @@ App({
         wx.request({
           // http://localhost:3000/api/v1/login
           // https://habits.wogengapp.cn
-          url: 'http://localhost:3000/api/v1/login',
+          url: 'https://habits.wogengapp.cn/api/v1/login',
           method: 'POST',
           data: {
             code: res.code
