@@ -9,6 +9,8 @@
     </block>
   </view>
 
+  <button bindtap="compareHabitDates">test</button>
+
   <tabbar />
 </view>
 
