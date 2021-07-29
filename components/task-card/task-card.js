@@ -19,9 +19,12 @@ Component({
    */
   methods: {
     checkDone() {
+      // TODO: Find a way to toggle the display when clicked, either by setting page data or using another way
       const stepId = this.data.info.id
-      if(this.data.doneTap == true) {
-        this.setData({ doneTap: false })
+      const completed = this.data.info.completed
+      // console.log(this.data)
+      if(completed == true) {
+        this.setData({ completed: false })
         wx.request({
         url: `https://habits.wogengapp.cn/api/v1/steps/${stepId}`,
         method: 'PUT',
@@ -32,7 +35,7 @@ Component({
          })
         // console.log(this.data.doneTap)
       } else {
-        this.setData({ doneTap: true })
+        this.setData({ completed: true })
         wx.request({
         // old url: `https://habits.wogengapp.cn/api/v1/master_habits/:master_habit_id/habits/:habit_id/steps/:id`,
           url: `https://habits.wogengapp.cn/api/v1/steps/${stepId}`,
