@@ -87,7 +87,7 @@ compareHabitDates() {
           const nextHabit = masterhabit.habit.find(h => Date.parse(h.due_date) > currentDate)
           nextHabits.push(nextHabit)
         })
-        console.log(nextHabits)
+        // console.log(nextHabits)
         page.setData({
           habits: habits,
           nextHabits: nextHabits
