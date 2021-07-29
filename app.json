@@ -18,6 +18,7 @@
     "btn": "/components/button/button",
     "check-box": "/components/checkbox/checkbox",
     "habit-form": "/components/habit-form/habit-form",
+    "group-form": "/components/group-form/group-form",
     "l-progress":"/miniprogram_npm/lin-ui/progress/index",
     "l-dialog":"/miniprogram_npm/lin-ui/dialog/index",
     "l-collapse":"/miniprogram_npm/lin-ui/collapse/index",

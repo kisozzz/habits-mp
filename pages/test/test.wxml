@@ -14,5 +14,4 @@
 <check-box color="red" text="TUE"/>
 
 <view class="container"><task-form /></view> -->
-
-
+<view class="container"><group-form /></view>

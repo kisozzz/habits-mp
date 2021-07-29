@@ -56,7 +56,7 @@
 <view class="section">
   <view class="label">Steps</view>
   <view wx:for="{{steps}}" wx:for-item="step" wx:key="index" class="step-added">
-    <task-card-small bind:myevent="removeStep" name="{{step}}" index="{{index}}" class="task-card"/> 
+    <task-card-small bind:myevent="removeStep" name="{{step.name}}" index="{{index}}" class="task-card"/> 
   </view>
   <view class="task-card">
     <form bindsubmit="submit">
@@ -68,10 +68,7 @@
 </view>
 </view>
 
-<view class="section">
+<view slot="submit" class="section">
   <button bindtap="changeBtnColor" style="background: {{color}};" formType="submit" class="btn-big">Create</button>
-  <!-- <view slot="submit">
-    <btn formType="submit" color="grey" text="Create" />
-  </view> -->
 </view>
 </form>
