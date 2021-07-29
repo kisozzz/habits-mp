@@ -3,7 +3,9 @@
     "pages/index/index",
     "pages/habit/habit",
     "pages/group/group",
+    "pages/groups-select/groups-select",
     "pages/create-habit/create-habit",
+    "pages/create-group/create-group",
     "pages/test/test",
     "pages/logs/logs"
   ],

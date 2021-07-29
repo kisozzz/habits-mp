@@ -1,0 +1,6 @@
+<view class="mt180 mb250 column-center">
+    <block wx:for="{{habits.groups}}" wx:key="index">
+      <!-- <habit-card info="{{item}}" class="mb20" /> -->
+      <navigator url="/pages/group/group?id={{item.id}}">{{item.name}}</navigator>
+    </block>
+  </view>
