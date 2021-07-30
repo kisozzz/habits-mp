@@ -10,7 +10,7 @@
   line-height: 36px;
   color: #2C12A1;
   text-align: center;
-  padding: 40rpx;
+  padding: 40rpx 40rpx 40rpx 0rpx;
 }
 
 .title-input {
