@@ -63,3 +63,8 @@
 .enter.paragraph {
   transform: none;
 }
+
+.icon-sizing {
+  width: 15px;
+  height: 15px;
+}
