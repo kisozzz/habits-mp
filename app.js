@@ -17,6 +17,7 @@ App({
           success(res) {
             console.log(res)
             that.globalData.user = res.data.user
+            wx.setStorageSync('user', res.data.user)
           }
         })
       }
