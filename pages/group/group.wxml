@@ -9,13 +9,13 @@
     <view class="text-primary fsheader vt323">Members</view>
     <view class="member-avatars"></view>
     <view class="friends">
-      <block wx:for="{{group.user}}" wx:key="value">
+      <!-- <block wx:for="{{group.user}}" wx:key="value"> -->
         <block wx:if="{{canIUseOpenData}}">
           <view class="avatar ofh avatar-position" bindtap="bindViewTap">
             <open-data type="userAvatarUrl"></open-data>
           </view>
         </block>
-      </block>
+      <!-- </block> -->
       <add-friends/>
     </view>
   </view>
