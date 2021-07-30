@@ -25,8 +25,8 @@
 
 .icon-bar-position {
   position: absolute;
-  right: 40rpx;
-  bottom: 40rpx;
+  left: 40rpx;
+  bottom: 20rpx;
 }
 
 .header-text {
