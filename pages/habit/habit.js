@@ -1,13 +1,8 @@
-// pages/habit/habit.js
 Page({
 
-  /**
-   * Page initial data
-   */
   data: {
     deleteDialog: false,
     confirm: false,
-    // filled1: ''
   },
 
   showDeleteDialog(e){
@@ -41,9 +36,6 @@ Page({
     console.log('editMasterHabit')
   },
 
-  /**
-   * Lifecycle function--Called when page load
-   */
   onLoad: function (options) {
     console.log(options)
     const habitId = options.id;
@@ -55,8 +47,20 @@ Page({
       success(res) {
         const habit = res.data;
         console.log(habit);
+        const otherHabits = habit.other_habits
+        let completedStatuses = []
+        otherHabits.forEach(habit => {
+          if (habit.completed) {
+            completedStatuses.push('complete')
+          } else if (habit.partially_completed) {
+            completedStatuses.push('partial')
+          } else {
+            completedStatuses.push('incomplete')
+          }
+        })
         page.setData({
-          habit: habit
+          habit: habit,
+          completedStatuses: completedStatuses
         });
       }
     });
