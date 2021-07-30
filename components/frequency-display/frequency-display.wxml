@@ -1,5 +1,4 @@
-<view>for debugging: info = {{info.frequency_options}}</view>
-
+<!-- <view>for debugging: info = {{info.frequency_options}}</view> -->
 <view class="flex justify-between items-center">
     <view wx:if="{{info.frequency_options[0] === 'Weekly'}}" class="flex items-center frequency-div">
       <block wx:if="{{info.frequency_options[1] === '1'}}">

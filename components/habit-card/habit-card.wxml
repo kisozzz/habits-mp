@@ -1,11 +1,11 @@
-<view class="habit-card">
+<navigator url="/pages/habit/habit?id={{info.id}}&master_id={{info.master_habit_id}}" class="habit-card">
     <view class="bar">
     </view>
     <view class="h100 px10 flex items-center justify-around">
 
-    <navigator url="/pages/habit/habit?id={{info.id}}&master_id={{info.master_habit_id}}" class="w60 h100 flex items-center justify-center">
+    <view class="w60 h100 flex items-center justify-center">
       <view class="task-name vt323 text-primary fsheader">{{info.name}}</view>
-    </navigator>
+    </view>
 
     <!-- display step circles on right end of card -->
     <view class="w40 h100 flex items-center justify-center">
@@ -18,11 +18,7 @@
       </block>  
       </view>    
     </view>
-  </view>
-
-
-
-      
+</navigator>
 
         <!-- <view bindtap="showDialog1" class="step-icon-{{filled1}} mr20"></view>
         <view class="step-icon-{{filled2}} mr20"></view>
