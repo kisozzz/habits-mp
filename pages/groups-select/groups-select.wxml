@@ -2,8 +2,8 @@
   <view class="center text-primary vt323 fheader mb60">Select a group</view>
     <block wx:for="{{habits.groups}}" wx:key="index">
       <!-- <habit-card info="{{item}}" class="mb20" /> -->
-      <view class="pa40 text-primary vt323 fsheader mb60 b">
-      <navigator url="/pages/group/group?id={{item.id}}">{{item.name}}</navigator>
-      </view>
+      <navigator url="/pages/group/group?id={{item.id}}" class="pa40 text-primary vt323 fsheader mb60 b">
+      <view>{{item.name}}</view>
+      </navigator>
     </block>
   </view>

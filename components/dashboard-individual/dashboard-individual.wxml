@@ -32,20 +32,25 @@
       </view>
     </block>
 
+    <view class="flex icon-bar-position">
     <!-- Display groups logic -->
-    <block wx:if="{{info.groups.length <= 3}}">
+    <block wx:if="{{info.groups.length === 1}}">
     <block wx:for="{{info.groups}}" wx:key="index">
-      <navigator url="/pages/group/group?id={{item.id}}" class="inconsolata text-primary fbody flex items-center mb20">
+      <navigator url="/pages/group/group?id={{item.id}}" class="inconsolata text-primary fbody flex items-center mb20 mr20">
         <view class="mr20">{{item.name}}</view>
         <image class="icon-sizing" src="/images/icons/arrow-icon.svg"></image>
       </navigator>
     </block>
     </block>
-    <block wx:if="{{info.groups.length > 3}}">
-      <navigator url="/pages/groups-select/groups-select?id={{info.user.id}}" class="inconsolata text-primary fbody flex items-center mb20">See My Groups</navigator>
+    <block wx:elif="{{info.groups.length === 0}}">
+      <navigator url="/pages/create-group/create-group" class="inconsolata text-primary fbody flex items-center mb20 mr20">Create Group</navigator>
     </block>
-
-    <view class="flex icon-bar-position">
+    <block wx:else="{{info.groups.length > 1}}">
+      <navigator url="/pages/groups-select/groups-select?id={{info.user.id}}" class="inconsolata text-primary fbody flex items-center mb20 mr20">
+      <view class="mr10">My Groups</view>
+      <image class="icon-sizing" src="/images/icons/arrow-icon.svg"></image>
+      </navigator>
+    </block>
       <view class="mr20">icon</view>
       <view>icon</view>
     </view>
