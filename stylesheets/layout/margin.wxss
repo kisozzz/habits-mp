@@ -34,7 +34,7 @@
 .mt300 { margin-top: 300rpx !important; }
 
 .mr0 { margin-right: 0 !important; }
-.mr { margin-right: 10rpx !important; }
+.mr10 { margin-right: 10rpx !important; }
 .mr20 { margin-right: 20rpx !important; }
 .mr30 { margin-right: 30rpx !important; }
 .mr40 { margin-right: 40rpx !important; }
