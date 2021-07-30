@@ -2,8 +2,8 @@
 .box-grey{
   position: relative;
   display: flex;
-  width: 28.97px;
-  height: 28.97px;
+  width: 60rpx;
+  height: 60rpx;
   background: #F4F4F4;
   border: 1px solid #18191F;
   border-radius: 50px;
@@ -14,8 +14,8 @@
 .box-red {
   position: relative;
   display: flex;
-  width: 28.97px;
-  height: 28.97px;
+  width: 60rpx;
+  height: 60rpx;
   background: #FFE8F0;
   border: 1px solid #18191F;
   border-radius: 50px;

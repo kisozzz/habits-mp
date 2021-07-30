@@ -38,5 +38,25 @@
   font-weight: normal;
   font-size: 34rpx;
   text-align: center;
+}
 
+.circle {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  opacity: 30%;
+  margin-right: 15rpx;
+  transform: translateY(-60rpx);
+}
+
+.green {
+  background-color: green;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.red {
+  background-color: red;
 }

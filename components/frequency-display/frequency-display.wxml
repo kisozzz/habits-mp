@@ -1,36 +1,33 @@
-<view>for debugging: info = {{info}}</view>
+<view>for debugging: info = {{info.frequency_options}}</view>
 
 <view class="flex justify-between items-center">
-    <view wx:if="{{info[0] === 'Weekly'}}" class="flex items-center frequency-div">
-      <!-- <block wx:for="{{info[1]}}" wx:key="index">
-        <check-box id="1" color="grey" text="1"></check-box>
-      </block> -->
-      <block wx:if="{{info[1] === '1'}}">
+    <view wx:if="{{info.frequency_options[0] === 'Weekly'}}" class="flex items-center frequency-div">
+      <block wx:if="{{info.frequency_options[1] === '1'}}">
       <check-box id="1" color="grey" text="1"></check-box>
       </block>
-      <block wx:if="{{info[1] === '2'}}">
+      <block wx:if="{{info.frequency_options[1] === '2'}}">
       <check-box id="1" color="grey" text="1"></check-box>
       <check-box id="2" color="grey" text="2"></check-box>
       </block>
-      <block wx:if="{{info[1] === '3'}}">
+      <block wx:if="{{info.frequency_options[1] === '3'}}">
       <check-box id="1" color="grey" text="1"></check-box>
       <check-box id="2" color="grey" text="2"></check-box>
       <check-box id="3" color="grey" text="3"></check-box>
       </block>
-      <block wx:if="{{info[1] === '4'}}">
+      <block wx:if="{{info.frequency_options[1] === '4'}}">
       <check-box id="1" color="grey" text="1"></check-box>
       <check-box id="2" color="grey" text="2"></check-box>
       <check-box id="3" color="grey" text="3"></check-box>
       <check-box id="4" color="grey" text="4"></check-box>
       </block>
-      <block wx:if="{{info[1] === '5'}}">
+      <block wx:if="{{info.frequency_options[1] === '5'}}">
       <check-box id="1" color="grey" text="1"></check-box>
       <check-box id="2" color="grey" text="2"></check-box>
       <check-box id="3" color="grey" text="3"></check-box>
       <check-box id="4" color="grey" text="4"></check-box>
       <check-box id="5" color="grey" text="5"></check-box>
       </block>
-      <block wx:if="{{info[1] === '6'}}">
+      <block wx:if="{{info.frequency_options[1] === '6'}}">
       <check-box id="1" color="grey" text="1"></check-box>
       <check-box id="2" color="grey" text="2"></check-box>
       <check-box id="3" color="grey" text="3"></check-box>
@@ -39,7 +36,7 @@
       <check-box id="6" color="grey" text="6"></check-box>
       </block>
     </view> 
-    <view wx:elif="{{info[0] === 'Daily'}}" class="flex items-center frequency-div">
+    <view wx:elif="{{info.frequency_options[0] === 'Daily'}}" class="flex items-center frequency-div">
       <check-box id="1" color="grey" text="1"></check-box>
       <check-box id="2" color="grey" text="2"></check-box>
       <check-box id="3" color="grey" text="3"></check-box>
@@ -50,7 +47,7 @@
     </view> 
     <view wx:else class="flex items-center frequency-div">
       <!-- to-do: find way to display correct circles based on days in info array -->
-      <block wx:for="{{info}}" wx:key="index">
+      <block wx:for="{{info.frequency_options}}" wx:key="index">
         <check-box id="{{item}}" color="grey" text="{{item}}"></check-box>
       </block>
       <!-- <check-box id="sun" color="grey" text="SUN"></check-box>
