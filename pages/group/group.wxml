@@ -3,10 +3,10 @@
     <dashboard-group info="{{group}}" />
   </view>
 
-  <!-- invite friends -->
-<view class="container">
+<!-- invite friends -->
+<view class="px60 mt140">
   <view class="group-members">
-    <view class="title">Members</view>
+    <view class="text-primary fsheader vt323">Members</view>
     <view class="member-avatars"></view>
     <add-friends/>
   </view>
