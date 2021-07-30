@@ -46,9 +46,11 @@ Page({
       }) 
       },
       fail(){
-        wx.redirectTo({
-          url: '/pages/index/index',
-        })
+        setTimeout(function() {
+          wx.redirectTo({
+            url: '/pages/index/index',
+          })
+        }, 8000)
       }
     })
   },
