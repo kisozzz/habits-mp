@@ -22,12 +22,14 @@ Component({
   /**
    * Component methods
    */
+  lifetimes: {
+    attached: function() {
+      console.log('dashboard', this.data)
+    }
+  },
+
   methods: {
-    bindViewTap() {
-      wx.navigateTo({
-        url: '../logs/logs'
-      })
-    },
+
     onLoad() {
       if (wx.getUserProfile) {
         this.setData({
