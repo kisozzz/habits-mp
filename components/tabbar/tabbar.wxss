@@ -26,6 +26,10 @@
   padding: 30rpx 30rpx;
 }
 
+.tab-text-small {
+  font-size: 22rpx;
+}
+
 .tab {
   margin: 0.8rem auto;
 }
@@ -47,6 +51,13 @@
   position: absolute;
   left: 0%;
   bottom: 22%;
+  text-align: center;
+}
+
+.dynamic-tab-inner-sm {
+  position: absolute;
+  left: 0%;
+  bottom: 30%;
   text-align: center;
 }
 
