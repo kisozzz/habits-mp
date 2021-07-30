@@ -50,12 +50,15 @@
     </view> 
     <view wx:else class="flex items-center frequency-div">
       <!-- to-do: find way to display correct circles based on days in info array -->
-      <check-box id="sun" color="grey" text="SUN"></check-box>
+      <block wx:for="{{info}}" wx:key="index">
+        <check-box id="{{item}}" color="grey" text="{{item}}"></check-box>
+      </block>
+      <!-- <check-box id="sun" color="grey" text="SUN"></check-box>
       <check-box id="mon" color="grey" text="MON"></check-box>
       <check-box id="tue" color="grey" text="TUE"></check-box>
       <check-box id="wed" color="grey" text="WED"></check-box>
       <check-box id="thu" color="grey" text="THU"></check-box>
       <check-box id="fri" color="grey" text="FRI"></check-box>
-      <check-box id="sat" color="grey" text="SAT"></check-box>
+      <check-box id="sat" color="grey" text="SAT"></check-box> -->
     </view> 
   </view>

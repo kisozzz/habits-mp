@@ -1,0 +1,48 @@
+/* components/instruction-card/instruction-card.wxss */
+.card-red {
+  width: 400rpx;
+  height: 300rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10rpx;
+  background: #FFE8F0;
+  border: 2rpx solid #2C12A1;
+  box-sizing: border-box;
+  filter: drop-shadow(8rpx 8rpx 0rpx #2C12A1);
+}
+.card-green {
+  width: 400rpx;
+  height: 300rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10rpx;
+  background: #C4EEEA;
+  border: 2rpx solid #2C12A1;
+  box-sizing: border-box;
+  filter: drop-shadow(8rpx 8rpx 0rpx #2C12A1);
+}
+.card-yellow {
+  width: 400rpx;
+  height: 300rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10rpx;
+  background: #FFF4CC;
+  border: 2rpx solid #2C12A1;
+  box-sizing: border-box;
+  filter: drop-shadow(8rpx 8rpx 0rpx #2C12A1);
+}
+.text{
+  font-family: Inconsolata;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36rpx;
+  line-height: 38rpx;
+  padding: 20rpx;
+
+  color: #1E1C26;
+
+}

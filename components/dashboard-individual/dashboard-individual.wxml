@@ -1,7 +1,7 @@
 <!--components/dashboard-individual/dashboard-individual.wxml-->
 <view class="dashboard bg-white relative">
     <!-- For retrieving user info -->
-    <view class="center items-center pa40">
+    <view class="center items-center pa20">
     <block wx:if="{{canIUseOpenData}}">
       <view class="avatar ofh avatar-position" bindtap="bindViewTap">
         <open-data type="userAvatarUrl"></open-data>
@@ -21,20 +21,15 @@
     </block>
   </view>
 
-  <!-- Rest of dashboard content -->
   <!-- Display habits content -->
   <view class="px40 flex column">
     <!-- To do: make this able to handle props and add in logic for when there is more than two habits. This will overflow the individual dashboard container if it has too much content -->
-    <!-- Problem is we need the nextHabits here for data, not just the habits array or master_habit name -->
-    <block >
-    <view class="mb40">
-      <view class="inconsolata fbody mb20">Go to gym</view>
-        <l-progress percent="50" stroke-width='15' border-radius='2' active-color="#A0F337" l-class="progress-bar"></l-progress> 
-    </view>
-    <view class="mb40">
-      <view class="inconsolata fbody mb20">Write in journal</view>
-        <l-progress percent="50" stroke-width='15' border-radius='2' active-color="#A0F337" l-class="progress-bar"></l-progress> 
-    </view>
+    <block wx:for="{{info.master_habits}}" wx:key="index">
+      <view class="mb20">
+        <view class="inconsolata fbody mb20">{{item.name}}</view>
+        <!-- To do: display weekly progress by looping through habit array for week, getting total complete, then do [ completed / total ] -->
+          <l-progress percent="50" stroke-width='15' border-radius='2' active-color="#A0F337" l-class="progress-bar"></l-progress> 
+      </view>
     </block>
 
     <!-- Display groups logic -->
