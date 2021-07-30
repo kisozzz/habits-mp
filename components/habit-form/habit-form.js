@@ -113,7 +113,7 @@ Component({
     formSubmit: function(e){
       console.log(e.detail.value)
       console.log(this.data)
-      const user_id = 1;
+      const user_id = getApp().globalData.user.id;
       const name = e.detail.value.input;
       const frequency_options = [];
       const frequencyForm = this.data.selectedFreq; // daily weekly days
