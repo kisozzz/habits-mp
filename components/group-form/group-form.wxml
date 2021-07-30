@@ -4,9 +4,9 @@
     <view class="title">Create a Group</view>
     <view class="card-container">
       <image class="lines" src="/images/big-lines.svg"></image>
-      <instruction-card class="card1" color="red" text="what is a group? invite your friends to the group"/>
-      <instruction-card class="card2" color="green" text="what is a group? invite your friends to the group"/>
-      <instruction-card class="card3" color="yellow" text="what is a group? invite your friends to the group"/>
+      <instruction-card class="card1" color="red" text="In HABITS, groups are place for you to work towards your habit goals with friends."/>
+      <instruction-card class="card2" color="green" text="You can create group goals, leave messages, and even challenge each other."/>
+      <instruction-card class="card3" color="yellow" text="All you need to do first is to choose a name. Then, you can invite your friends from your group screen."/>
     </view>
     <view class="section input-section">
       <input class="title-input" name="name" placeholder="Type Group Name" placeholder-style="font-family: Overpass Mono; color: #C6C6C6;" ></input>
