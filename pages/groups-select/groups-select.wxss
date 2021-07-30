@@ -1,3 +1,8 @@
 .b {
   border: 2px solid #2C12A1;
 }
+
+.icon-sizing {
+  width: 15px;
+  height: 15px;
+}
