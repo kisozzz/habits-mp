@@ -2,6 +2,7 @@
   "pages":[
     "pages/index/index",
     "pages/habit/habit",
+    "pages/progress/progress",
     "pages/group/group",
     "pages/groups-select/groups-select",
     "pages/create-habit/create-habit",
