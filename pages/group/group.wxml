@@ -16,8 +16,8 @@
           </view>
         </block>
       </block>
+      <add-friends/>
     </view>
-    <add-friends/>
   </view>
 </view>
 
