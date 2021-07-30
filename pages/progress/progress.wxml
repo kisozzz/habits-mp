@@ -1,2 +1,4 @@
-<!--pages/progress/progress.wxml-->
-<text>pages/progress/progress.wxml</text>
+<view class="wrapper vh100">
+
+  <tabbar />
+</view>

@@ -1,5 +1,8 @@
 <view class="mt180 mb250 column-center">
   <view class="center text-primary vt323 fheader mb60">Select a group</view>
+    <view wx:if="{{habits.groups.length === 0}}" class="center text-primary inconsolata ftheader">
+      <navigator url="/pages/create-group/create-group">You do not currently have any groups. <block class="bold">Create one here!</block></navigator>
+    </view>
     <block wx:for="{{habits.groups}}" wx:key="index">
       <!-- <habit-card info="{{item}}" class="mb20" /> -->
       <navigator url="/pages/group/group?id={{item.id}}" class="pa40 text-primary vt323 fsheader mb60 b">
