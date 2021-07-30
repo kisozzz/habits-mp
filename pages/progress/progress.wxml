@@ -1,4 +1,6 @@
 <view class="wrapper vh100">
-
+  <view class="mx60 flex column mt100">
+    <view class="text-primary fheader vt323">Weekly Progress</view>
+  </view>
   <tabbar />
 </view>

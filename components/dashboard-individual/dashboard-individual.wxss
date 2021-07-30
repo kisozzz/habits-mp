@@ -54,6 +54,11 @@
   height: 15px;
 }
 
+.icon-sizing-alien {
+  width: 17px;
+  height: 17px;
+}
+
 .habits-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
