@@ -8,11 +8,10 @@
       <instruction-card class="card2" color="green" text="what is a group? invite your friends to the group"/>
       <instruction-card class="card3" color="yellow" text="what is a group? invite your friends to the group"/>
     </view>
-    <view class="section">
+    <view class="section input-section">
       <input class="title-input" name="name" placeholder="Type Group Name" placeholder-style="font-family: Overpass Mono; color: #C6C6C6;" ></input>
     </view>
-   
-    <view slot="submit" class="section">
+    <view slot="submit" class="section submit-section">
      <button formType="submit" class="btn-big">Create</button>
     </view>
   </form>
