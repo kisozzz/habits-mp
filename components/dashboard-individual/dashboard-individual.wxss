@@ -53,3 +53,13 @@
   width: 15px;
   height: 15px;
 }
+
+.habits-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20rpx;
+}
+
+.progress-bar {
+  min-width: 220rpx;
+}
