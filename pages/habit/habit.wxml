@@ -4,9 +4,9 @@
   <frequency-display info="{{habit}}" />
   <view class="flex">
     <block wx:for="{{completedStatuses}}" wx:key="index">
-      <view wx:if="{{item === 'complete'}}" class="circle green">GREEN</view>
-      <view wx:elif="{{item === 'partial'}}" class="circle yellow">YELLOW</view>
-      <view wx:else class="circle red">RED</view>
+      <view wx:if="{{item === 'complete'}}" class="circle green"></view>
+      <view wx:elif="{{item === 'partial'}}" class="circle yellow"></view>
+      <view wx:else class="circle red"></view>
     </block>
   </view>
   </view>
