@@ -60,7 +60,7 @@
     </block>
       <navigator url="/pages/progress/progress" class="inconsolata text-primary fbody flex items-center mb20 mr20">
         <view class="mr10 fsbody">Progress</view>
-        <image class="icon-sizing" src="/images/icons/alien.svg"></image>
+        <image class="icon-sizing" src="/images/icons/wand.svg"></image>
       </navigator>
       <navigator url="/pages/groups-select/groups-select?id={{info.user.id}}" class="inconsolata text-primary fbody flex items-center mb20 mr20">
         <view class="mr10 fsbody">Challenges</view>
