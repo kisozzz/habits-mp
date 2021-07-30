@@ -75,8 +75,9 @@ compareHabitDates() {
 
   onLoad() {
     const page = this;
+    const userId = getApp().globalData.user.id;
     wx.request({
-      url: "https://habits.wogengapp.cn/api/v1/users/1/master_habits",
+      url: `https://habits.wogengapp.cn/api/v1/users/${userId}/master_habits`,
       method: "GET",
       success(res) {
         const habits = res.data;
