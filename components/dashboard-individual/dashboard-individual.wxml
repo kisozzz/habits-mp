@@ -48,8 +48,8 @@
     </block>
     <block wx:elif="{{info.groups.length === 0}}">
       <navigator url="/pages/create-group/create-group" class="inconsolata text-primary fbody flex items-center mb20 mr20">
+        <view class="mr10 fsbody">Create Group</view>
         <image class="icon-sizing" src="/images/icons/pixelsphere.svg"></image>
-        <view>Create Group</view>
       </navigator>
     </block>
     <block wx:else="{{info.groups.length > 1}}">
