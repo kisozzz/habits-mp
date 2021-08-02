@@ -4,7 +4,6 @@
     <view class="mb40">
       <view class="goal-section body-text">
       Group Goal  <text class="num-big">80</text><image class="icon-percent" src="/images/icons/icons_percent.svg"></image><image class="icon-finish" src="/images/icons/finish-flag.svg"></image>
-      <!-- completion every week this month -->
       </view>
       <view class="edate body-text">End Date<text class="num-big">2021-09-30</text></view>
       <view class="group-progress body-text">Group weekly progress</view>
