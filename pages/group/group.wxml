@@ -11,7 +11,7 @@
     <view class="friends">
       <!-- <block wx:for="{{group.user}}" wx:key="value"> -->
         <block wx:if="{{canIUseOpenData}}">
-          <view class="avatar ofh avatar-position" bindtap="bindViewTap">
+          <view class="avatar ofh avatar-position">
             <open-data type="userAvatarUrl"></open-data>
           </view>
         </block>
