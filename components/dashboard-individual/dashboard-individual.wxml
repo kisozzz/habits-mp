@@ -62,10 +62,10 @@
         <view class="mr10 fsbody">Analytics</view>
         <image class="icon-sizing" src="/images/icons/wand.svg"></image>
       </navigator>
-      <navigator url="/pages/groups-select/groups-select?id={{info.user.id}}" class="inconsolata text-primary fbody flex items-center mb20 mr20">
+      <!-- <navigator url="/pages/groups-select/groups-select?id={{info.user.id}}" class="inconsolata text-primary fbody flex items-center mb20 mr20">
         <view class="mr10 fsbody">Challenges</view>
         <image class="icon-sizing-alien" src="/images/icons/alien.svg"></image>
-      </navigator>
+      </navigator> -->
     </view>
   </view>
 </view>
