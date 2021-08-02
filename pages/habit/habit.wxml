@@ -6,7 +6,8 @@
     <block wx:for="{{completedStatuses}}" wx:key="index">
       <view wx:if="{{item === 'complete'}}" class="circle green"></view>
       <view wx:elif="{{item === 'partial'}}" class="circle yellow"></view>
-      <view wx:else class="circle red"></view>
+      <view wx:elif="{{item === 'incomplete'}}" class="circle red"></view>
+      <view wx:else class="circle"></view>
     </block>
   </view>
   </view>
@@ -47,26 +48,3 @@
   </view>
   <tabbar />
 </view>
-
-<!-- <view bindtap="showDialog1" class="step-icon-{{filled1}} mr20"></view>
-        <view class="step-icon-{{filled2}} mr20"></view>
-        <view class="step-icon-{{filled3}}"></view>
-        <view wx:if="{{dialog1}}">
-          <l-dialog 
-          id="task1"
-          l-class="dialog"
-          l-cancel-class="cancel-btn"
-          l-confirm-class="confirm-btn"
-          l-content-class="step-name"
-          bind:linconfirm = "confirm"
-          show="{{true}}"
-          type="confirm"  
-          show-title="{{false}}"
-          content="Pack gym clothes"
-          confirm-text="Done"
-          confirm-color="#2C12A1"
-          cancel-text="Cancel"
-          cancel-color="#999" />
-        </view>        
-      </view>
-      </view> -->

@@ -54,8 +54,10 @@ Page({
             completedStatuses.push('complete')
           } else if (habit.partially_completed) {
             completedStatuses.push('partial')
-          } else {
+          } else if (habit.missed) {
             completedStatuses.push('incomplete')
+          } else {
+            completedStatuses.push('not-started')
           }
         })
         page.setData({
