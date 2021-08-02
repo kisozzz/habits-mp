@@ -42,9 +42,9 @@
   </view>
 
   <!-- edit button -->
-  <view bindtap="editMasterHabit" class="mt20 px80 w30 flex items-center">
+  <!-- <view bindtap="editMasterHabit" class="mt20 px80 w30 flex items-center">
     <image class="icon-sizing" src="/images/icons/wand.svg"></image>
     <view class="text-primary inconsolata">Edit Habit</view>
-  </view>
+  </view> -->
   <tabbar />
 </view>
