@@ -1,7 +1,10 @@
 /* components/group-card/group-card.wxss */
+@import '/stylesheets/index';
+
 .group-card {
   display: flex;
   position: relative;
+  flex-direction: column;
   width: 652rpx;
   height: 320rpx;
   background: #FFFFFF;
@@ -29,4 +32,13 @@
   color: #1E1C26; 
   padding: 20rpx;
   padding-left: 50rpx;
+}
+
+.avatar {
+  width:125rpx;
+  height:125rpx;
+  border-radius:50%;
+  flex-shrink: 0;
+  flex-grow: 0;
+  padding: 20rpx;
 }
