@@ -24,6 +24,12 @@
   </view>
 </view>
 
+<!-- popup form -->
+<l-arc-popup show="{{showPopup}}" max-height="800" min-height="200">
+ 
+</l-arc-popup>
+
+
 <view class="empty-space"></view>
 
 

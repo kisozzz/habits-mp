@@ -22,7 +22,7 @@
     "group-form": "/components/group-form/group-form",
     "l-progress":"/miniprogram_npm/lin-ui/progress/index",
     "l-dialog":"/miniprogram_npm/lin-ui/dialog/index",
-
+    "l-arc-popup":"/miniprogram_npm/lin-ui/arc-popup/index",
     "l-radio":"/miniprogram_npm/lin-ui/radio/index",
     "l-radio-group":"/miniprogram_npm/lin-ui/radio-group/index",
     "l-checkbox":"/miniprogram_npm/lin-ui/checkbox/index",

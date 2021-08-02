@@ -72,3 +72,5 @@
   <button bindtap="changeBtnColor" formType="submit" class="btn-big">Create</button>
 </view>
 </form>
+
+<view class="empty-space"></view>

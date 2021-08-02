@@ -165,3 +165,7 @@ check-box{
   font-family: inconsolata;
   color:#979797;
 }
+
+.empty-space {
+  height: 200rpx;
+}

@@ -12,6 +12,7 @@
   box-sizing: border-box;
   box-shadow: 0rpx 8rpx 0rpx #2C12A1;
   border-radius: 4rpx;
+  
 }
 
 .icon-arrow{
@@ -27,18 +28,22 @@
   font-family: Inconsolata;
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 50rpx;  /* temp, change back to smaller */
   line-height: 28px;
   /* color: #1E1C26;  */
   padding: 20rpx;
   padding-left: 50rpx;
+  
 }
 
 .avatar {
   width:125rpx;
   height:125rpx;
   border-radius:50%;
-  flex-shrink: 0;
-  flex-grow: 0;
+  /* flex-shrink: 0;
+  flex-grow: 0; */
   box-shadow: 0px 2px 3px #2C12A1;
+  display: flex; /* temp, delete*/
+  justify-content: center; /* temp, delete*/
+
 }
