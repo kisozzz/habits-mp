@@ -24,7 +24,9 @@ Page({
     wx.getStorage({
       key: 'user',
       success (res) {
-        console.log("user?", res.data.id)
+        // console.log(res.data)
+        console.log("user-id?", res.data.id)
+        console.log("user-openid:", res.data.open_id)
         const userId = res.data.id
     wx.request({
       url: `https://habits.wogengapp.cn/api/v1/users/${userId}/master_habits`,

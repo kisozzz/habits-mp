@@ -1,10 +1,24 @@
 // pages/group/group.js
+const app = getApp();
+
 Page({
 
   /**
    * Page initial data
    */
   data: {
+    show: true,
+    currentConfig: {
+      transition: true,
+      zIndex: 99,
+      locked: false,
+      direction: 'bottom',
+      arcRadius: 18,
+      maxHeight: 500,
+      minHeight: 200,
+      opacity: 0.4
+    },
+
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
@@ -39,6 +53,38 @@ Page({
     url: `https://habits.wogengapp.cn/api/v1/groups/${group_id}/goals`,
     method: 'POST',
     data: goal,
+    success(res) {
+      console.log(res)
+        wx.redirectTo({
+          url: `/pages/group/group?id=${group_id}`
+        });
+      }
+    })
+
+  },
+
+  doNothing(e){
+    console.log('picked cancel')
+    this.setData({ show: false })
+  },
+
+  confirmJoin(e){
+    console.log('picked join')
+    
+    const group_id = this.data.group.id;
+    const open_id = app.globalData.openid;
+    // const wechat_username = ;
+    // const wechat_pic_url = ;
+    // let user = {
+    //   open_id: open_id,
+    //   wechat_username: wechat_username,
+    //   wechat_pic_url: wechat_pic_url
+    // }
+    // console.log(user)
+    wx.request({
+    url: `https://habits.wogengapp.cn/api/v1/groups/${group_id}/newuser`,
+    method: 'POST',
+    data: user,
     success(res) {
       console.log(res)
         wx.redirectTo({
