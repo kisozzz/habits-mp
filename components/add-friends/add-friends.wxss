@@ -10,18 +10,18 @@
 }
 
 .plusicon{
-  width: 164rpx;
-  height: 164rpx;
+  width: 160rpx;
+  height: 160rpx;
   position: relative;
   object-position: center;
   display: flex;
   justify-content: center;
 }
 
-.section {
+/* .section {
   margin: 50rpx;
   margin-top: 80rpx;
-}
+} */
 
 .form-container{
   width: 100%;
@@ -50,6 +50,5 @@ button[plain] {
 .share-section{
   width: 100%;
   margin: auto;
-  justify-content: center;
   display: flex;
 }
