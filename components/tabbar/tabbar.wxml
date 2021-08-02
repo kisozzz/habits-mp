@@ -1,20 +1,38 @@
 <view class="bar relative">
   <view class="vw row-around">
     <navigator class="tab-text" url="/pages/index/index">HOME</navigator>
-    <block wx:if="{{info.groups.length === 1}}">
-    <navigator class="tab-text" url="/pages/groups-select/groups-select?id={{info.user.id}}">GROUP</navigator>
+
+    <block wx:if="{{info.groups}}">
+      <block wx:if="{{info.groups.length === 1}}">
+      <navigator class="tab-text" url="/pages/groups-select/groups-select?id={{info.user.id}}">GROUP</navigator>
+      </block>
+      <block wx:elif="{{info.groups.length === 0}}">
+      <navigator class="tab-text" url="/pages/create-group/create-group">GROUP</navigator>
+      </block>
+      <block wx:else>
+      <navigator class="tab-text" url="/pages/groups-select/groups-select?id={{info.user.id}}">GROUPS</navigator>
+      </block>
     </block>
-    <block wx:elif="{{info.groups.length === 0}}">
-    <navigator class="tab-text" url="/pages/create-group/create-group">GROUP</navigator>
+
+    <block wx:if="{{!info.groups}}">
+      <navigator class="tab-text" url="/pages/groups-select/groups-select?id={{user}}">GROUP</navigator>
     </block>
-    <block wx:else>
-    <navigator class="tab-text" url="/pages/groups-select/groups-select?id={{info.user.id}}">GROUPS</navigator>
-    </block>
+     
   </view>
   <navigator bindtap="displayCreateOptions" class="tab" url="#"><image class="logo" src="/images/icons/plusgame.svg"></image></navigator>
-  <navigator url="/pages/progress/progress?id={{info.user.id}}" class="dynamic-tab-left" wx:if="{{createMenuOpen}}">
+
+  <block wx:if="{{info.user}}">
+    <navigator url="/pages/progress/progress?id={{info.user.id}}" class="dynamic-tab-left" wx:if="{{createMenuOpen}}">
+      <view class="dynamic-tab-inner-sm text-primary inconsolata tab-text-small">My Progress</view>
+    </navigator>
+  </block>
+  <block wx:if="{{!info.user}}">
+    <navigator url="/pages/progress/progress?id={{user}}" class="dynamic-tab-left" wx:if="{{createMenuOpen}}">
     <view class="dynamic-tab-inner-sm text-primary inconsolata tab-text-small">My Progress</view>
-  </navigator>
+    </navigator>
+  </block>
+
+
   <navigator url="/pages/create-group/create-group" class="dynamic-tab-right relative" wx:if="{{createMenuOpen}}">
     <view class="dynamic-tab-inner text-primary inconsolata">New Group</view>
   </navigator>

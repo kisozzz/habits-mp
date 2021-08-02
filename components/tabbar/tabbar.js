@@ -7,6 +7,13 @@ Component({
     info: Object
   },
 
+  ready: function(){
+    if (getApp().globalData.user.id) {
+      const user = getApp().globalData.user.id
+      this.setData({user: user})
+    }
+  },
+
   /**
    * Component initial data
    */
