@@ -3,12 +3,12 @@
     
     <view class="fheader vt323 text-primary mb20 tc">{{info.name}}</view>
 
-    <block wx:if="{{info.goal.length > 0}}">
+    <block wx:if="{{info.goals.length > 0}}">
       <view class="mb40">
       <view class="goal-section body-text">
-      Group Goal  <text class="num-big">{{info.goal.percent_complete}}</text><image class="icon-percent" src="/images/icons/icons_percent.svg"></image><image class="icon-finish" src="/images/icons/finish-flag.svg"></image>
+      Group Goal  <text class="num-big">{{info.goals.first.percent_complete}}</text><image class="icon-percent" src="/images/icons/icons_percent.svg"></image><image class="icon-finish" src="/images/icons/finish-flag.svg"></image>
       </view>
-      <view class="edate body-text">End Date<text class="num-big">{{info.goal.end_date}}</text></view>
+      <view class="edate body-text">End Date<text class="num-big">{{info.goals.first.end_date}}</text></view>
       <view class="group-progress body-text">Group weekly progress</view>
         <l-progress percent="50" stroke-width='15' border-radius='2' active-color="#A0F337" l-class="progress-bar"></l-progress> 
       </view>
