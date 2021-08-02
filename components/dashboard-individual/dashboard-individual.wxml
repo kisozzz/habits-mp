@@ -19,7 +19,7 @@
   </view>
 
   <!-- Display habits content -->
-  <view class="text-primary vt323 ftheader mx40 mb20">Weekly Progress</view>
+  <view class="text-primary vt323 ftheader mx40 my20">Weekly Progress</view>
     <block wx:if="{{info.master_habits.length > 0 && info.master_habits.length <= 3}}">
       <view class="px40">
         <block wx:for="{{info.master_habits}}" wx:key="index">

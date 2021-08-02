@@ -24,7 +24,8 @@
   </view>
 </view>
 
+<view class="empty-space"></view>
 
 
-<tabbar />
+<tabbar/>
 </view>
