@@ -1,2 +1,4 @@
-<!--components/progress-card/progress-card.wxml-->
-<text>components/progress-card/progress-card.wxml</text>
+<view class="card">
+  <view class="bar"></view>
+  <view>{{info.name}}</view>
+</view>
