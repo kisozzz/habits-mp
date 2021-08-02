@@ -30,7 +30,8 @@
     "dashboard-individual":"/components/dashboard-individual/dashboard-individual",
     "frequency-display":"/components/frequency-display/frequency-display",
     "add-friends":"/components/add-friends/add-friends",
-    "instruction-card":"/components/instruction-card/instruction-card"
+    "instruction-card":"/components/instruction-card/instruction-card",
+    "group-card":"/components/group-card/group-card"
 
   },
   "window":{
