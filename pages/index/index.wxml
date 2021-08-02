@@ -15,61 +15,9 @@
     </navigator>
   </view>
 
-
-  <!-- share element page-->
-  <!-- <view class="screen screen1">
-    <view class="mt180 mb250 column-center">
-      <block wx:for="{{habits.master_habits}}" wx:key="id" wx:for-item="habit">
-        <view class="habit" bindtap="showNext" data-idx="{{index}}">
-          <share-element class="habit-name" key="name" duration="{{duration}}" transform="{{transformIdx === index}}">
-          {{habit.name}}
-          </share-element>
-          <habit-card class="mb20"/>
-        </view>
-        
-      </block>
-    </view>
-  </view>
-  <page-container
-    show="{{show}}"
-    overlay="{{overlay}}"
-    close-on-slide-down
-    duration="{{duration}}"
-    position="{{position}}"
-    bindbeforeenter="onBeforeEnter"
-    bindenter="onEnter"
-    bindafterenter="onAfterEnter"
-    bindbeforeleave="onBeforeLeave"
-    bindleave="onLeave"
-    bindafterleave="onAfterLeave"
-    bindclickoverlay="onClickOverlay"
-  >
-    <view class="screen screen2">
-      <view class="habit">
-        <share-element class="habit-name-title fheader vt323 text-primary" key="name" duration="{{duration}}" transform>
-          {{habit.name}}
-        </share-element>
-        <view class="paragraph {{show ? 'enter' : ''}}">
-          <view class="wrapper">
-            <view class="px40 pt60 pb40 fheader vt323 text-primary">{{placeholder_name}}</view>
-            <view class="px80 py40">
-            <frequency-display />
-            </view>
-            <view class="steps-div flex column items-center justify-center pa20">
-              <task-card class="mb20" />
-              <task-card class="mb20" />
-              <task-card class="mb20" />
-            </view>
-          </view>
-        </view>
-        <button class="screen2-button" bindtap="showPrev" hidden="{{!show}}" hover-class="none">Click Me</button>
-      </view>
-    </view>
-  </page-container> -->
-
   <tabbar info="{{habits}}" />
 </view>
-
+<view class="empty-space"></view>
 
 
 

@@ -1,4 +1,5 @@
 /**index.wxss**/
+
 .background-top {
   min-height: 25%;
   background: linear-gradient(0deg, rgba(254,154,190,1) 0%, rgba(205,195,248,1) 100%);
@@ -44,27 +45,13 @@
   text-align: center;
   margin: 10px 0;
 }
-.screen {
-  -webkit-overflow-scrolling: touch;
-}
 
-.screen1 {
-  overflow-y: scroll;
-  padding: 0;
-}
-
-.paragraph {
-  -webkit-transition: transform ease-in-out 500ms;
-  transition: transform ease-in-out 500ms;
-  -webkit-transform: scale(0.6);
-  transform: scale(0.6);
-}
-
-.enter.paragraph {
-  transform: none;
-}
 
 .icon-sizing {
   width: 15px;
   height: 15px;
+}
+
+.empty-space {
+  height: 200rpx;
 }

@@ -27,3 +27,7 @@
 .nickname{
   padding-left: 20rpx;
 }
+
+.empty-space {
+  height: 200rpx;
+}
