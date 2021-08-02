@@ -65,6 +65,10 @@
   gap: 20rpx;
 }
 
-.progress-bar {
+.progress-bar-half {
   min-width: 220rpx;
+}
+
+.progress-bar-full {
+  min-width: 500rpx;
 }
