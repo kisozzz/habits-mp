@@ -21,7 +21,7 @@ Page({
       success(res) {
         const habits = res.data;
         console.log(habits)
-        const currentDate = Date.now()
+        // const currentDate = Date.now()
         // let nextHabits = []
         // habits.master_habits.forEach(masterhabit => {
         //   const nextHabit = masterhabit.habit.find(h => Date.parse(h.due_date) > currentDate)

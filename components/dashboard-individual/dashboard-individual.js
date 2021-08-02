@@ -19,17 +19,7 @@ Component({
     canIUseOpenData: wx.canIUse('open-data.type.userAvatarUrl') && wx.canIUse('open-data.type.userNickName') // 如需尝试获取用户信息可改为false
   },
 
-  /**
-   * Component methods
-   */
-  lifetimes: {
-    attached: function() {
-      console.log('dashboard', this.data)
-    }
-  },
-
   methods: {
-
     onLoad() {
       if (wx.getUserProfile) {
         this.setData({

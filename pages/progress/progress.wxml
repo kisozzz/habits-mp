@@ -1,8 +1,8 @@
 <view class="wrapper vh100">
-  <view class="mx60 flex column mt100 mb300">
+  <view class="mx60 flex column justify-center items-center mt100 mb300">
     <view class="text-primary fheader vt323 mb60">Weekly Progress</view>
     <block wx:for="{{habits.master_habits}}" wx:key="index">
-      <progress-card class="mb20" info="{{item}}" />
+      <progress-card class="mb60 mxauto" info="{{item}}" />
     </block>
   </view>
   <tabbar />
