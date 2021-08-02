@@ -9,7 +9,7 @@
   border-radius:50%;
   flex-shrink: 0;
   flex-grow: 0;
-  border: 4rpx solid #1CD9C6;
+  box-shadow: 0px 2px 3px #2C12A1;
 }
 
 .friends{

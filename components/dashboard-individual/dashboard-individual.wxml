@@ -3,7 +3,7 @@
     <!-- For retrieving user info -->
     <view class="center items-center pa20">
     <block wx:if="{{canIUseOpenData}}">
-      <view class="avatar ofh avatar-position" bindtap="bindViewTap">
+      <view class="avatar ofh avatar-position">
         <open-data type="userAvatarUrl"></open-data>
       </view>
     </block>

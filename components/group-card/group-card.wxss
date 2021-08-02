@@ -6,7 +6,7 @@
   position: relative;
   flex-direction: column;
   width: 652rpx;
-  height: 320rpx;
+  height: 300rpx;
   background: #FFFFFF;
   border: 4rpx solid #2C12A1;
   box-sizing: border-box;
@@ -40,5 +40,5 @@
   border-radius:50%;
   flex-shrink: 0;
   flex-grow: 0;
-  padding: 20rpx;
+  box-shadow: 0px 2px 3px #2C12A1;
 }
