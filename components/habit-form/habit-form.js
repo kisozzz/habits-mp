@@ -11,8 +11,8 @@ Component({
    * 组件的初始数据
    */
   data: {
-    sdate: '2021-01-01',
-    edate: '2021-01-01',
+    sdate: '',
+    edate: '',
     btnColor: '#DBDDFC',
     selectedFreq: null,
     steps:[],
@@ -36,6 +36,17 @@ Component({
     formSubmit: function (e) {
       console.log('form发生了submit事件，携带数据为：', e.detail.value)
     },
+
+    // setToday: function(d){
+    //   var yyyy = d.getFullYear().toString();                                    
+    //   var mm = (d.getMonth()+1).toString(); // getMonth() is zero-based         
+    //   var dd  = d.getDate().toString();                           
+    //   var today = yyyy + '-' + (mm[1]?mm:"0"+mm[0]) + '-' + (dd[1]?dd:"0"+dd[0]);
+    //   console.log(today)
+    //   this.setData({
+    //       sdate: today
+    //   })
+    // },
 
     bindDateChangeStart: function (e) {
       console.log('picker发送选择改变，携带值为', e.detail.value)

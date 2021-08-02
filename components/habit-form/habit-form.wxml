@@ -37,13 +37,13 @@
 <view class="section">
   <view class="label">Duration</view>
   <view class="picktime">
-    <picker mode="date" value="{{date}}" start="2021-01-01" end="2100-01-01" bindchange="bindDateChangeStart">
+    <picker mode="date" value="{{sdate}}" start="1970-01-01" end="2100-01-01" bindchange="bindDateChangeStart">
       <view class="picker">
         {{sdate}}
       </view>
       <view class="label-small">Start</view>
     </picker>
-    <picker mode="date" value="{{date}}" start="2021-01-01" end="2100-01-01" bindchange="bindDateChangeEnd">
+    <picker mode="date" value="{{edate}}" start="1970-01-01" end="2100-01-01" bindchange="bindDateChangeEnd">
       <view class="picker">
         {{edate}}
       </view>
