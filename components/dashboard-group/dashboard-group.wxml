@@ -1,19 +1,30 @@
 <view class="dashboard bg-white relative">
   <view class="px40 py20 flex column">
+    
     <view class="fheader vt323 text-primary mb20 tc">{{info.name}}</view>
-    <view class="mb40">
+
+    <block wx:if="{{info.goal.length > 0}}">
+      <view class="mb40">
       <view class="goal-section body-text">
-      Group Goal  <text class="num-big">80</text><image class="icon-percent" src="/images/icons/icons_percent.svg"></image><image class="icon-finish" src="/images/icons/finish-flag.svg"></image>
+      Group Goal  <text class="num-big">{{info.goal.percent_complete}}</text><image class="icon-percent" src="/images/icons/icons_percent.svg"></image><image class="icon-finish" src="/images/icons/finish-flag.svg"></image>
       </view>
-      <view class="edate body-text">End Date<text class="num-big">2021-09-30</text></view>
+      <view class="edate body-text">End Date<text class="num-big">{{info.goal.end_date}}</text></view>
       <view class="group-progress body-text">Group weekly progress</view>
         <l-progress percent="50" stroke-width='15' border-radius='2' active-color="#A0F337" l-class="progress-bar"></l-progress> 
-    </view>
-
-    <view class="icon-section">
-      <view class="mr20"><image class="icon-small" src="/images/icons/message.svg"></image></view>
+      </view>
+      <view class="icon-section">
+      <!-- <view class="mr20"><image class="icon-small" src="/images/icons/message.svg"></image></view> -->
       <view class="mr20"><image class="icon-small" src="/images/icons/pixelgame.svg"></image></view>
       <image class="icon-small" src="/images/icons/calendar.svg"></image><view class="days-text">28 days left</view>
-    </view>
+      </view>
+    </block>
+
+    <block wx:else>
+      <view class="text-primary inconsolata fbody mx60 mb40">
+        <view class="mt40 mb40">What's your group goal?</view>
+        <view class="mt40 mb40">Set a percentage you wish to complete as a group</view>
+        <view class="set-goal ml20 text-primary vt323 fsheader" bindtap="openPopup">Set group goal here</view>
+      </view>
+    </block>
   </view>
 </view>

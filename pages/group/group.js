@@ -12,6 +12,41 @@ Page({
     canIUseOpenData: wx.canIUse('open-data.type.userAvatarUrl') && wx.canIUse('open-data.type.userNickName') // 如需尝试获取用户信息可改为false
   },
 
+  bindShowPopup() {
+    this.setData({ showPopup: true })
+  },
+
+  bindDateChangeEnd: function (e) {
+    console.log('picker发送选择改变，携带值为', e.detail.value)
+    this.setData({
+      edate: e.detail.value
+    })
+  },
+
+  formSubmit: function (e) {
+    console.log('form发生了submit事件，携带数据为：', e.detail.value)
+    console.log(this.data)
+    const group_id = this.data.group.id;
+    const end_date = this.data.edate;
+    const percent_complete = e.detail.value.input;;
+    let goal = {
+      group_id: group_id,
+      end_date: end_date,
+      percent_complete: percent_complete
+    }
+    console.log(goal)
+    wx.request({
+    url: `https://habits.wogengapp.cn/api/v1/groups/${group_id}/goals`,
+    method: 'POST',
+    data: goal,
+    success(res) {
+      console.log(res)
+        wx.redirectTo({
+          url: `/pages/group/group?id=${group_id}`
+        });
+      }
+    })
+  },
   /**
    * Lifecycle function--Called when page load
    */

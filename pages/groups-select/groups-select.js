@@ -8,9 +8,7 @@ Page({
 
   },
 
-  bindShowPopup() {
-    this.setData({ showPopup: true })
-  },
+
   /**
    * Lifecycle function--Called when page load
    */
