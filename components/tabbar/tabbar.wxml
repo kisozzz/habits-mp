@@ -12,7 +12,7 @@
     </block>
   </view>
   <navigator bindtap="displayCreateOptions" class="tab" url="#"><image class="logo" src="/images/icons/plusgame.svg"></image></navigator>
-  <navigator url="/pages/progress/progress" class="dynamic-tab-left" wx:if="{{createMenuOpen}}">
+  <navigator url="/pages/progress/progress?id={{info.user.id}}" class="dynamic-tab-left" wx:if="{{createMenuOpen}}">
     <view class="dynamic-tab-inner-sm text-primary inconsolata tab-text-small">My Progress</view>
   </navigator>
   <navigator url="/pages/create-group/create-group" class="dynamic-tab-right relative" wx:if="{{createMenuOpen}}">
