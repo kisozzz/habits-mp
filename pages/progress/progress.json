@@ -1,3 +1,5 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "progress-card": "/components/progress-card/progress-card"
+  }
 }

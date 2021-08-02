@@ -12,7 +12,7 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-    // console.log(options)
+    console.log(options)
     const userId = options.id
     const page = this;
     wx.request({
