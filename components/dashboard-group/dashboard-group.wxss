@@ -7,12 +7,6 @@
   border: 2rpx solid #2C12A1;
 }
 
-.icon-bar-position {
-  position: absolute;
-  left: 40rpx;
-  bottom: 40rpx;
-}
-
 .header-text {
   font-family: 'VT323', sans-serif;
   font-style: normal;
@@ -26,17 +20,26 @@
   color: #2C12A1;
 }
 
-.days {
+.icon-section {
   display: flex;
   padding: 30rpx 0;
   justify-content: flex-start;
   align-items: center;
+  position: absolute;
+  left: 40rpx;
+  bottom: 20rpx;
 }
 
-.calendar-icon {
-  width: 40rpx;
-  height: 40rpx;
+.icon-small {
+  width: 50rpx;
+  height: 50rpx;
   padding-right: 10rpx;
+}
+
+.icon-calendar {
+  width: 60rpx !important;
+  height: 60rpx !important;
+  padding-right: 20rpx;
 }
 
 .days-text {
@@ -45,4 +48,52 @@
   font-weight: normal;
   font-size: 28rpx;
   color: #2C12A1;
+}
+
+.icon-finish {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.goal-section{
+  display: flex;
+  align-items: center;
+
+}
+
+.body-text {
+  font-family: Inconsolata;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 17px;
+  color: #1E1C26;
+  padding-top: 30rpx;
+  padding-bottom: 20rpx;
+}
+
+.num-big {
+  padding-left: 20rpx;
+  font-family: Overpass Mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40rpx;
+
+  color: #2C12A1;
+
+}
+
+.edate{
+  display: flex;
+  align-items: center;
+}
+
+.icon-percent {
+  padding-right: 20rpx;
+  width: 46rpx;
+  height: 46rpx;
+}
+
+.progress-bar{
+  padding-bottom: 20rpx;
 }

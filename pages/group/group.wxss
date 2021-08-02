@@ -6,14 +6,24 @@
 .avatar {
   width:125rpx;
   height:125rpx;
-  border-radius:30%;
+  border-radius:50%;
   flex-shrink: 0;
   flex-grow: 0;
-  box-shadow: 0px 2px 3px #2C12A1;
+  border: 4rpx solid #1CD9C6;
 }
 
 .friends{
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.friend-card{
+  display: flex;
   align-items: center;
+  padding: 20rpx;
+}
+
+.nickname{
+  padding-left: 20rpx;
 }

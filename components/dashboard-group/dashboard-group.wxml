@@ -1,20 +1,20 @@
 <view class="dashboard bg-white relative">
   <view class="px40 py20 flex column">
-    <view class="fheader vt323 text-primary mb40">{{info.name}}</view>
+    <view class="fheader vt323 text-primary mb20 tc">{{info.name}}</view>
     <view class="mb40">
-      <view class="inconsolata fbody mb20">group weekly progress</view>
+      <view class="goal-section body-text">
+      Group Goal  <text class="num-big">80</text><image class="icon-percent" src="/images/icons/icons_percent.svg"></image><image class="icon-finish" src="/images/icons/finish-flag.svg"></image>
+      <!-- completion every week this month -->
+      </view>
+      <view class="edate body-text">End Date<text class="num-big">2021-09-30</text></view>
+      <view class="group-progress body-text">Group weekly progress</view>
         <l-progress percent="50" stroke-width='15' border-radius='2' active-color="#A0F337" l-class="progress-bar"></l-progress> 
     </view>
-    <view class="inconsolata text-primary">
-      Group Goal: 80% completion every week this month
-    </view>
-    <view class="days">
-      <image class="calendar-icon" src="/images/icons/calendar.svg"></image>
-      <view class="days-text">28 days left</view>
-    </view>
-    <view class="flex icon-bar-position">
-      <view class="mr20">icon</view>
-      <view>icon</view>
+
+    <view class="icon-section">
+      <view class="mr20"><image class="icon-small" src="/images/icons/message.svg"></image></view>
+      <view class="mr20"><image class="icon-small" src="/images/icons/pixelgame.svg"></image></view>
+      <image class="icon-small" src="/images/icons/calendar.svg"></image><view class="days-text">28 days left</view>
     </view>
   </view>
 </view>

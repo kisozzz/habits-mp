@@ -7,15 +7,18 @@
 <view class="px60 mt140">
   <view class="group-members">
     <view class="text-primary fsheader vt323">Members</view>
-    <view class="member-avatars"></view>
     <view class="friends">
       <!-- <block wx:for="{{group.user}}" wx:key="value"> -->
         <block wx:if="{{canIUseOpenData}}">
-          <view class="avatar ofh avatar-position">
-            <open-data type="userAvatarUrl"></open-data>
+          <view class="friend-card">
+            <view class="avatar ofh">
+              <open-data type="userAvatarUrl"></open-data>
+            </view>
+            <view class="nickname">
+             <open-data type="userNickName"></open-data>
+            </view>
           </view>
         </block>
-      <!-- </block> -->
       <add-friends/>
     </view>
   </view>
