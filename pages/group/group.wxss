@@ -26,6 +26,7 @@
 
 .nickname{
   padding-left: 20rpx;
+  color: #2C12A1;
 }
 
 .empty-space {

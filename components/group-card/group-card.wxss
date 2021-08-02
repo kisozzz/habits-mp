@@ -24,12 +24,12 @@
 }
 
 .title {
-  font-family: Overpass Mono;
+  font-family: Inconsolata;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 18px;
   line-height: 28px;
-  color: #1E1C26; 
+  /* color: #1E1C26;  */
   padding: 20rpx;
   padding-left: 50rpx;
 }
