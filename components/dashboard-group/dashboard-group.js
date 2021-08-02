@@ -18,6 +18,8 @@ Component({
    * Component methods
    */
   methods: {
-
+    openPopup() {
+      this.selectOwnerComponent().bindShowPopup()
+   }
   }
 })

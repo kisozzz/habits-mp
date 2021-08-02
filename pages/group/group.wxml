@@ -26,7 +26,23 @@
 
 <!-- popup form -->
 <l-arc-popup show="{{showPopup}}" max-height="800" min-height="200">
- 
+  <view class="form-container" style="height: 800rpx;">
+    <view class="title">Set group goal</view>
+    <form bindsubmit="formSubmit">
+      <view class="label">percent complete</view>
+      <input name="input" class="title-input"/>
+      <view class="label">End Date</view>
+      <view class="picktime">
+        <picker mode="date" value="{{edate}}" start="1970-01-01" end="2100-01-01" bindchange="bindDateChangeEnd">
+        <view class="picker">{{edate}}</view>
+        </picker>
+      </view>
+
+      <view slot="submit" class="section">
+        <button formType="submit" class="btn-big">Set it</button>
+      </view>
+    </form>
+  </view>
 </l-arc-popup>
 
 
