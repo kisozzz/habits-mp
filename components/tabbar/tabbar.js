@@ -8,7 +8,7 @@ Component({
   },
 
   ready: function(){
-    if (getApp().globalData.user.id) {
+    if (getApp().globalData.user) {
       const user = getApp().globalData.user.id
       this.setData({user: user})
     }
