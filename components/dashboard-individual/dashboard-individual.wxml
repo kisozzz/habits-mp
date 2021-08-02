@@ -58,7 +58,7 @@
       <image class="icon-sizing" src="/images/icons/arrow-icon.svg"></image>
       </navigator>
     </block>
-      <navigator url="/pages/progress/progress" class="inconsolata text-primary fbody flex items-center mb20 mr20">
+      <navigator url="/pages/progress/progress?id={{info.user.id}}" class="inconsolata text-primary fbody flex items-center mb20 mr20">
         <view class="mr10 fsbody">Analytics</view>
         <image class="icon-sizing" src="/images/icons/wand.svg"></image>
       </navigator>
