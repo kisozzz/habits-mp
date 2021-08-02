@@ -15,7 +15,6 @@ Component({
   },
 
   attached: function(){
-    console.log(this.data.info.id)
     const masterHabitId = this.data.info.id
     const that = this;
     wx.request({
