@@ -15,10 +15,10 @@
   <navigator url="/pages/progress/progress" class="dynamic-tab-left" wx:if="{{createMenuOpen}}">
     <view class="dynamic-tab-inner-sm text-primary inconsolata tab-text-small">My Progress</view>
   </navigator>
-  <navigator url="/pages/create-habit/create-habit" class="dynamic-tab-right relative" wx:if="{{createMenuOpen}}">
-    <view class="dynamic-tab-inner text-primary inconsolata">New Habit</view>
+  <navigator url="/pages/create-group/create-group" class="dynamic-tab-right relative" wx:if="{{createMenuOpen}}">
+    <view class="dynamic-tab-inner text-primary inconsolata">New Group</view>
   </navigator>
-  <navigator class="dynamic-tab-center" wx:if="{{createMenuOpen}}">
-    <view class="dynamic-tab-inner text-primary inconsolata">Latest Habit</view>
+  <navigator url="/pages/create-habit/create-habit" class="dynamic-tab-center" wx:if="{{createMenuOpen}}">
+    <view class="dynamic-tab-inner text-primary inconsolata">New Habit</view>
   </navigator>
 </view>
