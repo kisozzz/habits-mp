@@ -1,7 +1,7 @@
 <!--components/group-card/group-card.wxml-->
 <view class="group-card">
   <image class="icon-arrow" src="/images/icons/icon-arrow-box.svg"></image>
-  <view class="title">{{title}}</view>
+  <view class="title text-primary">{{title}}</view>
   <view class="avatar ofh">
     <open-data type="userAvatarUrl"></open-data>
   </view>
