@@ -47,7 +47,27 @@
     <view wx:else class="flex items-center frequency-div">
       <!-- to-do: find way to display correct circles based on days in info array -->
       <block wx:for="{{info.frequency_options}}" wx:key="index">
-        <check-box id="{{item}}" color="grey" text="{{item}}"></check-box>
+        <block wx:if="{{item === 'Monday'}}">
+          <check-box id="{{item}}" color="grey" text="MON"></check-box>
+        </block>
+        <block wx:if="{{item === 'Tuesday'}}">
+          <check-box id="{{item}}" color="grey" text="TUE"></check-box>
+        </block>
+        <block wx:if="{{item === 'Wednesday'}}">
+          <check-box id="{{item}}" color="grey" text="WED"></check-box>
+        </block>
+        <block wx:if="{{item === 'Thursday'}}">
+          <check-box id="{{item}}" color="grey" text="THU"></check-box>
+        </block>
+        <block wx:if="{{item === 'Friday'}}">
+          <check-box id="{{item}}" color="grey" text="FRI"></check-box>
+        </block>
+        <block wx:if="{{item === 'Saturday'}}">
+          <check-box id="{{item}}" color="grey" text="SAT"></check-box>
+        </block>
+        <block wx:if="{{item === 'Sunday'}}">
+          <check-box id="{{item}}" color="grey" text="SUN"></check-box>
+        </block>
       </block>
       <!-- <check-box id="sun" color="grey" text="SUN"></check-box>
       <check-box id="mon" color="grey" text="MON"></check-box>
