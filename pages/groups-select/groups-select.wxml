@@ -10,7 +10,7 @@
       <block wx:for="{{habits.groups}}" wx:key="index">
         <navigator url="/pages/group/group?id={{item.id}}" class="pa20 mb20">
         <!-- <view>{{item.name}}</view> -->
-        <group-card title="{{item.name}}"/>
+        <group-card title="{{item.name}}" users="{{item.users}}"/>
         </navigator>
       </block>
       <navigator class="flex items-center fbody text-primary inconsolata" url="/pages/create-group/create-group">

@@ -7,6 +7,7 @@ Component({
    */
   properties: {
     title: String,
+    users: Array
   },
 
   /**
