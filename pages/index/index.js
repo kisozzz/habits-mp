@@ -80,5 +80,14 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+  },
+
+  goToHabitForm (){
+    wx.redirectTo({
+      url: '/pages/create-habit/create-habit',
+      success: (res) => {},
+      fail: (res) => {},
+      complete: (res) => {},
+    })
   }
 })

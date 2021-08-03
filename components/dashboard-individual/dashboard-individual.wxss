@@ -17,10 +17,11 @@
 .avatar {
   width:125rpx;
   height:125rpx;
-  border-radius:30%;
+  border-radius:50%;
   flex-shrink: 0;
   flex-grow: 0;
-  box-shadow: 0px 2px 3px #2C12A1;
+  /* box-shadow: 0px 2px 3px #2C12A1; */
+  /* filter: drop-shadow(0px 4px 0px #CEC3F7); */
 }
 
 .icon-bar-position {
@@ -29,7 +30,7 @@
   bottom: 20rpx;
 }
 .header {
-  font-size: 44rpx;
+  font-size: 48rpx;
 }
 .header-text {
   font-family: 'VT323', sans-serif;
@@ -42,7 +43,9 @@
 
 .inconsolata {
   font-family: Inconsolata, sans-serif;
-  color: #2C12A1;
+  /* color: #2C12A1; */
+  color: #1E1C26;
+
 }
 
 .center {
@@ -56,9 +59,17 @@
   height: 15px;
 }
 
+.icon-wand {
+  transform: scaleX(-1);
+}
+
 .icon-sizing-alien {
   width: 17px;
   height: 17px;
+}
+
+.smheader {
+  font-size: 38rpx;
 }
 
 .habits-grid {
@@ -77,4 +88,27 @@
 
 .create-btn {
   text-decoration: underline;
+}
+
+.btn-big {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 340rpx !important;
+  height: 80rpx;
+  margin-top: 60rpx;
+  background: #DBDDFC;
+  border: 2rpx solid #1E1C26;
+  border-radius: 0 !important;
+  box-sizing: border-box;
+  box-shadow: 0rpx 6rpx 0rpx #2C12A1;
+
+  font-family: VT323;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50rpx;
+  line-height: 56rpx;
+  text-align: center;
+  letter-spacing: 3rpx;
+  color: #2C12A1;
 }
