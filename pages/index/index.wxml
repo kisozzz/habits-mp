@@ -8,6 +8,9 @@
     <block wx:for="{{nextHabits}}" wx:key="index">
       <habit-card info="{{item}}" class="mb20" />
     </block>
+    <view wx:if="{{nextHabits.length === 0}}" class="text-primary fbody inconsolata">
+      Quartz is a . Once you create a habit, it will show up here. 
+    </view>
     </view>
     <navigator url="/pages/create-habit/create-habit" class="flex items-center mx60 mt"> 
       <image class="icon-sizing mr10" src="/images/icons/pixelsphere.svg"></image>
