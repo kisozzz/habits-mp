@@ -12,6 +12,9 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
+    wx.showLoading({
+      title: 'Loading',
+    })
     console.log(options)
     const userId = options.id
     const page = this;
@@ -31,6 +34,7 @@ Page({
           habits: habits
           // nextHabits: nextHabits
         });
+        wx.hideLoading()
       } 
       }) 
   },

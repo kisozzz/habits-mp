@@ -20,6 +20,9 @@ Page({
 //  },
 
   onShow() {
+    wx.showLoading({
+      title: 'Loading',
+    })
     const page = this;
     wx.getStorage({
       key: 'user',
@@ -28,32 +31,34 @@ Page({
         console.log("user-id?", res.data.id)
         console.log("user-openid:", res.data.open_id)
         const userId = res.data.id
-    wx.request({
-      url: `https://habits.wogengapp.cn/api/v1/users/${userId}/master_habits`,
-      method: "GET",
-      success(res) {
-        const habits = res.data;
-        console.log(habits)
-        const currentDate = Date.now()
-        let nextHabits = []
-        habits.master_habits.forEach(masterhabit => {
-          const nextHabit = masterhabit.habit.find(h => Date.parse(h.due_date) > (currentDate - 86400000))
-          nextHabits.push(nextHabit)
-        })
-        page.setData({
-          habits: habits,
-          nextHabits: nextHabits
-        });
-      } 
-      }) 
-      },
-      fail(){
-        setTimeout(function() {
-          wx.redirectTo({
-            url: '/pages/index/index',
-          })
-        }, 8000)
-      }
+        wx.request({
+          url: `https://habits.wogengapp.cn/api/v1/users/${userId}/master_habits`,
+          method: "GET",
+            success(res) {
+              const habits = res.data;
+              console.log(habits)
+              const currentDate = Date.now()
+              let nextHabits = []
+              habits.master_habits.forEach(masterhabit => {
+                const nextHabit = masterhabit.habit.find(h => Date.parse(h.due_date) > (currentDate - 86400000))
+                nextHabits.push(nextHabit)
+              })
+              page.setData({
+                habits: habits,
+                nextHabits: nextHabits
+              });
+              wx.hideLoading()
+            } 
+          }) 
+        },
+        fail(){
+          setTimeout(function() {
+            wx.redirectTo({
+              url: '/pages/index/index',
+            })
+          }, 8000)
+          wx.hideLoading()
+        }
     })
   },
 
@@ -74,6 +79,15 @@ Page({
     this.setData({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
+    })
+  },
+
+  goToHabitForm (){
+    wx.redirectTo({
+      url: '/pages/create-habit/create-habit',
+      success: (res) => {},
+      fail: (res) => {},
+      complete: (res) => {},
     })
   }
 })

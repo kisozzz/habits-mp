@@ -8,14 +8,15 @@
     <block wx:for="{{nextHabits}}" wx:key="index">
       <habit-card info="{{item}}" class="mb20" />
     </block>
-    <view wx:if="{{habits.master_habits.length === 0}}" class="text-primary fbody inconsolata mx60 mb40">
-      Quartz helps you manage the habits that you want to build. Once you create a habit, it will show up here. Each habit is made up of several steps, and you can easily track your step progress from this page. Click the button below to begin!
+    <view wx:if="{{habits.master_habits.length === 0}}" class="body-container fbody inconsolata px60 mb40">
+      <view class="py20 body-color">Quartz helps you manage the habits that you want to build. </view>
+      <view class="py20">Once you create a habit, it will show up here.</view>
+      <view class="py20">Each habit is made up of several steps, and you can easily track your step progress from this page. </view>
+      <view class="py20">Click the button below to begin!</view>
     </view>
     </view>
-    <navigator url="/pages/create-habit/create-habit" class="flex items-center mx60 mt"> 
-      <image class="icon-sizing mr10" src="/images/icons/pixelsphere.svg"></image>
-      <view class="text-primary inconsolata fbody">Add a new habit</view> 
-    </navigator>
+    <button bindtap="goToHabitForm" formType="submit" class="btn-big">Create</button>
+      <view class="tc inconsolata fbody body-color pt20">Create a new habit</view> 
   </view>
 
   <tabbar info="{{habits}}" />
