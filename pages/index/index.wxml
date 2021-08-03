@@ -8,8 +8,8 @@
     <block wx:for="{{nextHabits}}" wx:key="index">
       <habit-card info="{{item}}" class="mb20" />
     </block>
-    <view wx:if="{{nextHabits.length === 0}}" class="text-primary fbody inconsolata">
-      Quartz is a . Once you create a habit, it will show up here. 
+    <view wx:if="{{habits.master_habits.length === 0}}" class="text-primary fbody inconsolata">
+      Quartz helps you manage the habits that you want to build. Once you create a habit, it will show up here. Each habit is made up of several steps, and you can also easily track your step progress from this page.
     </view>
     </view>
     <navigator url="/pages/create-habit/create-habit" class="flex items-center mx60 mt"> 
@@ -21,24 +21,3 @@
   <tabbar info="{{habits}}" />
 </view>
 <view class="empty-space"></view>
-
-
-
-<!-- DON'T DELETE PLEASE Get user avatar and nickname -->
-  <!-- <view class="userinfo">
-    <block wx:if="{{canIUseOpenData}}">
-      <view class="userinfo-avatar" bindtap="bindViewTap">
-        <open-data type="userAvatarUrl"></open-data>
-      </view>
-      <open-data type="userNickName"></open-data>
-    </block>
-    <block wx:elif="{{!hasUserInfo}}">
-      <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
-      <button wx:elif="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-      <view wx:else> 请使用1.4.4及以上版本基础库 </view>
-    </block>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view> -->
