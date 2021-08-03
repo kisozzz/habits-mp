@@ -4,6 +4,12 @@
     <block wx:for="{{habits.master_habits}}" wx:key="index">
       <progress-card class="mb60 mxauto" info="{{item}}" />
     </block>
+    <view wx:if="{{habits.master_habits.length === 0}}" class="inconsolate text-primary fbody mx60">
+      <view class="mb60">
+      You do not currently have any habits, but once you create a habit, you can track your weekly progress here. 
+      </view>
+      <navigator class="tc vt323 fsheader" url="/pages/index/index">Return HOME to create a new habit!</navigator>
+    </view>
   </view>
   <tabbar />
 </view>
