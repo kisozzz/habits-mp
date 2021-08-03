@@ -8,6 +8,7 @@ Page({
    */
   data: {
     show: true,
+    showJoinModal: false,
     currentConfig: {
       transition: true,
       zIndex: 99,
@@ -28,6 +29,10 @@ Page({
 
   bindShowPopup() {
     this.setData({ showPopup: true })
+  },
+
+  bindShowPopupEdit() {
+    this.setData({ showPopupEdit: true })
   },
 
   bindDateChangeEnd: function (e) {
@@ -63,28 +68,22 @@ Page({
 
   },
 
-  doNothing(e){
-    console.log('picked cancel')
-    this.setData({ show: false })
-  },
-
-  confirmJoin(e){
-    console.log('picked join')
-    
+  formSubmitEdit: function (e) {
+    console.log('form发生了submit事件，携带数据为：', e.detail.value)
+    console.log(this.data)
     const group_id = this.data.group.id;
-    const open_id = app.globalData.openid;
-    // const wechat_username = ;
-    // const wechat_pic_url = ;
-    // let user = {
-    //   open_id: open_id,
-    //   wechat_username: wechat_username,
-    //   wechat_pic_url: wechat_pic_url
-    // }
-    // console.log(user)
+    const end_date = this.data.edate;
+    const percent_complete = e.detail.value.input;;
+    let goal = {
+      group_id: group_id,
+      end_date: end_date,
+      percent_complete: percent_complete
+    }
+    console.log(goal)
     wx.request({
-    url: `https://habits.wogengapp.cn/api/v1/groups/${group_id}/newuser`,
-    method: 'POST',
-    data: user,
+    url: `https://habits.wogengapp.cn/api/v1/groups/${group_id}/goals`,
+    method: 'PUT',
+    data: goal,
     success(res) {
       console.log(res)
         wx.redirectTo({
@@ -92,12 +91,56 @@ Page({
         });
       }
     })
+
+  },
+
+  doNothing(e){
+    console.log('picked cancel')
+    this.setData({ show: false })
+  },
+
+  confirmJoin(e){
+    console.log('picked join', e)
+    const action = e.currentTarget.dataset.action
+    if (action === 'join') {
+      this.getUserProfile().then(res => {
+        const user = app.globalData.user
+        // console.log({user})
+        
+        const userInfo = this.data.userInfo
+        const group_id = this.data.group.id;
+        // const open_id = app.globalData.openid;
+        // const wechat_username = ;
+        // const wechat_pic_url = ;
+        // let user = {
+        //   open_id: open_id,
+        //   wechat_username: userInfo.nickName,
+        //   wechat_pic_url: userInfo.avatarUrl
+        // }
+        // console.log(user)
+        wx.request({
+        url: `https://habits.wogengapp.cn/api/v1/groups/${group_id}/newuser`,
+        method: 'POST',
+        data: {user_id: user.id},
+        success(res) {
+          console.log(res)
+            wx.redirectTo({
+              url: `/pages/group/group?id=${group_id}`
+            });
+          }
+        })
+      })
+    }
+    
   },
   /**
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
     // console.log(options)
+    const user = app.globalData.user
+    // const owner_id = this.data.group.users[0].id
+    
     const page = this
     const group_id = options.id
     wx.request({
@@ -107,8 +150,10 @@ Page({
       success(res) {
         const group = res.data;
         console.log(group);
+        const hasUserAccepted = group.users.map(x => x.id).includes(user.id)
+       
         page.setData({
-          group: group
+          group: group, showJoinModal: (!hasUserAccepted)
         });
       }
     });
@@ -124,16 +169,36 @@ Page({
 
   getUserProfile(e) {
     // 推荐使用wx.getUserProfile获取用户信息，开发者每次通过该接口获取用户个人信息均需用户确认，开发者妥善保管用户快速填写的头像昵称，避免重复弹窗
-    wx.getUserProfile({
-      desc: '展示用户信息', // 声明获取用户个人信息后的用途，后续会展示在弹窗中，请谨慎填写
-      success: (res) => {
-        console.log(res)
-        this.setData({
-          userInfo: res.userInfo,
-          hasUserInfo: true
-        })
-      }
+    return new Promise((resolve, reject) => {
+      wx.getUserProfile({
+        desc: '展示用户信息', // 声明获取用户个人信息后的用途，后续会展示在弹窗中，请谨慎填写
+        success: (res) => {
+          console.log(res)
+          // update user route to backend 
+          const user = app.globalData.user
+          wx.request({
+            url: `https://habits.wogengapp.cn/api/v1/login/users/${user.id}`,
+            method: "PUT",
+            data: {wechat_pic_url: res.userInfo.avatarUrl, wechat_username: res.userInfo.nickName},
+            success(res) {
+              console.log('update user',res)
+              //  wx.redirectTo({
+              //    url: ``
+              //  });
+             }
+          });
+          // 
+
+
+          this.setData({
+            userInfo: res.userInfo,
+            hasUserInfo: true
+          })
+          resolve(res.userInfo)
+        }
+      })
     })
+    
   },
   /**
    * Lifecycle function--Called when page is initially rendered

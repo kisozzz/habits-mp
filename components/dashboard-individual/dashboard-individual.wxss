@@ -28,7 +28,9 @@
   left: 40rpx;
   bottom: 20rpx;
 }
-
+.header {
+  font-size: 44rpx;
+}
 .header-text {
   font-family: 'VT323', sans-serif;
   font-style: normal;

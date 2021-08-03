@@ -94,6 +94,15 @@
   height: 46rpx;
 }
 
+.icon-edit {
+  width: 46rpx;
+  height: 46rpx;
+  position: absolute;
+  padding: 30rpx;
+  top: 0;
+  right: 0;
+}
+
 .progress-bar{
   padding-bottom: 20rpx;
 }

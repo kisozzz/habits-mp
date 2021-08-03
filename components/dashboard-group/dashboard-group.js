@@ -20,6 +20,9 @@ Component({
   methods: {
     openPopup() {
       this.selectOwnerComponent().bindShowPopup()
-   }
+   },
+    editGoal() {
+      this.selectOwnerComponent().bindShowPopupEdit()
+    }
   }
 })
