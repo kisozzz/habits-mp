@@ -8,8 +8,8 @@
     <block wx:for="{{nextHabits}}" wx:key="index">
       <habit-card info="{{item}}" class="mb20" />
     </block>
-    <view wx:if="{{habits.master_habits.length === 0}}" class="text-primary fbody inconsolata">
-      Quartz helps you manage the habits that you want to build. Once you create a habit, it will show up here. Each habit is made up of several steps, and you can also easily track your step progress from this page.
+    <view wx:if="{{habits.master_habits.length === 0}}" class="text-primary fbody inconsolata mx60 mb40">
+      Quartz helps you manage the habits that you want to build. Once you create a habit, it will show up here. Each habit is made up of several steps, and you can easily track your step progress from this page. Click the button below to begin!
     </view>
     </view>
     <navigator url="/pages/create-habit/create-habit" class="flex items-center mx60 mt"> 

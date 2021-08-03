@@ -49,7 +49,7 @@
     <block wx:else>
       <view class="text-primary inconsolata fbody mx60 mb40">
         <view class="mt40 mb40">Welcome to Quartz! You don't currently have any habits.</view>
-        <navigator url="/pages/create-habit/create-habit" class="ml20 text-primary vt323 fsheader">Create one here!</navigator>
+        <navigator url="/pages/create-habit/create-habit" class="create-btn ml20 text-primary vt323 fsheader">Create one here!</navigator>
       </view>
     </block>
 
