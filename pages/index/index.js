@@ -37,7 +37,7 @@ Page({
         const currentDate = Date.now()
         let nextHabits = []
         habits.master_habits.forEach(masterhabit => {
-          const nextHabit = masterhabit.habit.find(h => Date.parse(h.due_date) > currentDate)
+          const nextHabit = masterhabit.habit.find(h => Date.parse(h.due_date) > (currentDate - 86400000))
           nextHabits.push(nextHabit)
         })
         page.setData({
