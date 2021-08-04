@@ -1,5 +1,5 @@
 <view class="wrapper vh100">
-  <view bindtap="goToHabitHelp" class="help-btn text-primary inconsolata">HELP</view>
+  <view bindtap="goToHabitHelp" class="help-btn text-primary fbody inconsolata">HELP</view>
   <view class="px60 pt60 pb40 fheader vt323 text-primary">{{habit.name}}</view>
   <view class="px80 pt">
   <view class="inconsolata body-color mb20 flex">
