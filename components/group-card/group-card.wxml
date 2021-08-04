@@ -8,7 +8,7 @@
       <block wx:for="{{users}}" wx:key="index">
         <view class="avatar ofh ml40">
             <image wx:if="{{item.wechat_pic_url}}" class="w100 h100" mode="aspectFill" src="{{item.wechat_pic_url}}"></image>
-            <image wx:else class="w100 h100" mode="aspectFill" src="/images/icons/UserCirclePlus.svg"></image>   
+            <image wx:else class="w100 h100" mode="aspectFill" src="/images/icons/Smiley.svg"></image>   
         </view>
       </block>
     </block>

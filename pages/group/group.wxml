@@ -15,17 +15,19 @@
               <image class="w100 h100" mode="aspectFill" src="{{item.wechat_pic_url}}"></image>
               <!-- <open-data type="userAvatarUrl"></open-data> -->
             </view>
-            <view class="nickname">
-              <view>{{item.wechat_username}}</view>
-             <!-- <open-data type="userNickName"></open-data> -->
+            <view class="flex column w100">
+              <view class="nickname">
+                <view>{{item.wechat_username}}</view>
+              <!-- <open-data type="userNickName"></open-data> -->
+              </view>
+              <view class="progress-bar w80">
+                <l-progress percent="{{item.weekly_average}}" stroke-width='15' border-radius='2' active-color="#A0F337" l-class="progress-bar-full pa20"></l-progress>
+              </view>
             </view>
-            <!-- <view class="progress-bar">
-              <l-progress percent="{{item.weekly_average}}" stroke-width='15' border-radius='2' active-color="#A0F337" l-class="progress-bar-full"></l-progress>
-            </view> -->
           </view>
         </block>
       </block>
-      <add-friends/>
+      <add-friends class="add-btn"/>
     </view>
   </view>
   <view class="flex mt50" bindtap="removeUserFromGroup"> 
@@ -58,7 +60,7 @@
 
 <l-arc-popup show="{{showPopupEdit}}" max-height="800" min-height="200">
   <view class="form-container" style="height: 800rpx;">
-    <view class="title">Set group goal</view>
+    <view class="title">Edit group goal</view>
     <form bindsubmit="formSubmitEdit">
       <view class="label">percent complete</view>
       <input name="input" class="title-input" placeholder="{{group.goal[0].percent_complete}}"/>
@@ -70,34 +72,12 @@
       </view>
 
       <view slot="submit" class="section">
-        <button formType="submit" class="btn-big">Set it</button>
+        <button formType="submit" class="btn-big">Set</button>
       </view>
     </form>
   </view>
 </l-arc-popup>
 <view class="empty-space"></view>
-
-<!-- popup goal edit form -->
-<!-- <l-arc-popup show="{{showPopupEdit}}" max-height="800" min-height="200">
-  <view class="form-container" style="height: 800rpx;">
-    <view class="title">Set group goal</view>
-    <form bindsubmit="formSubmitEdit">
-      <view class="label">percent complete</view>
-      <input name="input" class="title-input"/>
-      <view class="label">End Date</view>
-      <view class="picktime">
-        <picker mode="date" value="{{edate}}" start="1970-01-01" end="2100-01-01" bindchange="bindDateChangeEnd">
-        <view class="picker">{{edate}}</view>
-        </picker>
-      </view>
-
-      <view slot="submit" class="section">
-        <button formType="submit" class="btn-big">Set it</button>
-      </view>
-    </form>
-  </view>
-</l-arc-popup>
-<view class="empty-space"></view> -->
 
 
 <!-- <tabbar/> -->
