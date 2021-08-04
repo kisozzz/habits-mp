@@ -76,6 +76,9 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20rpx;
+  overflow: scroll;
+  height: 70%;
+  padding-top: 30rpx;
 }
 
 .progress-bar-half {

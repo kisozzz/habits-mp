@@ -17,5 +17,6 @@
   </view>
 
   <tabbar info="{{habits}}" />
-</view>
 <view class="empty-space"></view>
+</view>
+

@@ -14,7 +14,7 @@
       <view class="icon-section w90">
       <!-- <view class="mr20"><image class="icon-small" src="/images/icons/message.svg"></image></view> -->
         <view class="days-text flex items-center" bindtap="editGoal"><image class="icon-small" src="/images/icons/edit-box.svg"></image>Edit goal</view>
-        <view class="mr20 days-text flex items-center" bindtap="deleteGoal"><image class="icon-small" src="/images/icons/pixelgame.svg"></image>Delete Goal</view>
+        <view class="mr20 days-text flex items-center" bindtap="deleteGoal"><image class="icon-small" src="/images/icons/lightning.svg"></image>Delete Goal</view>
       </view>
     </block>
 

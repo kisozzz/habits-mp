@@ -42,12 +42,14 @@
 }
 
  .overlap {
-  transform: translateX(-30rpx);
+  /* transform: translateX(-30rpx); */
   margin-left: -20rpx;
+  overflow-x: scroll;
 }
 
 .many-avatar {
   display: flex;
   justify-content: center;
   margin-left: 20rpx;
+  overflow-x: scroll;
 }
