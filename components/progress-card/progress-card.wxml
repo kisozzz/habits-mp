@@ -1,9 +1,9 @@
-<view class="bar"></view>
 <view class="card pa20">
   <view class="vt323 fsheader text-primary mb">{{info.name}}</view>
   <view class="vt323 ftheader text-primary mb40">From {{info.start_date}} to {{info.end_date}}</view>
   <block wx:for="{{progress.weeks}}" wx:key="index">
-    <view class="inconsolata fbody text-primary mb">{{item[0]}}</view>
-    <view class="inconsolata fbody text-primary mb20">{{item[1]}}</view>  
+    <view class="inconsolata body-color mb ml20">{{item[0]}}</view>
+    <view class="inconsolata body-color mb20 ml30">{{item[1]}}</view>  
   </block>
 </view>
+<view class="bar"></view>
