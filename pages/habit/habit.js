@@ -36,6 +36,15 @@ Page({
     console.log('editMasterHabit')
   },
 
+  goToHome() {
+    wx.redirectTo({
+      url: '/pages/index/index',
+      success: (res) => {},
+      fail: (res) => {},
+      complete: (res) => {},
+    })
+  },
+
   onLoad: function (options) {
     console.log(options)
     const habitId = options.id;

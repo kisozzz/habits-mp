@@ -5,14 +5,14 @@
 
   <view class="mt180 mb300">
     <view class="column-center">
-    <block wx:for="{{nextHabits}}" wx:key="index">
-      <habit-card info="{{item}}" class="mb20" />
-    </block>
-    <view wx:if="{{habits.master_habits.length === 0}}" class="body-container fbody inconsolata px60 mb40">
-      <view class="py20 body-color">Quartz helps you manage the habits that you want to build. </view>
-      <view class="py20">Once you create a habit, it will show up here.</view>
-      <view class="py20">Each habit is made up of several steps, and you can easily track your step progress from this page. </view>
-    </view>
+      <block wx:for="{{nextHabits}}" wx:key="index">
+        <habit-card info="{{item}}" class="mb20" />
+      </block>
+      <view wx:if="{{habits.master_habits.length === 0}}" class="body-container fbody inconsolata px60 mb40">
+        <view class="py20 body-color">Quartz helps you manage the habits that you want to build. </view>
+        <view class="py20">Once you create a habit, it will show up here.</view>
+        <view class="py20">Each habit is made up of several steps, and you can easily track your step progress from this page. </view>
+      </view>
     </view>
   </view>
 
