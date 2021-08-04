@@ -41,13 +41,13 @@
   flex-grow: 0;
 }
 
-/* .avatar-many {
-  width: 105rpx;
-  height: 105rpx;
-  border-radius: 50%;
-  border: 1px solid #2C12A1;
-  flex-shrink: 0;
-  flex-grow: 0;
+ .overlap {
   transform: translateX(-30rpx);
-  margin-left: -10rpx;
-} */
+  margin-left: -20rpx;
+}
+
+.many-avatar {
+  display: flex;
+  justify-content: center;
+  margin-left: 20rpx;
+}
