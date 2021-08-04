@@ -16,7 +16,31 @@
   display: flex;
   width: 60rpx;
   height: 60rpx;
-  background: #FFE8F0;
+  background: #BF3F50;
+  border: 1px solid #18191F;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-yellow {
+  position: relative;
+  display: flex;
+  width: 60rpx;
+  height: 60rpx;
+  background: #ffca00;
+  border: 1px solid #18191F;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-green {
+  position: relative;
+  display: flex;
+  width: 60rpx;
+  height: 60rpx;
+  background: #76D5AB;
   border: 1px solid #18191F;
   border-radius: 50px;
   justify-content: center;
