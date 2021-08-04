@@ -1,7 +1,7 @@
 <!--components/group-form/group-form.wxml-->
 <view class="form-container">
   <form bindsubmit="submit">
-    <view class="title">Create a Group</view>
+    <view class="title mt40">Create a Group</view>
     <view class="card-container">
       <image class="lines" src="/images/big-lines.svg"></image>
       <instruction-card class="card1" color="red" text="In Quartzzz, groups are place for you to work towards your habit goals with friends."/>
@@ -11,7 +11,7 @@
     <view class="section input-section">
       <input class="title-input" name="name" placeholder="Type Group Name" placeholder-style="font-family: Overpass Mono; color: #C6C6C6;" ></input>
     </view>
-    <view slot="submit" class="section submit-section">
+    <view slot="submit" class="section submit-section mt140">
      <button formType="submit" class="btn-big">Create</button>
     </view>
   </form>
