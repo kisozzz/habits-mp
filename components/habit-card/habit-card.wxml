@@ -1,7 +1,7 @@
 <view class="habit-card">
     <view class="bar">
     </view>
-    <view class="hint">task status</view>
+    <view class="hint">Task status</view>
     <view class="h100 px20 flex items-center justify-between">
     <navigator url="/pages/habit/habit?id={{info.id}}&master_id={{info.master_habit_id}}" class="w60 h100 flex items-center justify-between">
       <view class="task-name vt323 text-primary fsheader">{{info.name}}</view>

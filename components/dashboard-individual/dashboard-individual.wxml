@@ -50,7 +50,7 @@
 
     <block wx:elif="{{info.master_habits.length > 6}}">
       <view class="habits-grid px40">
-        <block wx:for="{{info.master_habits.slice(0, 6)}}" wx:key="index">
+        <block wx:for="{{info.master_habits}}" wx:key="index">
           <view class="mb">
             <view class="inconsolata fbody mb">{{item.name}}</view>
               <view class="flex items-center">

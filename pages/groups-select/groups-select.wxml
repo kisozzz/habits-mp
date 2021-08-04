@@ -16,7 +16,7 @@
         </navigator>
       </block>
       <navigator class="flex items-center fbody text-primary inconsolata" url="/pages/create-group/create-group">
-        <image class="icon-sizing mr10" src="/images/icons/pixelsphere.svg"></image>
+        <image class="icon-sizing mr10" src="/images/icons/pixelgame.svg"></image>
         <view>Create new group</view>
       </navigator>
     </block>

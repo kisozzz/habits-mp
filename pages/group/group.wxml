@@ -31,7 +31,7 @@
     </view>
   </view>
   <view class="flex mt50" bindtap="removeUserFromGroup"> 
-    <image class="icon-sizing mr10" src="/images/icons/pixelsphere.svg"></image>
+    <image class="icon-sizing mr10" src="/images/icons/lightning.svg"></image>
     <view class="text-primary inconsolata fbody">Remove myself from group</view> 
   </view>
 </view>
