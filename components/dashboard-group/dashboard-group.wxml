@@ -1,7 +1,7 @@
 <view class="dashboard bg-white relative">
   <view class="px40 py20 flex column">
     <!-- <image bindtap="editGoal" class="icon-edit" src="/images/icons/edit-box.svg"></image> -->
-    <view class="fheader vt323 text-primary mb20 tc">{{info.name}}</view>
+    <view class="fheader vt323 text-primary mb tc">{{info.name}}</view>
     <block wx:if="{{info.goal.length > 0}}">
       <view class="mb40">
       <view class="goal-section body-text">
@@ -19,10 +19,9 @@
     </block>
 
     <block wx:else>
-      <view class="text-primary inconsolata fbody mx60 mb40">
-        <view class="mt40 mb40">What's your group goal?</view>
-        <view class="mt40 mb40">Set a percentage you wish to complete as a group</view>
-        <view class="set-goal ml20 text-primary vt323 fsheader" bindtap="openPopup">Set group goal here</view>
+      <view class="body-color inconsolata fbody mx20 mb40">
+        <view class="mt40">Click the button below to create a group goal that will be shared by all group members. Each members' weekly progress on their own habits contribute to a group average. The goal percentage is for the group average over a week.</view>
+        <button bindtap="openPopup" class="btn-big mt">Set Goal</button>
       </view>
     </block>
   </view>
