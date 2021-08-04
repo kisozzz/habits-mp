@@ -11,7 +11,7 @@
     <view class="h100 flex items-center justify-center">
       <view class="row-around"></view>
       <block wx:for="{{info.steps_completed}}" wx:key="index">
-          <view class="mr20 step-icon-filled1"></view>
+          <view class="mr30 step-icon-filled1"></view>
       </block>  
       <block wx:for="{{info.total_steps - info.steps_completed}}" wx:key="index">
           <view class="mr20 step-icon-"></view>
