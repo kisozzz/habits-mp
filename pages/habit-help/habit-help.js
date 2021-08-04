@@ -5,7 +5,7 @@ Page({
    * Page initial data
    */
   data: {
-
+    sampleFrequencyOptions: { frequncy_options: ['Weekly', 4] }
   },
 
   goBackToHabit() {
