@@ -73,7 +73,7 @@
 </view>
 
 <view slot="submit" class="section">
-  <button formType="submit" class="btn-big">Create</button>
+  <button formType="submit" class="btn-big" disabled="{{disabled}}">Create</button>
 </view>
 </form>
 

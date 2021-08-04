@@ -13,7 +13,7 @@ Page({
       transition: true,
       zIndex: 99,
       locked: false,
-      direction: 'bottom',
+      direction: 'top',
       arcRadius: 18,
       maxHeight: 500,
       minHeight: 200,

@@ -30,6 +30,10 @@
   line-height: 28px;
   padding: 20rpx;
   padding-left: 50rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-right: 80rpx;
 }
 
 .avatar {

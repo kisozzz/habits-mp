@@ -83,7 +83,6 @@
 <!-- <tabbar/> -->
 
 <!-- friends request form -->
-<!-- <block wx:if="showJoinModal" >  -->
   <l-arc-popup show="{{showJoinModal}}" transition="{{currentConfig.transition}}" direction="{{currentConfig.direction}}" locked="{{currentConfig.locked}}" maxHeight="{{currentConfig.maxHeight}}" minHeight="{{currentConfig.minHeight}}" arcRadius="{{currentConfig.arcRadius}}" opacity="{{currentConfig.opacity}}" l-panel-class="{{panelClass}}">
     <view class="popup-demo9">
         <view class="popup-demo9-info">
@@ -94,10 +93,10 @@
             Hi!	<open-data type="userNickName"></open-data>
           </view>
         </view>
-        <view class="popup-demo9-desc">Join my group</view>
+        <view class="popup-demo9-desc">Join our group</view>
         <view class="popup-demo9-button">
           <button data-action="cancel" class="cancel-btn" style='margin-right:50rpx' bg-color="#ccc" catchtap="doNothing">Cancel</button>
-          <button data-action="join" class="confirm-btn" type="success" style='margin-right:50rpx' catchtap="confirmJoin">Join</button>
+          <button data-action="join" class="confirm-btn" type="success" catchtap="confirmJoin">Join</button>
         </view>
     </view>
   </l-arc-popup>

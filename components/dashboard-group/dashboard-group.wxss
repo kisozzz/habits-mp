@@ -5,6 +5,7 @@
   height: 560rpx;
   transform: translateY(100rpx);
   border: 2rpx solid #2C12A1;
+  overflow: scroll;
 }
 
 .header-text {

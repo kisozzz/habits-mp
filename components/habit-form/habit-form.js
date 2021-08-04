@@ -12,6 +12,7 @@ Component({
    */
   data: {
     show: false,
+    disabled: false,
     content:'',
     sdate: '',
     edate: '',
@@ -131,7 +132,6 @@ Component({
       console.log(e.detail.value)
       console.log(this.data)
       // const step_array = this.data.steps;
-
       const user_id = getApp().globalData.user.id;
       const name = e.detail.value.input;
       const frequency_options = [];
@@ -194,6 +194,9 @@ Component({
       } else if (day_result < 6) {
         this.showDateMessage()
       } else {
+        this.setData({
+          disabled: true
+        })
         wx.request({
           url: "https://habits.wogengapp.cn/api/v1/master_habits",
           method: 'POST',

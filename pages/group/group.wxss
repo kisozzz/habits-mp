@@ -14,7 +14,8 @@
   border-radius:50%;
   flex-shrink: 0;
   flex-grow: 0;
-  /* box-shadow: 0px 2px 3px #2C12A1; */
+  border: 5px solid white;
+  box-shadow: 0px 0px 2px #2C12A1;
 }
 
 .friends{
@@ -187,9 +188,17 @@
 }
 
 .add-btn{
-  width: 105rpx;
-  height: 105rpx;
-  padding-left: 20rpx;
+  width: 150rpx;
+  height: 150rpx;
+  padding-left: 10rpx;
+}
+
+.circle-back {
+  width: 67px;
+  height: 67px;
+  border-radius: 50%;
+  background: #2C12A1;
+
 }
 
 .underline {
