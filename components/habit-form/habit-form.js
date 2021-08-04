@@ -1,4 +1,5 @@
 // components/habit-form/habit-form.js
+import validator from "../../utils/validator";
 Component({
   /**
    * 组件的属性列表
@@ -11,6 +12,8 @@ Component({
    * 组件的初始数据
    */
   data: {
+    show: false,
+    content:'',
     sdate: '',
     edate: '',
     btnColor: '#DBDDFC',
@@ -62,9 +65,17 @@ Component({
       })
     },
 
-    changeBtnColor: function(e){
+    showEmptyMessage(){
       this.setData({
-        btnColor: "#F4F4F4"
+          show:true,
+          content:'Steps cannot be empty!'
+      })
+    },
+
+    showLimitMessage(){
+      this.setData({
+          show:true,
+          content:'No more than 5 steps!'
       })
     },
 
@@ -124,6 +135,8 @@ Component({
     formSubmit: function(e){
       console.log(e.detail.value)
       console.log(this.data)
+      // const step_array = this.data.steps;
+
       const user_id = getApp().globalData.user.id;
       const name = e.detail.value.input;
       const frequency_options = [];
@@ -170,18 +183,25 @@ Component({
         end_date: end_date,
         step_array: step_array
       }
-      console.log(habit)
-      wx.request({
-      url: "https://habits.wogengapp.cn/api/v1/master_habits",
-      method: 'POST',
-      data: habit,
-      success(res) {
-        console.log(res)
-          wx.redirectTo({
-            url: `/pages/index/index?id=${user_id}`
-          });
-        }
-      })
+      if (step_array.length === 0) {
+        this.showEmptyMessage()
+      } else if (step_array.length > 5) {
+        this.showLimitMessage()
+      } else {
+        wx.request({
+          url: "https://habits.wogengapp.cn/api/v1/master_habits",
+          method: 'POST',
+          data: habit,
+          success(res) {
+            console.log(res)
+              wx.redirectTo({
+                url: `/pages/index/index?id=${user_id}`
+              });
+            }
+          })
+
+      }
+      // console.log(habit)  
     }
   }
 })
