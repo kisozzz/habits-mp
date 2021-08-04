@@ -186,6 +186,11 @@
   color: #2C12A1;
 }
 
+.add-btn{
+  width: 105rpx;
+  height: 105rpx;
+  padding-left: 20rpx;
+}
 
 
 .empty-space {
