@@ -58,3 +58,7 @@
   top: 100rpx;
   left: 620rpx
 }
+
+.empty-space {
+  height: 200rpx;
+}

@@ -39,17 +39,6 @@ Component({
       console.log('form发生了submit事件，携带数据为：', e.detail.value)
     },
 
-    // setToday: function(d){
-    //   var yyyy = d.getFullYear().toString();                                    
-    //   var mm = (d.getMonth()+1).toString(); // getMonth() is zero-based         
-    //   var dd  = d.getDate().toString();                           
-    //   var today = yyyy + '-' + (mm[1]?mm:"0"+mm[0]) + '-' + (dd[1]?dd:"0"+dd[0]);
-    //   console.log(today)
-    //   this.setData({
-    //       sdate: today
-    //   })
-    // },
-
     bindDateChangeStart: function (e) {
       console.log('picker发送选择改变，携带值为', e.detail.value)
       this.setData({
@@ -67,14 +56,21 @@ Component({
     showEmptyMessage(){
       this.setData({
           show:true,
-          content:'Steps cannot be empty!'
+          content:'Tasks cannot be empty!'
       })
     },
 
     showLimitMessage(){
       this.setData({
           show:true,
-          content:'No more than 5 steps!'
+          content:'No more than 5 tasks!'
+      })
+    },
+
+    showDateMessage(){
+      this.setData({
+          show:true,
+          content:'Duration cannot be less than 6 days!'
       })
     },
 
@@ -174,6 +170,13 @@ Component({
       const start_date = this.data.sdate;
       const end_date = this.data.edate;
       const step_array = this.data.steps;
+
+      const date1 = new Date(start_date);  
+      const date2 = new Date(end_date);  
+
+      const time_difference = date2.getTime() - date1.getTime();  
+      const day_result = time_difference / (1000 * 60 * 60 * 24);  
+
       let habit = {
         user_id: user_id,
         name: name,
@@ -182,10 +185,14 @@ Component({
         end_date: end_date,
         step_array: step_array
       }
+
+      console.log(habit)
       if (step_array.length === 0) {
         this.showEmptyMessage()
       } else if (step_array.length > 5) {
         this.showLimitMessage()
+      } else if (day_result < 6) {
+        this.showDateMessage()
       } else {
         wx.request({
           url: "https://habits.wogengapp.cn/api/v1/master_habits",
