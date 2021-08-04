@@ -15,11 +15,13 @@
         <group-card title="{{item.name}}" users="{{item.group_users}}" />
         </navigator>
       </block>
-      <navigator class="flex items-center fbody text-primary inconsolata" url="/pages/create-group/create-group">
+      <navigator class="flex items-center fbody text-primary inconsolata pt30" url="/pages/create-group/create-group">
         <image class="icon-sizing mr10" src="/images/icons/pixelgame.svg"></image>
-        <view>Create new group</view>
+        <view class="underline">Create new group</view>
       </navigator>
     </block>
+
+  <view class="empty-space"></view>
   </view>
 
   

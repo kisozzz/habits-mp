@@ -30,9 +30,9 @@
       <add-friends class="add-btn"/>
     </view>
   </view>
-  <view class="flex mt50" bindtap="removeUserFromGroup"> 
+  <view class="flex justify-center mt100" bindtap="removeUserFromGroup"> 
     <image class="icon-sizing mr10" src="/images/icons/lightning.svg"></image>
-    <view class="text-primary inconsolata fbody">Remove myself from group</view> 
+    <view class="text-primary inconsolata fbody underline">Remove myself from group</view> 
   </view>
 </view>
 
@@ -104,5 +104,5 @@
 <!-- </block> -->
 
 
-
+<view class="empty-space"></view>
 </view>

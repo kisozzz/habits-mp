@@ -14,7 +14,7 @@ page {
   --greyDark: #333333;
   --yellow: #ffca00;
   --orange: #F08302;
-  --red: #BF3F50;
+  --red: #ff0077;
   --redLight: #d86964;
   --purple: #d5a2ff;
   --navy: #0f1221;

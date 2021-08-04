@@ -1,1 +1,4 @@
 /* pages/habit-help/habit-help.wxss */
+.empty-space {
+  height: 200rpx;
+}

@@ -19,4 +19,6 @@
   <view class="body-color inconsolata fbody mb20">In the habit view, you can see the tasks associated with your habit. You can mark a task as complete by pressing the square in the left hand of the task card. When you mark all tasks as complete, the habit will be considered as completed for the day. </view>
   <view class="body-color inconsolata fbody mb20">You can press the "DONE" button to return to the main page, where you'll also be able to see your task progress represented in the habit card.</view>
   <button bindtap="goBackToHabit" class="btn-big">Back</button>
+  
+<view class="empty-space"></view>
 </view>

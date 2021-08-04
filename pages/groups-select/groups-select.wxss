@@ -6,3 +6,12 @@
   width: 15px;
   height: 15px;
 }
+
+.underline {
+  text-decoration: underline;
+  font-size: large;
+}
+
+.empty-space {
+  height: 200rpx;
+}
