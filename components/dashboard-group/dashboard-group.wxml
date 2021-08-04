@@ -8,14 +8,14 @@
       Group Goal  <text class="num-big">{{info.goal[0].percent_complete}}</text><image class="icon-percent" src="/images/icons/icons_percent.svg"></image><image class="icon-finish" src="/images/icons/finish-flag.svg"></image>
       </view>
       <view class="edate body-text">End Date<text class="num-big">{{info.goal[0].end_date}}</text></view>
-      <!-- <view class="group-progress body-text">Group weekly progress</view>
-        <l-progress percent="50" stroke-width='15' border-radius='2' active-color="#A0F337" l-class="progress-bar"></l-progress>  -->
+      <view class="group-progress body-text">Group weekly progress: {{info.group_average}}%</view>
+        <l-progress percent="{{info.group_average}}" stroke-width='15' border-radius='2' active-color="#A0F337" l-class="progress-bar"></l-progress> 
       </view>
-      <!-- <view class="icon-section"> -->
+      <view class="icon-section w90">
       <!-- <view class="mr20"><image class="icon-small" src="/images/icons/message.svg"></image></view> -->
-      <!-- <view class="mr20"><image class="icon-small" src="/images/icons/pixelgame.svg"></image></view>
-      <image class="icon-small" src="/images/icons/calendar.svg"></image><view class="days-text">28 days left</view>
-      </view> -->
+        <view class="days-text" bindtap="editGoal"><image class="icon-small" src="/images/icons/calendar.svg"></image>Edit goal</view>
+        <view class="mr20 days-text" bindtap="deleteGoal"><image class="icon-small" src="/images/icons/pixelgame.svg"></image>Delete Goal</view>
+      </view>
     </block>
 
     <block wx:else>
