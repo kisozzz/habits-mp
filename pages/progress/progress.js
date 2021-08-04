@@ -8,6 +8,14 @@ Page({
 
   },
 
+  goToHabitForm (){
+    wx.redirectTo({
+      url: '/pages/create-habit/create-habit',
+      success: (res) => {},
+      fail: (res) => {},
+      complete: (res) => {},
+    })
+  },
   /**
    * Lifecycle function--Called when page load
    */

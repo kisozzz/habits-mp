@@ -8,6 +8,15 @@ Page({
 
   },
 
+  goToGroupForm (){
+    wx.redirectTo({
+      url: '/pages/create-group/create-group',
+      success: (res) => {},
+      fail: (res) => {},
+      complete: (res) => {},
+    })
+  },
+
 
   /**
    * Lifecycle function--Called when page load

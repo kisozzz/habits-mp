@@ -3,8 +3,9 @@
     <view wx:if="{{!habits.groups}}" class="center text-primary inconsolata ftheader">
       <navigator class="px60 tc inconsolata" url="/pages/create-group/create-group">You don't currently have any groups. <view class="bold pt20">Create one here!</view></navigator>
     </view>
-    <view wx:if="{{habits.groups.length === 0}}" class="center text-primary inconsolata ftheader">
-      <navigator class="px60 tc inconsolata" url="/pages/create-group/create-group">You don't currently have any groups. <view class="bold pt20">Create one here!</view></navigator>
+    <view wx:if="{{habits.groups.length === 0}}" class="center">
+      <view class="wx60 mb20 body-color inconsolata">You don't currently have any groups. Create one here!</view>
+      <button bindtap="goToGroupForm" formType="submit" class="btn-big">Create Group</button>
     </view>
     <block wx:if="{{habits.groups.length > 0}}">
       <block wx:for="{{habits.groups}}" wx:key="index">
