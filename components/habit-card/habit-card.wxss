@@ -113,7 +113,14 @@
 
 }
 
-.step-name{
-  font-family: Inconsolata;
-  font-size: 36rpx;
+.task-name{
+  padding-left: 20rpx;
+}
+
+.hint {
+  position: absolute;
+  right: 40rpx;
+  top: 20rpx;
+  font-family: inconsolata;
+  color: #979797;
 }

@@ -1,5 +1,4 @@
 // components/habit-form/habit-form.js
-import validator from "../../utils/validator";
 Component({
   /**
    * 组件的属性列表
