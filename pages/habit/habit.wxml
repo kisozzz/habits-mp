@@ -1,6 +1,11 @@
 <view class="wrapper vh100">
+  <view bindtap="goToHabitHelp" class="help-btn text-primary inconsolata">HELP</view>
   <view class="px60 pt60 pb40 fheader vt323 text-primary">{{habit.name}}</view>
   <view class="px80 pt">
+  <view class="inconsolata body-color mb20 flex">
+    <view>Next habit due date:</view>
+    <view class="font-bold ml">{{habit.due_date}}</view>
+  </view>
   <frequency-display info="{{habit}}" />
   <view class="flex">
     <block wx:for="{{completedStatuses}}" wx:key="index">
@@ -11,6 +16,7 @@
     </block>
   </view>
   </view>
+
   <view class="steps-div flex column items-center justify-center pa20">
     <block wx:for="{{habit.steps}}" wx:key="index">
         <task-card info="{{item}}" class="mb20" />

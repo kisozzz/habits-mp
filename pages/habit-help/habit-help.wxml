@@ -1,0 +1,3 @@
+<!--pages/habit-help/habit-help.wxml-->
+<text>pages/habit-help/habit-help.wxml</text>
+<button bindtap="goBackToHabit" class="btn-big">Back</button>

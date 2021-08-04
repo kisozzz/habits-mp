@@ -45,11 +45,23 @@ Page({
     })
   },
 
+  goToHabitHelp() {
+    wx.redirectTo({
+      url: `/pages/habit-help/habit-help?id=${this.data.habitId}`,
+      success: (res) => {},
+      fail: (res) => {},
+      complete: (res) => {},
+    })
+  },
+
   onLoad: function (options) {
+    const page = this;
     console.log(options)
     const habitId = options.id;
+    page.setData({
+      habitId: habitId
+    });
     const masterId = options.master_id;
-    const page = this;
     wx.request({
       url: `https://habits.wogengapp.cn/api/v1/master_habits/${masterId}/habits/${habitId}`,
       method: "GET",
