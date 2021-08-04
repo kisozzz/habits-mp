@@ -2,26 +2,31 @@
   <image class="icon-arrow" src="/images/icons/icon-arrow-box.svg"></image>
   <view class="title text-primary fsheader">{{title}}</view>
 
-    
-  <view class="flex mr20">
-    <block wx:if="{{users.length <= 4}}">
+
+  <block wx:if="{{users.length <= 4}}">
+    <view class="flex mr20">
       <block wx:for="{{users}}" wx:key="index">
         <view class="avatar ofh ml40">
             <image wx:if="{{item.wechat_pic_url}}" class="w100 h100" mode="aspectFill" src="{{item.wechat_pic_url}}"></image>
             <image wx:else class="w100 h100" mode="aspectFill" src="/images/icons/Smiley.svg"></image>   
         </view>
       </block>
-    </block>
+    </view>
+  </block>
 
     <!-- Could add overlapping avatars styles for when there are more than 4 avatars. Currently only the first 4 will show. -->
     <block wx:if="{{users.length > 4}}">
-      <block wx:for="{{users}}" wx:key="index">
-        <view wx:if="{{index < 4}}" class="avatar ofh ml40">
-            <image wx:if="{{item.wechat_pic_url}}" class="w100 h100" mode="aspectFill" src="{{item.wechat_pic_url}}"></image>
-            <image wx:else class="w100 h100" mode="aspectFill" src="/images/icons/UserCirclePlus.svg"></image>
-        </view>
-      </block>
+      <view class="many-avatar">
+        <block wx:for="{{users}}" wx:key="index">
+          <!-- <view wx:if="{{index < 4}}" class="avatar ofh ml40"> -->
+            <view class="avatar overlap ofh">
+                <image wx:if="{{item.wechat_pic_url}}" class="w100 h100" mode="aspectFill" src="{{item.wechat_pic_url}}"></image>
+                <image wx:else class="w100 h100" mode="aspectFill" src="/images/icons/Smiley.svg"></image>
+            </view>
+          
+        </block>
+      </view>
     </block>
 
-  </view>
+
 </view>
