@@ -1,0 +1,22 @@
+<!--pages/habit-help/habit-help.wxml-->
+<view class="mx60 mt60 mb300">
+  <view class="text-primary vt323 tc fheader mb20">Help</view>
+  <view class="body-color inconsolata fbody mb40">The habit screen is made up of main sections: the date view and the task view.</view>
+  <view class="body-color inconsolata fbody mb20">In the date view, there are several circles, each representing one day in a week. The number of circles is determined by the frequency options that you selected when you created the habit. For example, if you selected 4 times a week, you will see 4 circles, numbered 1-4.</view>
+  <view class="flex mb20">
+    <check-box class="mr10" id="1" color="grey" text="1"></check-box>
+    <check-box class="mr10" id="2" color="grey" text="2"></check-box>
+    <check-box class="mr10" id="3" color="grey" text="3"></check-box>
+    <check-box id="4" color="grey" text="4"></check-box>
+  </view>
+  <view class="body-color inconsolata fbody mb40">You can also see your next habit due date in the date view. After each due date, one circle will be filled in with a different color depending on whether you completed the habit. Green means the habit was completed for that day, yellow is partially completed, and red is totally incomplete. After 3 days, it may look like this:</view>
+  <view class="flex mb20">
+    <check-box class="mr10" id="1" color="green" text="1"></check-box>
+    <check-box class="mr10" id="2" color="yellow" text="2"></check-box>
+    <check-box class="mr10" id="3" color="red" text="3"></check-box>
+    <check-box id="4" color="grey" text="4"></check-box>
+  </view>
+  <view class="body-color inconsolata fbody mb20">In the habit view, you can see the tasks associated with your habit. You can mark a task as complete by pressing the square in the left hand of the task card. When you mark all tasks as complete, the habit will be considered as completed for the day. </view>
+  <view class="body-color inconsolata fbody mb20">You can press the "DONE" button to return to the main page, where you'll also be able to see your task progress represented in the habit card.</view>
+  <button bindtap="goBackToHabit" class="btn-big">Back</button>
+</view>

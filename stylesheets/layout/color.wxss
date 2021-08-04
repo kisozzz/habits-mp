@@ -1,6 +1,6 @@
 /* DON'T CHANGE THE VARIABLES */
 .text-primary { color: #2C12A1;}
-
+.body-color { color: #1E1C26;}
 
 /* TEXT COLORS */
 .trans { color: transparent !important; }

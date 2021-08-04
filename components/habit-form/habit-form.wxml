@@ -1,5 +1,6 @@
 <!--components/habit-form/habit-form.wxml-->
 <view class="title">Create a Habit</view>
+<l-message show="{{show}}" content="{{content}}" type="error" duration="3000"/>
 <form bindsubmit="formSubmit">
 <view class="section">
   <view class="label">Habit Name</view>
@@ -54,7 +55,10 @@
 
 
 <view class="section">
-  <view class="label">Steps</view>
+  <view class="taskline flex items-center">
+    <view class="label">Tasks</view>
+    <view class="hint"> (the TODOs of your habit) </view>
+  </view>
   <view wx:for="{{steps}}" wx:for-item="step" wx:key="index" class="step-added">
     <task-card-small bind:myevent="removeStep" name="{{step.name}}" index="{{index}}" class="task-card"/> 
   </view>
@@ -69,7 +73,7 @@
 </view>
 
 <view slot="submit" class="section">
-  <button bindtap="changeBtnColor" formType="submit" class="btn-big">Create</button>
+  <button formType="submit" class="btn-big">Create</button>
 </view>
 </form>
 

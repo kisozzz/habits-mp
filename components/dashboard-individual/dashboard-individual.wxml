@@ -19,8 +19,8 @@
   </view>
 
   <!-- Display habits content -->
-  <view class="header text-primary vt323 mx40 my20">Weekly Progress</view>
     <block wx:if="{{info.master_habits.length > 0 && info.master_habits.length <= 3}}">
+      <view class="header text-primary vt323 mx40 my20">Weekly Progress</view>
       <view class="px40">
         <block wx:for="{{info.master_habits}}" wx:key="index">
           <view class="mb">
@@ -33,7 +33,8 @@
         </block>
       </view>
     </block>
-    <block wx:elif="{{info.master_habits.length >= 4}}">
+    
+    <block wx:elif="{{info.master_habits.length >= 4 && info.master_habits.length <= 6}}">
       <view class="habits-grid px40">
         <block wx:for="{{info.master_habits}}" wx:key="index">
           <view class="mb">
@@ -46,10 +47,27 @@
         </block>
       </view>
     </block>
+
+    <block wx:elif="{{info.master_habits.length > 6}}">
+      <view class="habits-grid px40">
+        <block wx:for="{{info.master_habits.slice(0, 6)}}" wx:key="index">
+          <view class="mb">
+            <view class="inconsolata fbody mb">{{item.name}}</view>
+              <view class="flex items-center">
+              <l-progress percent="{{item.percent_complete}}" stroke-width='15' border-radius='2' active-color="#A0F337" l-class="progress-bar-half"></l-progress>
+              <view class="vt323 text-primary fbody ml20">{{item.percent_complete}}%</view>
+            </view>
+          </view>
+        </block>
+      </view>
+    </block>
+
     <block wx:else>
-      <view class="text-primary inconsolata fbody mx60 mb40">
-        <view class="mt40 mb40">Welcome to Quartz! You don't currently have any habits.</view>
-        <navigator url="/pages/create-habit/create-habit" class="create-btn ml20 text-primary vt323 fsheader">Create one here!</navigator>
+      <view class="tc text-primary px60 pb40">
+        <view class="header vt323 mt40 mb40">Welcome to Quartzzz!</view>
+        <view class="inconsolata fbody"> You don't currently have any habits.</view>
+        <button bindtap="goToHabitForm" formType="submit" class="btn-big">Create</button>
+       <view class="inconsolata fbody py20">Create one here!</view>
       </view>
     </block>
 
@@ -71,17 +89,13 @@
     </block>
     <block wx:else="{{info.groups.length > 1}}">
       <navigator url="/pages/groups-select/groups-select?id={{info.id}}" class="inconsolata text-primary fbody flex items-center mb20 mr20">
-      <view class="mr10 fbody">Groups</view>
+      <view class="mr10 vt323 text-primary smheader">Groups</view>
       <image class="icon-sizing" src="/images/icons/arrow-icon.svg"></image>
       </navigator>
     </block>
-      <navigator url="/pages/progress/progress?id={{info.id}}" class="inconsolata text-primary fbody flex items-center mb20 mr20">
-        <view class="mr10 fbody">Analytics</view>
-        <image class="icon-sizing" src="/images/icons/wand.svg"></image>
+      <navigator url="/pages/progress/progress?id={{info.id}}" class="inconsolata text-primary fbody flex items-center justify-center mb20 mr20">
+        <view class="mr10 vt323 text-primary smheader">Progress</view>
+        <image class="icon-sizing icon-wand" src="/images/icons/wand.svg"></image>
       </navigator>
-      <!-- <navigator url="/pages/groups-select/groups-select?id={{info.user.id}}" class="inconsolata text-primary fbody flex items-center mb20 mr20">
-        <view class="mr10 fsbody">Challenges</view>
-        <image class="icon-sizing-alien" src="/images/icons/alien.svg"></image>
-      </navigator> -->
     </view>
 </view>

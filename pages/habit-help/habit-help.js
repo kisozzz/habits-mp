@@ -1,45 +1,32 @@
-// pages/groups-select/groups-select.js
+// pages/habit-help/habit-help.js
 Page({
 
   /**
    * Page initial data
    */
   data: {
-
+    sampleFrequencyOptions: { frequncy_options: ['Weekly', 4] }
   },
 
-  goToGroupForm (){
+  goBackToHabit() {
     wx.redirectTo({
-      url: '/pages/create-group/create-group',
+      url: `/pages/habit/habit?id=${this.data.habitId}`,
       success: (res) => {},
       fail: (res) => {},
       complete: (res) => {},
     })
   },
 
-
   /**
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-    wx.showLoading({
-      title: 'Loading',
-    })
-    // console.log(options)
-    const userId = options.id
+    console.log(options)
+    const habitId = options.id
     const page = this;
-    wx.request({
-      url: `https://habits.wogengapp.cn/api/v1/users/${userId}/master_habits`,
-      method: "GET",
-      success(res) {
-        const habits = res.data;
-        console.log(habits)
-        page.setData({
-          habits: habits,
-        });
-        wx.hideLoading()
-      }
-    }) 
+    page.setData({
+      habitId: habitId,
+    });
   },
 
   /**

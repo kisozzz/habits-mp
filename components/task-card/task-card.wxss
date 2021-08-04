@@ -2,17 +2,18 @@
 .task-card {
   position: relative;
   width: 600rpx;
-  height: 120rpx;
+  /* height: 120rpx; */
   background: #FFFFFF;
   border: 3rpx solid #2C12A1;
   box-sizing: border-box;
   display: flex;
+  justify-content: space-around;
   align-items: center;
 }
 
 .task-name {
-  padding: 30rpx;
-  padding-left: 30rpx;
+  padding: 20rpx;
+  width: 70%;
   font-family: VT323;
   font-style: normal;
   font-weight: normal;
@@ -26,7 +27,7 @@
   background: #F4F4F4;
   border: 2rpx solid #2C12A1;
   box-sizing: border-box;
-  margin-left: 30rpx;
+  margin: 30rpx;
 }
 .done {
   background: #A0F337 !important;

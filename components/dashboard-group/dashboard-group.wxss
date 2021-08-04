@@ -15,11 +15,6 @@
   color: #2C12A1;
 }
 
-.inconsolata {
-  font-family: Inconsolata, sans-serif;
-  color: #2C12A1;
-}
-
 .icon-section {
   display: flex;
   padding: 30rpx 0;
@@ -58,7 +53,6 @@
 .goal-section{
   display: flex;
   align-items: center;
-
 }
 
 .body-text {
@@ -67,7 +61,7 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 17px;
-  color: #2C12A1;
+  color: #1E1C26;
   padding-top: 30rpx;
   padding-bottom: 20rpx;
 }
@@ -78,9 +72,7 @@
   font-style: normal;
   font-weight: bold;
   font-size: 40rpx;
-
   color: #2C12A1;
-
 }
 
 .edate{

@@ -111,15 +111,6 @@ Page({
         
         const userInfo = this.data.userInfo
         const group_id = this.data.group.id;
-        // const open_id = app.globalData.openid;
-        // const wechat_username = ;
-        // const wechat_pic_url = ;
-        // let user = {
-        //   open_id: open_id,
-        //   wechat_username: userInfo.nickName,
-        //   wechat_pic_url: userInfo.avatarUrl
-        // }
-        // console.log(user)
         wx.request({
         url: `https://habits.wogengapp.cn/api/v1/groups/${group_id}/newuser`,
         method: 'POST',
@@ -140,6 +131,9 @@ Page({
    */
   onLoad: function (options) {
     // console.log(options)
+    wx.showLoading({
+      title: 'Loading',
+    })
     const user = app.globalData.user
     // const owner_id = this.data.group.users[0].id
     
@@ -151,12 +145,14 @@ Page({
       method: "GET",
       success(res) {
         const group = res.data;
-        console.log(group);
+        console.log({group});
+        console.log('userid', user.id)
         const hasUserAccepted = group.users.map(x => x.id).includes(user.id)
-       
+        console.log({hasUserAccepted})
         page.setData({
           group: group, showJoinModal: (!hasUserAccepted)
         });
+        wx.hideLoading()
       }
     });
 
@@ -201,9 +197,6 @@ Page({
             data: {wechat_pic_url: res.userInfo.avatarUrl, wechat_username: res.userInfo.nickName},
             success(res) {
               console.log('update user',res)
-              //  wx.redirectTo({
-              //    url: ``
-              //  });
              }
           });
           // 
@@ -270,9 +263,10 @@ Page({
       console.log(ops.target)
     }
     return {
+
       title: 'Join our group',
       // imageUrl:'http://xxxx',//图片地址
-      path:'/pages/group/group?id=2',// 用户点击首先进入的当前页面
+      path:`/pages/group/group?id=${this.data.group.id}`,// 用户点击首先进入的当前页面
       success: function (res) {
         // 转发成功
         console.log("转发成功:");

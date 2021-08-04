@@ -18,6 +18,9 @@
   font-weight: normal;
   font-size: 30rpx;
   color: #2C12A1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .cube {

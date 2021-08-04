@@ -6,13 +6,12 @@
   position: relative;
   flex-direction: column;
   width: 652rpx;
-  height: 300rpx;
+  min-height: 240rpx;
   background: #FFFFFF;
-  border: 4rpx solid #2C12A1;
+  border: 2rpx solid #2C12A1;
   box-sizing: border-box;
-  box-shadow: 0rpx 8rpx 0rpx #2C12A1;
-  border-radius: 4rpx;
-  
+  box-shadow: 0rpx 4rpx 0rpx #2C12A1;
+  /* border-radius: 4rpx;  */
 }
 
 .icon-arrow{
@@ -25,23 +24,30 @@
 }
 
 .title {
-  font-family: Inconsolata;
+  font-family: VT323;
   font-style: normal;
   font-weight: 400;
-  font-size: 50rpx; 
   line-height: 28px;
-  /* color: #1E1C26;  */
   padding: 20rpx;
   padding-left: 50rpx;
-  
 }
 
 .avatar {
-  width:105rpx;
-  height:105rpx;
-  border-radius:50%;
-  /* flex-shrink: 0;
-  flex-grow: 0; */
-  box-shadow: 0rpx 4rpx 6rpx #2C12A1;
-
+  width: 105rpx;
+  height: 105rpx;
+  border-radius: 50%;
+  /* border: 1px solid #2C12A1; */
+  flex-shrink: 0;
+  flex-grow: 0;
 }
+
+/* .avatar-many {
+  width: 105rpx;
+  height: 105rpx;
+  border-radius: 50%;
+  border: 1px solid #2C12A1;
+  flex-shrink: 0;
+  flex-grow: 0;
+  transform: translateX(-30rpx);
+  margin-left: -10rpx;
+} */

@@ -103,8 +103,8 @@
 <!-- <tabbar/> -->
 
 <!-- friends request form -->
-<block wx:if="showJoinModal" > 
-  <l-arc-popup transition="{{currentConfig.transition}}" direction="{{currentConfig.direction}}" locked="{{currentConfig.locked}}" maxHeight="{{currentConfig.maxHeight}}" minHeight="{{currentConfig.minHeight}}" arcRadius="{{currentConfig.arcRadius}}" opacity="{{currentConfig.opacity}}" l-panel-class="{{panelClass}}">
+<!-- <block wx:if="showJoinModal" >  -->
+  <l-arc-popup show="{{showJoinModal}}" transition="{{currentConfig.transition}}" direction="{{currentConfig.direction}}" locked="{{currentConfig.locked}}" maxHeight="{{currentConfig.maxHeight}}" minHeight="{{currentConfig.minHeight}}" arcRadius="{{currentConfig.arcRadius}}" opacity="{{currentConfig.opacity}}" l-panel-class="{{panelClass}}">
     <view class="popup-demo9">
         <view class="popup-demo9-info">
           <view class="popup-demo9-info-avatar">
@@ -121,7 +121,7 @@
         </view>
     </view>
   </l-arc-popup>
-</block>
+<!-- </block> -->
 
 
 

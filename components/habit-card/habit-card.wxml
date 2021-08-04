@@ -1,24 +1,28 @@
-<navigator url="/pages/habit/habit?id={{info.id}}&master_id={{info.master_habit_id}}" class="habit-card">
+<view class="habit-card">
     <view class="bar">
     </view>
-    <view class="h100 px10 flex items-center justify-around">
-
-    <view class="w60 h100 flex items-center ml40">
+    <view class="hint">task status</view>
+    <view class="h100 px20 flex items-center justify-between">
+    <navigator url="/pages/habit/habit?id={{info.id}}&master_id={{info.master_habit_id}}" class="w60 h100 flex items-center justify-between">
       <view class="task-name vt323 text-primary fsheader">{{info.name}}</view>
-    </view>
+    </navigator>
 
     <!-- display step circles on right end of card -->
-    <view class="w40 h100 flex items-center justify-end">
+    <view class="h100 flex items-center justify-center">
       <view class="row-around"></view>
-      <block wx:for="{{info.total_steps - info.steps_completed}}" wx:key="index">
-          <view class="mr30 step-icon-"></view>
-      </block>
       <block wx:for="{{info.steps_completed}}" wx:key="index">
           <view class="mr30 step-icon-filled1"></view>
       </block>  
+      <block wx:for="{{info.total_steps - info.steps_completed}}" wx:key="index">
+          <view class="mr20 step-icon-"></view>
+      </block>
       </view>    
     </view>
-</navigator>
+  </view>
+
+
+
+      
 
         <!-- <view bindtap="showDialog1" class="step-icon-{{filled1}} mr20"></view>
         <view class="step-icon-{{filled2}} mr20"></view>

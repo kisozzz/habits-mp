@@ -9,12 +9,12 @@
 }
 
 .avatar {
-  width:125rpx;
-  height:125rpx;
+  width:105rpx;
+  height:105rpx;
   border-radius:50%;
   flex-shrink: 0;
   flex-grow: 0;
-  box-shadow: 0px 2px 3px #2C12A1;
+  /* box-shadow: 0px 2px 3px #2C12A1; */
 }
 
 .friends{
@@ -31,7 +31,7 @@
 
 .nickname{
   padding-left: 20rpx;
-  color: #2C12A1;
+  color: #1E1C26;
 }
 
 .form-container {

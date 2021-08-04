@@ -1,9 +1,7 @@
 <view class="dashboard bg-white relative">
   <view class="px40 py20 flex column">
     <!-- <image bindtap="editGoal" class="icon-edit" src="/images/icons/edit-box.svg"></image> -->
-
     <view class="fheader vt323 text-primary mb20 tc">{{info.name}}</view>
-
     <block wx:if="{{info.goal.length > 0}}">
       <view class="mb40">
       <view class="goal-section body-text">

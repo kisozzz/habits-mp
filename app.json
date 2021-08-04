@@ -2,6 +2,7 @@
   "pages":[
     "pages/index/index",
     "pages/habit/habit",
+    "pages/habit-help/habit-help",
     "pages/progress/progress",
     "pages/group/group",
     "pages/groups-select/groups-select",
@@ -27,6 +28,7 @@
     "l-radio-group":"/miniprogram_npm/lin-ui/radio-group/index",
     "l-checkbox":"/miniprogram_npm/lin-ui/checkbox/index",
     "l-checkbox-group":"/miniprogram_npm/lin-ui/checkbox-group/index",
+    "l-message":"/miniprogram_npm/lin-ui/message/index",
     "dashboard-individual":"/components/dashboard-individual/dashboard-individual",
     "frequency-display":"/components/frequency-display/frequency-display",
     "add-friends":"/components/add-friends/add-friends",
@@ -37,7 +39,7 @@
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#CDC3F8",
-    "navigationBarTitleText": "Quartz",
+    "navigationBarTitleText": "Quartzzz",
     "navigationBarTextStyle":"black"
   },
   "style": "v2",

@@ -1,20 +1,28 @@
 <view class="wrapper vh100">
+  <view bindtap="goToHabitHelp" class="help-btn text-primary inconsolata">HELP</view>
   <view class="px60 pt60 pb40 fheader vt323 text-primary">{{habit.name}}</view>
   <view class="px80 pt">
+  <view class="inconsolata body-color mb20 flex">
+    <view>Next habit due date:</view>
+    <view class="font-bold ml">{{habit.due_date}}</view>
+  </view>
   <frequency-display info="{{habit}}" />
   <view class="flex">
     <block wx:for="{{completedStatuses}}" wx:key="index">
-      <view wx:if="{{item === 'complete'}}" class="circle green"></view>
-      <view wx:elif="{{item === 'partial'}}" class="circle yellow"></view>
-      <view wx:elif="{{item === 'incomplete'}}" class="circle red"></view>
+      <view wx:if="{{item === 'complete'}}" class="circle bg-green"></view>
+      <view wx:elif="{{item === 'partial'}}" class="circle bg-yellow"></view>
+      <view wx:elif="{{item === 'incomplete'}}" class="circle bg-red"></view>
       <view wx:else class="circle"></view>
     </block>
   </view>
   </view>
+
   <view class="steps-div flex column items-center justify-center pa20">
     <block wx:for="{{habit.steps}}" wx:key="index">
         <task-card info="{{item}}" class="mb20" />
     </block>
+
+    <button bindtap="goToHome" formType="submit" class="btn-big mt40">Done</button>
   </view> 
 
   <!-- edit button -->
@@ -24,7 +32,7 @@
   </view>
 
   <!-- delete button -->
-  <view bindtap="showDeleteDialog" class="mt40 px80 w30 flex items-center">
+  <view bindtap="showDeleteDialog" class="mt60 mb300 px80 w30 flex items-center">
     <image class="icon-sizing" src="/images/icons/lightning.svg"></image>
     <view class="text-primary inconsolata">Delete Habit</view>
     <view wx:if="{{deleteDialog}}">

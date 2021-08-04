@@ -1,17 +1,17 @@
 <!--components/group-form/group-form.wxml-->
 <view class="form-container">
   <form bindsubmit="submit">
-    <view class="title">Create a Group</view>
+    <view class="title mt40">Create a Group</view>
     <view class="card-container">
       <image class="lines" src="/images/big-lines.svg"></image>
-      <instruction-card class="card1" color="red" text="In QUARTZ, groups are place for you to work towards your habit goals with friends."/>
+      <instruction-card class="card1" color="red" text="In Quartzzz, groups are place for you to work towards your habit goals with friends."/>
       <instruction-card class="card2" color="green" text="You can create group goals to help motivate each other, see other group members' progress, and more."/>
       <instruction-card class="card3" color="yellow" text="All you need to do first is to choose a name. Then, you can invite your friends from your group screen."/>
     </view>
     <view class="section input-section">
       <input class="title-input" name="name" placeholder="Type Group Name" placeholder-style="font-family: Overpass Mono; color: #C6C6C6;" ></input>
     </view>
-    <view slot="submit" class="section submit-section">
+    <view slot="submit" class="section submit-section mt140">
      <button formType="submit" class="btn-big">Create</button>
     </view>
   </form>

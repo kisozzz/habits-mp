@@ -44,19 +44,17 @@
   width: 60rpx;
   height: 60rpx;
   border-radius: 50%;
-  opacity: 30%;
+  opacity: 35%;
   margin-right: 15rpx;
-  transform: translateY(-60rpx);
+  transform: translate(2rpx, -62rpx);
 }
 
-.green {
-  background-color: green;
+.font-bold {
+  font-weight: 600;
 }
 
-.yellow {
-  background-color: yellow;
-}
-
-.red {
-  background-color: red;
+.help-btn {
+  position: relative;
+  top: 100rpx;
+  left: 620rpx
 }
