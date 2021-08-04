@@ -13,7 +13,7 @@
   <view class="flex mb20">
     <check-box class="mr10" id="1" color="green" text="1"></check-box>
     <check-box class="mr10" id="2" color="yellow" text="2"></check-box>
-    <check-box class="mr10" id="3" color="red" text="3"></check-box>
+    <check-box class="mr10" id="3" color="reddark" text="3"></check-box>
     <check-box id="4" color="grey" text="4"></check-box>
   </view>
   <view class="body-color inconsolata fbody mb20">In the habit view, you can see the tasks associated with your habit. You can mark a task as complete by pressing the square in the left hand of the task card. When you mark all tasks as complete, the habit will be considered as completed for the day. </view>
