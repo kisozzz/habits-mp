@@ -63,3 +63,7 @@
   text-align: center;
   padding: 4rpx 6rpx;
 }
+
+.empty-space {
+  height: 200rpx;
+}
