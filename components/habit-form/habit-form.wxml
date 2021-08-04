@@ -55,7 +55,10 @@
 
 
 <view class="section">
-  <view class="label">Steps</view>
+  <view class="taskline flex items-center">
+    <view class="label">Tasks</view>
+    <view class="hint"> (the TODOs of your habit) </view>
+  </view>
   <view wx:for="{{steps}}" wx:for-item="step" wx:key="index" class="step-added">
     <task-card-small bind:myevent="removeStep" name="{{step.name}}" index="{{index}}" class="task-card"/> 
   </view>

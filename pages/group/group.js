@@ -109,15 +109,6 @@ Page({
         
         const userInfo = this.data.userInfo
         const group_id = this.data.group.id;
-        // const open_id = app.globalData.openid;
-        // const wechat_username = ;
-        // const wechat_pic_url = ;
-        // let user = {
-        //   open_id: open_id,
-        //   wechat_username: userInfo.nickName,
-        //   wechat_pic_url: userInfo.avatarUrl
-        // }
-        // console.log(user)
         wx.request({
         url: `https://habits.wogengapp.cn/api/v1/groups/${group_id}/newuser`,
         method: 'POST',
@@ -187,9 +178,6 @@ Page({
             data: {wechat_pic_url: res.userInfo.avatarUrl, wechat_username: res.userInfo.nickName},
             success(res) {
               console.log('update user',res)
-              //  wx.redirectTo({
-              //    url: ``
-              //  });
              }
           });
           // 
