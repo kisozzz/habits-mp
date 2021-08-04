@@ -1,14 +1,14 @@
 <view class="wrapper vh100">
-  <view class="mx60 flex column justify-center items-center mt100 mb300">
-    <view class="text-primary fheader vt323 mb60">Weekly Progress</view>
+  <view class="mx40 flex column justify-center items-center mt100 mb300">
+    <view class="text-primary fsheader vt323 mb60">Weekly Progress</view>
     <block wx:for="{{habits.master_habits}}" wx:key="index">
       <progress-card class="mb60 mxauto" info="{{item}}" />
     </block>
     <view wx:if="{{habits.master_habits.length === 0}}" class="inconsolate text-primary fbody mx40">
-      <view class="mb60">
+      <view class="mb60 inconsolata body-color">
       You do not currently have any habits, but once you create a habit, you can track your weekly progress here. 
       </view>
-      <navigator class="tc vt323 fsheader" url="/pages/index/index">Return HOME to create a new habit!</navigator>
+      <button bindtap="goToHabitForm" formType="submit" class="btn-big">Create</button>
     </view>
   </view>
   <tabbar />
