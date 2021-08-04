@@ -74,14 +74,16 @@ Page({
     const group_id = this.data.group.id;
     const end_date = this.data.edate;
     const percent_complete = e.detail.value.input;;
+    const goal_id = this.data.group.goal[0].id
     let goal = {
       group_id: group_id,
       end_date: end_date,
       percent_complete: percent_complete
     }
     console.log(goal)
+    console.log(goal_id)
     wx.request({
-    url: `https://habits.wogengapp.cn/api/v1/groups/${group_id}/goals`,
+    url: `https://habits.wogengapp.cn/api/v1/groups/${group_id}/goals/${goal_id}`,
     method: 'PUT',
     data: goal,
     success(res) {
@@ -165,6 +167,23 @@ Page({
     }
 
     
+  },
+
+  removeUserFromGroup() {
+    const groupId = this.data.group.id
+    console.log(groupId)
+    const userId = app.globalData.user.id
+    console.log(userId)
+    wx.request({
+      url: `https://habits.wogengapp.cn/api/v1/groups/${groupId}/users/${userId}/removegroup`,
+      method: "DELETE",
+      success(res) {
+        console.log(res)
+        wx.redirectTo({
+          url: `/pages/groups-select/groups-select?id=${userId}`
+        });
+      }
+    })
   },
 
   getUserProfile(e) {

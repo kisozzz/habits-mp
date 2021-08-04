@@ -17,6 +17,12 @@
     </block>
   </view> 
 
+  <!-- edit button -->
+  <view bindtap="editMasterHabit" class="mt20 px80 w30 flex items-center">
+    <image class="icon-sizing" src="/images/icons/wand.svg"></image>
+    <view class="text-primary inconsolata">Edit Habit</view>
+  </view>
+
   <!-- delete button -->
   <view bindtap="showDeleteDialog" class="mt40 px80 w30 flex items-center">
     <image class="icon-sizing" src="/images/icons/lightning.svg"></image>
@@ -41,10 +47,5 @@
         </view>   
   </view>
 
-  <!-- edit button -->
-  <!-- <view bindtap="editMasterHabit" class="mt20 px80 w30 flex items-center">
-    <image class="icon-sizing" src="/images/icons/wand.svg"></image>
-    <view class="text-primary inconsolata">Edit Habit</view>
-  </view> -->
   <tabbar />
 </view>

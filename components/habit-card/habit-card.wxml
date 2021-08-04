@@ -3,7 +3,7 @@
     </view>
     <view class="h100 px10 flex items-center justify-around">
 
-    <view class="w60 h100 flex items-center ml50">
+    <view class="w60 h100 flex items-center ml40">
       <view class="task-name vt323 text-primary fsheader">{{info.name}}</view>
     </view>
 
@@ -11,10 +11,10 @@
     <view class="w40 h100 flex items-center justify-end">
       <view class="row-around"></view>
       <block wx:for="{{info.total_steps - info.steps_completed}}" wx:key="index">
-          <view class="mr50 step-icon-"></view>
+          <view class="mr30 step-icon-"></view>
       </block>
       <block wx:for="{{info.steps_completed}}" wx:key="index">
-          <view class="mr20 step-icon-filled1"></view>
+          <view class="mr30 step-icon-filled1"></view>
       </block>  
       </view>    
     </view>

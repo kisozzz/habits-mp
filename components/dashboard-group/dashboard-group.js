@@ -23,6 +23,23 @@ Component({
    },
     editGoal() {
       this.selectOwnerComponent().bindShowPopupEdit()
+    },
+
+    deleteGoal() {
+      const group = this.data.info
+      const goal = group.goal[0].id
+      console.log(group.id)
+      console.log(goal)
+      wx.request({
+        url: `https://habits.wogengapp.cn/api/v1/groups/${group.id}/goals/${goal}`,
+        method: "DELETE",
+        success(res) {
+          console.log(res)
+          wx.redirectTo({
+            url: `/pages/group/group?id=${group.id}`
+          });
+        }
+      })
     }
   }
 })
