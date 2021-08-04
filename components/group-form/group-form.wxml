@@ -12,7 +12,7 @@
       <input class="title-input" name="name" placeholder="Type Group Name" placeholder-style="font-family: Overpass Mono; color: #C6C6C6;" ></input>
     </view>
     <view slot="submit" class="section submit-section mt140">
-     <button formType="submit" class="btn-big">Create</button>
+     <button formType="submit" class="btn-big" disabled="{{disabled}}">Create</button>
     </view>
   </form>
 </view>

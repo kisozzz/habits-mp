@@ -11,7 +11,7 @@ Component({
    * 组件的初始数据
    */
   data: {
-    
+    disabled: false
   },
 
   /**
@@ -28,6 +28,9 @@ Component({
         user_id: user_id,
         name: name
       }
+      this.setData({
+        disabled: true
+      })
       wx.request({
         url: "https://habits.wogengapp.cn/api/v1/groups",
         method: 'POST',

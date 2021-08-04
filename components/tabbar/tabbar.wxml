@@ -23,20 +23,24 @@
 
   <block wx:if="{{info.id}}">
     <navigator url="/pages/progress/progress?id={{info.id}}" class="dynamic-tab-left" wx:if="{{createMenuOpen}}">
-      <view class="dynamic-tab-inner-sm text-primary inconsolata tab-text-small">My Progress</view>
+      <view class="i tc text-primary inconsolata">i</view>
+      <view class="dynamic-tab-inner-sm text-primary inconsolata tab-text-small">Progress</view>
     </navigator>
   </block>
   <block wx:if="{{!info.id}}">
     <navigator url="/pages/progress/progress?id={{user}}" class="dynamic-tab-left" wx:if="{{createMenuOpen}}">
-    <view class="dynamic-tab-inner-sm text-primary inconsolata tab-text-small">My Progress</view>
+    <view class="i tc text-primary inconsolata">i</view>
+    <view class="dynamic-tab-inner-sm text-primary inconsolata tab-text-small">Progress</view>
     </navigator>
   </block>
 
 
   <navigator url="/pages/create-group/create-group" class="dynamic-tab-right relative" wx:if="{{createMenuOpen}}">
-    <view class="dynamic-tab-inner text-primary inconsolata">New Group</view>
+    <view class="plus tc text-primary inconsolata">+</view>
+    <view class="dynamic-tab-inner text-primary inconsolata">Group</view>
   </navigator>
   <navigator url="/pages/create-habit/create-habit" class="dynamic-tab-center" wx:if="{{createMenuOpen}}">
-    <view class="dynamic-tab-inner text-primary inconsolata">New Habit</view>
+    <view class="plus tc text-primary inconsolata">+</view>
+    <view class="dynamic-tab-inner text-primary inconsolata">Habit</view>
   </navigator>
 </view>

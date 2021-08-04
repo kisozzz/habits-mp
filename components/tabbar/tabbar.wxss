@@ -51,14 +51,21 @@
 
 .dynamic-tab-inner {
   position: absolute;
-  left: 0%;
+  left: 16%;
   bottom: 22%;
   text-align: center;
 }
 
+.plus {
+  font-size: 48rpx;
+}
+
+.i {
+  font-size: 40rpx;
+}
 .dynamic-tab-inner-sm {
   position: absolute;
-  left: 0%;
+  left: 7%;
   bottom: 30%;
   text-align: center;
 }

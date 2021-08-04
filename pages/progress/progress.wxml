@@ -12,4 +12,5 @@
     </view>
   </view>
   <tabbar />
+  <view class="empty-space"></view>
 </view>
