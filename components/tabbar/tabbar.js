@@ -40,6 +40,22 @@ Component({
         fail: (res) => {},
         complete: (res) => {},
       })
+    },
+    goToCreateHabit() {
+      wx.redirectTo({
+        url: '/pages/create-habit/create-habit',
+        success: (res) => {},
+        fail: (res) => {},
+        complete: (res) => {},
+      })
+    },
+    goToCreateGroup() {
+      wx.redirectTo({
+        url: '/pages/create-group/create-group',
+        success: (res) => {},
+        fail: (res) => {},
+        complete: (res) => {},
+      })
     }
   }
 })

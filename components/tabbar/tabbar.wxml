@@ -40,18 +40,18 @@
   </block>
 
 
-  <navigator url="/pages/create-group/create-group" class="dynamic-tab-right relative" wx:if="{{createMenuOpen}}">
+  <view bindtap="goToCreateGroup" class="dynamic-tab-right relative" wx:if="{{createMenuOpen}}">
     <!-- <view class="plus tc text-primary inconsolata">+</view> -->
     <view class="dynamic-tab-inner text-primary inconsolata">
       <image class="plus" src="/images/icons/simple-plus.svg"></image>
     Group
     </view>
-  </navigator>
-  <navigator url="/pages/create-habit/create-habit" class="dynamic-tab-center" wx:if="{{createMenuOpen}}">
+  </view>
+  <view bindtap="goToCreateHabit" class="dynamic-tab-center" wx:if="{{createMenuOpen}}">
     <!-- <view class="plus tc text-primary inconsolata">+</view> -->
     <view class="dynamic-tab-inner text-primary inconsolata">
       <image class="plus" src="/images/icons/simple-plus.svg"></image>
     Habit
     </view>
-  </navigator>
+  </view>
 </view>
