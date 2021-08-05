@@ -19,11 +19,10 @@
     </block>
      
   </view>
-  <view bindtap="displayCreateOptions" class="tab" url="#"><image class="logo" src="/images/icons/plusgame.svg"></image></view>
+  <view bindtap="displayCreateOptions" class="tab"><image class="logo" src="/images/icons/plusgame.svg"></image></view>
 
   <block wx:if="{{info.id}}">
     <navigator url="/pages/progress/progress?id={{info.id}}" class="dynamic-tab-left" wx:if="{{createMenuOpen}}">
-      
       <!-- <view class="i tc text-primary inconsolata">i</view> -->
       <view class="dynamic-tab-inner-sm text-primary inconsolata tab-text-small">
         <image class="myicon" src="/images/icons/my.svg"></image>
