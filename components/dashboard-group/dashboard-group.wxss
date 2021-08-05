@@ -27,9 +27,9 @@
 }
 
 .icon-small {
-  width: 30rpx;
-  height: 30rpx;
-  padding-right: 10rpx;
+  width: 33rpx;
+  height: 33rpx;
+  padding-left: 8rpx;
 }
 
 .icon-calendar {
@@ -87,15 +87,46 @@
   padding-right: 8rpx;
 }
 
-.icon-edit {
-  width: 35rpx;
-  height: 35rpx;
-  position: absolute;
-  padding: 30rpx;
-  top: 0;
-  right: 0;
-}
-
 .progress-bar{
   padding-bottom: 20rpx;
+}
+
+.smheader {
+  font-size: 38rpx;
+}
+
+.dialog{
+  width: 400rpx;
+  height: 188rpx;
+  background: #FFFFFF;
+  border: 3rpx solid #2C12A1;
+  border-top: 6rpx solid #2C12A1;
+  border-radius: 5rpx;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.cancel-btn {
+  width: 200rpx;
+  height: 56rpx;
+  background: #D6D5D5;
+  box-shadow: 3rpx 3rpx 0rpx rgba(0, 0, 0, 0.5), inset 3rpx 3rpx 0rpx #FFFFFF;
+  font-family: VT323;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 44rpx;
+  text-align: center;
+  color: #979797;
+}
+.confirm-btn {
+  width: 200rpx;
+  height: 56rpx;
+  background: #D6D5D5;
+  box-shadow: 3rpx 3rpx 0rpx rgba(0, 0, 0, 0.5), inset 3rpx 3rpx 0rpx #FFFFFF;
+  font-family: VT323;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 44rpx;
+  text-align: center;
 }
