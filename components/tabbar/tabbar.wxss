@@ -51,18 +51,24 @@
 
 .dynamic-tab-inner {
   position: absolute;
-  left: 16%;
+  /* left: 18%; */
   bottom: 22%;
   text-align: center;
 }
 
 .plus {
-  font-size: 48rpx;
+  width: 32rpx;
+  height: 32rpx;
 }
 
-.i {
-  font-size: 40rpx;
+.myicon {
+    width: 72rpx;
+    height: 72rpx;
+    position: absolute;
+    bottom: 40%;
+    left: 10%;
 }
+
 .dynamic-tab-inner-sm {
   position: absolute;
   left: 7%;
