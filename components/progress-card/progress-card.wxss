@@ -17,3 +17,7 @@
   background: #2C12A1;
   position: relative;
 }
+
+.percent-bar{
+  width: 75%
+}
