@@ -7,7 +7,7 @@
       <navigator class="tab-text" url="/pages/groups-select/groups-select?id={{info.id}}">GROUP</navigator>
       </block>
       <block wx:elif="{{info.groups.length === 0}}">
-      <navigator class="tab-text" url="/pages/create-group/create-group">GROUP</navigator>
+      <view class="tab-text" bindtap="goToCreateGroup">GROUP</view>
       </block>
       <block wx:else>
       <navigator class="tab-text" url="/pages/groups-select/groups-select?id={{info.id}}">GROUPS</navigator>
@@ -38,7 +38,6 @@
     <view class="dynamic-tab-inner-sm text-primary inconsolata tab-text-small">Progress</view>
     </navigator>
   </block>
-
 
   <view bindtap="goToCreateGroup" class="dynamic-tab-right relative" wx:if="{{createMenuOpen}}">
     <!-- <view class="plus tc text-primary inconsolata">+</view> -->
