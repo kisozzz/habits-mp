@@ -35,7 +35,7 @@
           Edit Goal
           <image class="icon-small" src="/images/icons/edit-box.svg"></image>
         </view>
-        <view class="mr20 vt323 text-primary smheader flex items-center" bindtap="deleteGoal">
+        <view class="mr20 vt323 text-primary smheader flex items-center" bindtap="showDeleteDialog">
           Delete Goal
           <image class="icon-small" src="/images/icons/lightning.svg"></image>
         </view>
@@ -50,3 +50,23 @@
     </block>
   </view>
 </view>
+
+<!-- delete dialog -->
+<view wx:if="{{deleteDialog}}">
+  <l-dialog 
+  id="task1"
+  l-class="dialog"
+  l-cancel-class="cancel-btn"
+  l-confirm-class="confirm-btn"
+  l-content-class="step-name"
+  bind:linconfirm = "deleteGoal"
+  bind:lincancel = "cancelDelete"
+  show="{{true}}"
+  type="confirm"  
+  show-title="{{false}}"
+  content="Are you sure you want to delete this goal?"
+  confirm-text="Delete"
+  confirm-color="#2C12A1"
+  cancel-text="Cancel"
+  cancel-color="#666" />
+</view>   

@@ -11,7 +11,8 @@ Component({
    * Component initial data
    */
   data: {
-
+    deleteDialog: false,
+    confirm: false,
   },
 
   /**
@@ -23,6 +24,16 @@ Component({
    },
     editGoal() {
       this.selectOwnerComponent().bindShowPopupEdit()
+    },
+
+    showDeleteDialog(e){
+      console.log(e)
+      this.setData({deleteDialog: true})
+    },
+  
+    cancelDelete(e){
+      console.log('picked cancel')
+      this.setData({deleteDialog: false})
     },
 
     deleteGoal() {
