@@ -1,9 +1,14 @@
 <view class="card pa20">
-  <view class="vt323 fsheader text-primary mb">{{info.name}}</view>
-  <view class="vt323 ftheader text-primary mb40">From {{info.start_date}} to {{info.end_date}}</view>
-  <block wx:for="{{progress.weeks}}" wx:key="index">
-    <view class="inconsolata body-color mb ml20">{{item[0]}}</view>
-    <view class="inconsolata body-color mb20 ml30">{{item[1]}}</view>  
-  </block>
+  <view class="vt323 fsheader text-primary mb ml">{{info.name}}</view>
+  <view class="vt323 ftheader text-primary mb ml">From {{info.start_date}} to {{info.end_date}}</view>
+  <view class="mb">
+    <block wx:for="{{progress.weeks}}" wx:key="index">
+      <view class="inconsolata body-color mb ml30 my20">{{item[0]}}</view>
+      <view class="w100 flex row-between">
+        <l-progress percent="{{item[2]}}" stroke-width='15' border-radius='5' active-color="#A0F337" l-class="progress-bar" class="percent-bar ml30"></l-progress> 
+        <view class="vt323 ftheader text-primary mr30">{{item[2]}}%</view>
+      </view>
+    </block>
+  </view>
 </view>
 <view class="bar"></view>
