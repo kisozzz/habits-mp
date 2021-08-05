@@ -10,22 +10,25 @@
         <image class="icon-percent" src="/images/icons/icons_percent.svg"></image>
       </view>
       <l-progress percent="{{info.group_average}}" stroke-width='15' border-radius='2' active-color="#A0F337" l-class="progress-bar"></l-progress> 
-      <view class="mb40">
-      <view class="body-text ml20">
-        <view class="flex items-center mb20">
-          <text class="bold mr10">Group Goal:</text>
-          <text>Complete</text>
-          <text class="num-big">{{info.goal[0].percent_complete}}</text>
-          <image class="icon-percent" src="/images/icons/icons_percent.svg"></image>
+      <view class="mb20">
+        <view class="body-text ml20">
+          <view class="flex items-center mb20">
+            <text class="bold mr10">Group goal:</text>
+            <text>Complete</text>
+            <text class="num-big">{{info.goal[0].percent_complete}}</text>
+            <image class="icon-percent" src="/images/icons/icons_percent.svg"></image>
+            <text>of habits</text>
+          </view>
+          <view class="ml20 flex items-center">
+          each week until 
+            <text class="num-big">{{info.goal[0].end_date}}</text>
+            <image class="icon-finish" src="/images/icons/finish-flag.svg"></image>
+          </view> 
         </view>
-        <view class="ml20 flex items-center">
-          of habits by 
-          <text class="num-big">{{info.goal[0].end_date}}</text>
-        </view> 
-      </view>
       </view>
       
-      <!-- <image class="icon-finish" src="/images/icons/finish-flag.svg"></image> -->
+      <!-- <view wx:if="{{info.group_average < info.goal[0].percent_complete}}" class="tc inconsolata fbody">{{info.goal[0].percent_complete - info.group_average}}% away from your weekly goal</view> -->
+      <view wx:if="{{info.group_average > info.goal[0].percent_complete}}" class="tc inconsolata fbody bold">You reached your weekly goal! Congratulations!</view>
          
       <view class="icon-section w90">
         <view class="days-text flex items-center" bindtap="editGoal"><image class="icon-small" src="/images/icons/edit-box.svg"></image>Edit goal</view>
