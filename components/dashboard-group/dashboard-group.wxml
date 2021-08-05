@@ -22,7 +22,6 @@
           <view class="ml20 flex items-center">
           each week until 
             <text class="num-big">{{info.goal[0].end_date}}</text>
-            <image class="icon-finish" src="/images/icons/finish-flag.svg"></image>
           </view> 
         </view>
       </view>
