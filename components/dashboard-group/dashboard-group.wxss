@@ -27,9 +27,9 @@
 }
 
 .icon-small {
-  width: 30rpx;
-  height: 30rpx;
-  padding-right: 10rpx;
+  width: 33rpx;
+  height: 33rpx;
+  padding-left: 8rpx;
 }
 
 .icon-calendar {
@@ -87,15 +87,10 @@
   padding-right: 8rpx;
 }
 
-.icon-edit {
-  width: 35rpx;
-  height: 35rpx;
-  position: absolute;
-  padding: 30rpx;
-  top: 0;
-  right: 0;
-}
-
 .progress-bar{
   padding-bottom: 20rpx;
+}
+
+.smheader {
+  font-size: 38rpx;
 }
