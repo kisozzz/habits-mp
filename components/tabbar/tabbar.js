@@ -1,4 +1,4 @@
-// components/tabbar/tabbar.js
+
 Component({
   /**
    * Component properties
@@ -32,6 +32,14 @@ Component({
       } else {
         this.setData({ createMenuOpen: false })
       }
+    },
+    goToHome() {
+      wx.redirectTo({
+        url: '/pages/index/index',
+        success: (res) => {},
+        fail: (res) => {},
+        complete: (res) => {},
+      })
     }
   }
 })
