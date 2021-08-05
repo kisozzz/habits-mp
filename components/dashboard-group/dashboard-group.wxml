@@ -2,17 +2,32 @@
   <view class="px40 py20 flex column">
     <!-- <image bindtap="editGoal" class="icon-edit" src="/images/icons/edit-box.svg"></image> -->
     <view class="fheader vt323 text-primary mb tc">{{info.name}}</view>
+    
     <block wx:if="{{info.goal.length > 0}}">
+      <view class="flex items-center">
+        <text class="body-text bold">Group weekly progress:</text>
+        <view class="num-big">{{info.group_average}}</view>
+        <image class="icon-percent" src="/images/icons/icons_percent.svg"></image>
+      </view>
+      <l-progress percent="{{info.group_average}}" stroke-width='15' border-radius='2' active-color="#A0F337" l-class="progress-bar"></l-progress> 
       <view class="mb40">
-      <view class="goal-section body-text">
-      Group Goal  <text class="num-big">{{info.goal[0].percent_complete}}</text><image class="icon-percent" src="/images/icons/icons_percent.svg"></image><image class="icon-finish" src="/images/icons/finish-flag.svg"></image>
+      <view class="body-text ml20">
+        <view class="flex items-center mb20">
+          <text class="bold mr10">Group Goal:</text>
+          <text>Complete</text>
+          <text class="num-big">{{info.goal[0].percent_complete}}</text>
+          <image class="icon-percent" src="/images/icons/icons_percent.svg"></image>
+        </view>
+        <view class="ml20 flex items-center">
+          of habits by 
+          <text class="num-big">{{info.goal[0].end_date}}</text>
+        </view> 
       </view>
-      <view class="edate body-text">End Date<text class="num-big">{{info.goal[0].end_date}}</text></view>
-      <view class="group-progress body-text">Group weekly progress: {{info.group_average}}%</view>
-        <l-progress percent="{{info.group_average}}" stroke-width='15' border-radius='2' active-color="#A0F337" l-class="progress-bar"></l-progress> 
       </view>
+      
+      <!-- <image class="icon-finish" src="/images/icons/finish-flag.svg"></image> -->
+         
       <view class="icon-section w90">
-      <!-- <view class="mr20"><image class="icon-small" src="/images/icons/message.svg"></image></view> -->
         <view class="days-text flex items-center" bindtap="editGoal"><image class="icon-small" src="/images/icons/edit-box.svg"></image>Edit goal</view>
         <view class="mr20 days-text flex items-center" bindtap="deleteGoal"><image class="icon-small" src="/images/icons/lightning.svg"></image>Delete Goal</view>
       </view>

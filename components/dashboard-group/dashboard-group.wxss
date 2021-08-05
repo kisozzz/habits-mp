@@ -27,8 +27,8 @@
 }
 
 .icon-small {
-  width: 50rpx;
-  height: 50rpx;
+  width: 30rpx;
+  height: 30rpx;
   padding-right: 10rpx;
 }
 
@@ -59,7 +59,7 @@
 .body-text {
   font-family: Inconsolata;
   font-style: normal;
-  font-weight: normal;
+  /* font-weight: normal; */
   font-size: 16px;
   line-height: 17px;
   color: #1E1C26;
@@ -69,10 +69,10 @@
 
 .num-big {
   padding-left: 20rpx;
-  font-family: Inconsolata;
+  font-family: VT323;
   font-style: normal;
-  font-weight: bold;
-  font-size: 40rpx;
+  /* font-weight: bold; */
+  font-size: 48rpx;
   color: #2C12A1;
 }
 
@@ -82,14 +82,14 @@
 }
 
 .icon-percent {
-  padding-right: 20rpx;
-  width: 46rpx;
-  height: 46rpx;
+  /* padding-right: 20rpx; */
+  width: 35rpx;
+  height: 35rpx;
 }
 
 .icon-edit {
-  width: 46rpx;
-  height: 46rpx;
+  width: 30rpx;
+  height: 30rpx;
   position: absolute;
   padding: 30rpx;
   top: 0;

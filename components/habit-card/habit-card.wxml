@@ -1,11 +1,11 @@
-<view class="habit-card">
+<navigator url="/pages/habit/habit?id={{info.id}}&master_id={{info.master_habit_id}}" class="habit-card">
     <view class="bar">
     </view>
     <view class="hint">Task status</view>
     <view class="h100 px20 flex items-center justify-between">
-    <navigator url="/pages/habit/habit?id={{info.id}}&master_id={{info.master_habit_id}}" class="w60 h100 flex items-center justify-between">
+    <view class="w60 h100 flex items-center justify-between">
       <view class="task-name vt323 text-primary fsheader">{{info.name}}</view>
-    </navigator>
+    </view>
 
     <!-- display step circles on right end of card -->
     <view class="h100 flex items-center justify-center">
@@ -18,31 +18,4 @@
       </block>
       </view>    
     </view>
-  </view>
-
-
-
-      
-
-        <!-- <view bindtap="showDialog1" class="step-icon-{{filled1}} mr20"></view>
-        <view class="step-icon-{{filled2}} mr20"></view>
-        <view class="step-icon-{{filled3}}"></view>
-        <view wx:if="{{dialog1}}">
-          <l-dialog 
-          id="task1"
-          l-class="dialog"
-          l-cancel-class="cancel-btn"
-          l-confirm-class="confirm-btn"
-          l-content-class="step-name"
-          bind:linconfirm = "confirm"
-          show="{{true}}"
-          type="confirm"  
-          show-title="{{false}}"
-          content="Pack gym clothes"
-          confirm-text="Done"
-          confirm-color="#2C12A1"
-          cancel-text="Cancel"
-          cancel-color="#999" />
-        </view>        
-      </view>
-      </view> -->
+</navigator>

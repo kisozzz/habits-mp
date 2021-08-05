@@ -55,7 +55,7 @@
 
 .help-btn {
   position: relative;
-  top: 100rpx;
+  top: 80rpx;
   left: 570rpx;
   border: 1px solid #2C12A1;
   background-color: #DBDDFC;
