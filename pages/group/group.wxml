@@ -12,8 +12,8 @@
         <block wx:if="{{canIUseOpenData}}">
           <view class="friend-card">
             <view class="avatar ofh">
-              <image class="w100 h100" mode="aspectFill" src="{{item.wechat_pic_url}}"></image>
-              <!-- <open-data type="userAvatarUrl"></open-data> -->
+              <image  wx:if="{{item.wechat_pic_url}}" class="w100 h100" mode="aspectFill" src="{{item.wechat_pic_url}}"></image>
+                <image wx:else class="w100 h100" mode="aspectFill" src="/images/icons/Smiley.svg"></image>
             </view>
             <view class="flex column w100">
               <view class="nickname">

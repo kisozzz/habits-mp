@@ -14,8 +14,6 @@
   border-radius:50%;
   flex-shrink: 0;
   flex-grow: 0;
-  border: 5px solid white;
-  box-shadow: 0px 0px 2px #2C12A1;
 }
 
 .friends{
