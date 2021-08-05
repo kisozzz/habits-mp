@@ -6,7 +6,7 @@
 
 .dialog{
   width: 360rpx;
-  height: 176rpx;
+  height: 253rpx;
   background: #FFFFFF;
   border: 3rpx solid #2C12A1;
   border-top: 6rpx solid #2C12A1;
