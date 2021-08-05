@@ -1,6 +1,6 @@
 <view class="bar relative">
   <view class="vw row-around">
-    <navigator class="tab-text" url="/pages/index/index">HOME</navigator>
+    <view bindtap="goToHome" class="tab-text" url="/pages/index/index">HOME</view>
 
     <block wx:if="{{info.groups}}">
       <block wx:if="{{info.groups.length === 1}}">
@@ -19,7 +19,7 @@
     </block>
      
   </view>
-  <navigator bindtap="displayCreateOptions" class="tab" url="#"><image class="logo" src="/images/icons/plusgame.svg"></image></navigator>
+  <view bindtap="displayCreateOptions" class="tab" url="#"><image class="logo" src="/images/icons/plusgame.svg"></image></view>
 
   <block wx:if="{{info.id}}">
     <navigator url="/pages/progress/progress?id={{info.id}}" class="dynamic-tab-left" wx:if="{{createMenuOpen}}">
