@@ -69,10 +69,10 @@
 
 .num-big {
   padding-left: 20rpx;
-  font-family: Inconsolata;
+  font-family: VT323;
   font-style: normal;
-  font-weight: bold;
-  font-size: 40rpx;
+  /* font-weight: bold; */
+  font-size: 48rpx;
   color: #2C12A1;
 }
 

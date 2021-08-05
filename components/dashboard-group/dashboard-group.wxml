@@ -12,14 +12,14 @@
       <l-progress percent="{{info.group_average}}" stroke-width='15' border-radius='2' active-color="#A0F337" l-class="progress-bar"></l-progress> 
       <view class="mb40">
       <view class="body-text ml20">
-        <view class="flex items-center mb">
+        <view class="flex items-center mb20">
           <text class="bold mr10">Group Goal:</text>
           <text>Complete</text>
           <text class="num-big">{{info.goal[0].percent_complete}}</text>
           <image class="icon-percent" src="/images/icons/icons_percent.svg"></image>
         </view>
         <view class="ml20 flex items-center">
-          of goals by 
+          of habits by 
           <text class="num-big">{{info.goal[0].end_date}}</text>
         </view> 
       </view>
