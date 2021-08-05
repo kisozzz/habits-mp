@@ -11,7 +11,7 @@ Page({
     showJoinModal: false,
     currentConfig: {
       transition: true,
-      zIndex: 99,
+      zIndex: 99999,
       locked: false,
       direction: 'top',
       arcRadius: 18,

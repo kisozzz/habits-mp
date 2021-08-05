@@ -38,7 +38,7 @@
 
 
 <!-- popup goal setting form -->
-<l-arc-popup show="{{showPopup}}" max-height="800" min-height="200">
+<l-arc-popup show="{{showPopup}}" max-height="800" min-height="200" z-index="999999">
   <view class="form-container" style="height: 800rpx;">
     <view class="title">Set group goal</view>
     <form bindsubmit="formSubmit">
@@ -58,7 +58,7 @@
   </view>
 </l-arc-popup>
 
-<l-arc-popup show="{{showPopupEdit}}" max-height="800" min-height="200">
+<l-arc-popup show="{{showPopupEdit}}" max-height="800" min-height="200" z-index="999999">
   <view class="form-container" style="height: 800rpx;">
     <view class="title">Edit group goal</view>
     <form bindsubmit="formSubmitEdit">
@@ -83,7 +83,7 @@
 <!-- <tabbar/> -->
 
 <!-- friends request form -->
-  <l-arc-popup show="{{showJoinModal}}" transition="{{currentConfig.transition}}" direction="{{currentConfig.direction}}" locked="{{currentConfig.locked}}" maxHeight="{{currentConfig.maxHeight}}" minHeight="{{currentConfig.minHeight}}" arcRadius="{{currentConfig.arcRadius}}" opacity="{{currentConfig.opacity}}" l-panel-class="{{panelClass}}">
+  <l-arc-popup show="{{showJoinModal}}" transition="{{currentConfig.transition}}" direction="{{currentConfig.direction}}" locked="{{currentConfig.locked}}" maxHeight="{{currentConfig.maxHeight}}" minHeight="{{currentConfig.minHeight}}" arcRadius="{{currentConfig.arcRadius}}" opacity="{{currentConfig.opacity}}" l-panel-class="{{panelClass}}" z-index="{{currentConfig.zIndex}}">
     <view class="popup-demo9">
         <view class="popup-demo9-info">
           <view class="popup-demo9-info-avatar">
