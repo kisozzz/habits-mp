@@ -98,7 +98,7 @@ Page({
 
   doNothing(e){
     console.log('picked cancel')
-    this.setData({ show: false })
+    this.setData({ showJoinModal: false })
   },
 
   confirmJoin(e){
