@@ -18,7 +18,7 @@
 }
 
 .usermotto {
-  margin-top: 200px;
+  margin-top: 400rpx;
 }
 
 /* customize */
@@ -29,8 +29,8 @@
   font-style: normal;
   font-weight: normal;
   font-size: 55rpx;
-  height: 65px;
-  margin: 10px 0;
+  height: 130rpx;
+  margin: 20rpx 0;
   text-align: center;
   /* line-height: 30rpx; */
   color: #2C12A1;
@@ -41,15 +41,15 @@
 }
 
 .habit-name-title{
-  height: 65px;
+  height: 130rpx;
   text-align: center;
-  margin: 10px 0;
+  margin: 20rpx 0;
 }
 
 
 .icon-sizing {
-  width: 15px;
-  height: 15px;
+  width: 30rpx;
+  height: 30rpx;
 }
 
 .body-container {

@@ -5,14 +5,14 @@
   width: 40rpx;
   height: 40rpx;
   border-radius: 50%;
-  border: 1px solid #2C12A1;
+  border: 2rpx solid #2C12A1;
 }
 
 .step-icon-filled1 {
   width: 40rpx;
   height: 40rpx;
   border-radius: 50%;
-  border: 1px solid #2C12A1;
+  border: 2rpx solid #2C12A1;
   background-color: #A0F337;
 }
 

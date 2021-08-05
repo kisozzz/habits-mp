@@ -6,7 +6,7 @@
 
 .circle {
   position: relative;
-  border: 1px solid #2C12A1;
+  border: 2rpx solid #2C12A1;
   width: 80rpx;
   height: 80rpx;
   background-origin: 50%;

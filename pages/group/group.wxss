@@ -4,8 +4,8 @@
 }
 
 .icon-sizing {
-  width: 15px;
-  height: 15px;
+  width: 30rpx;
+  height: 30rpx;
 }
 
 .avatar {
@@ -164,7 +164,7 @@
 .cancel-btn {
   border-radius: 0%;
   background: #D6D5D5;
-  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5), inset 2px 2px 0px #FFFFFF;
+  box-shadow: 4rpx 4rpx 0rpx rgba(0, 0, 0, 0.5), inset 4rpx 4rpx 0rpx #FFFFFF;
   font-family: VT323;
   font-style: normal;
   font-weight: normal;
@@ -176,7 +176,7 @@
 .confirm-btn {
   border-radius: 0%;
   background: #D6D5D5;
-  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5), inset 2px 2px 0px #FFFFFF;
+  box-shadow: 4rpx 4rpx 0rpx rgba(0, 0, 0, 0.5), inset 4rpx 4rpx 0rpx #FFFFFF;
   font-family: VT323;
   font-style: normal;
   font-weight: normal;
@@ -191,13 +191,6 @@
   padding-left: 10rpx;
 }
 
-.circle-back {
-  width: 67px;
-  height: 67px;
-  border-radius: 50%;
-  background: #2C12A1;
-
-}
 
 .underline {
   text-decoration: underline;
