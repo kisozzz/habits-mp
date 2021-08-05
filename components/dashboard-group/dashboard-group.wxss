@@ -60,8 +60,8 @@
 .body-text {
   font-family: Inconsolata;
   font-style: normal;
-  font-size: 16px;
-  line-height: 17px;
+  font-size: 32rpx;
+  line-height: 34rpx;
   color: #1E1C26;
   padding-top: 30rpx;
   padding-bottom: 20rpx;

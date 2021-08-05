@@ -1,10 +1,10 @@
 .b {
-  border: 2px solid #2C12A1;
+  border: 4rpx solid #2C12A1;
 }
 
 .icon-sizing {
-  width: 15px;
-  height: 15px;
+  width: 30rpx;
+  height: 30rpx;
 }
 
 .underline {
