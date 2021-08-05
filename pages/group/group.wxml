@@ -80,7 +80,7 @@
 <view class="empty-space"></view>
 
 
-<!-- <tabbar/> -->
+<tabbar/>
 
 <!-- friends request form -->
   <l-arc-popup show="{{showJoinModal}}" transition="{{currentConfig.transition}}" direction="{{currentConfig.direction}}" locked="{{currentConfig.locked}}" maxHeight="{{currentConfig.maxHeight}}" minHeight="{{currentConfig.minHeight}}" arcRadius="{{currentConfig.arcRadius}}" opacity="{{currentConfig.opacity}}" l-panel-class="{{panelClass}}" z-index="{{currentConfig.zIndex}}">
