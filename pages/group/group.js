@@ -7,7 +7,7 @@ Page({
    * Page initial data
    */
   data: {
-    show: true,
+    // show: true,
     showJoinModal: false,
     currentConfig: {
       transition: true,

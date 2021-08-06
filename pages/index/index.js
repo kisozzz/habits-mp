@@ -89,5 +89,10 @@ Page({
       fail: (res) => {},
       complete: (res) => {},
     })
+  },
+
+  onShareAppMessage: function () {
+
   }
+
 })
