@@ -32,7 +32,7 @@
   </view> -->
 
   <!-- delete button -->
-  <view bindtap="showDeleteDialog" class="mt60 mb300 px80 w30 flex items-center">
+  <view bindtap="showDeleteDialog" class="mt60 mb300 px80 w30 mauto flex items-center">
     <image class="icon-sizing" src="/images/icons/lightning.svg"></image>
     <view class="text-primary inconsolata">Delete Habit</view>
     <view wx:if="{{deleteDialog}}">
