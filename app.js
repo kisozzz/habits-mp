@@ -1,5 +1,9 @@
 // app.js
 App({
+  globalData: {
+    user: null,
+    hasUserWechatInfo: false
+  },
   onLaunch() {
     // 登录
     const that = this
@@ -18,12 +22,12 @@ App({
             console.log(res)
             that.globalData.user = res.data.user
             wx.setStorageSync('user', res.data.user)
+            if(res.data.user.wechat_username) {
+              that.globalData.hasUserWechatInfo = true;
+            }
           }
         })
       }
     })
-  },
-  globalData: {
-    user: null
   }
 })
